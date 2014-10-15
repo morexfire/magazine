@@ -6,18 +6,56 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
+  <header role="banner">
+    <h1>All Attack, No Hold Back</h1>
 
-<%= yield %>
+    <form role="search">
+      <label for="search">Archive</label>
+      <input type="text" name="search" value="" id="search" placeholder="Search" />
+    </form>
+  </header>
 
-<footer role="contentinfo">
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
-  Some Rights Reserved
-  (CC-BY-ND-NC)
-  2014
-</a>
+  <%= yield %>
 
-</footer>
+
+  <footer role="contentinfo">
+    <div id="about">
+      <h1>About All Attack, No Hold Back</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <p>
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+
+    <div id="contact" class="h-card">
+      <%= mail_to "us@allattacknoholdback.com", "us@allattacknoholdback.com", class: "p-email" %>
+
+      <%= link_to "@AllAttackMag", "https://twitter.com/AllAttackMag", class: "u-url" %>
+
+      <form method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" value="" id="name" placeholder="Your Name" />
+
+        <label for="email">Email</label>
+        <input type="email" name="email" value="" id="email" placeholder="Your Email" />
+
+        <label for="comments">Comments</label>
+        <textarea name="comments" rows="8" cols="40" placeholder="What's on your mind?"></textarea>
+      </form>
+    </div>
+
+    <p>
+      Some Rights Reserved
+      2014
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+        (CC-BY-ND-NC)
+      </a>
+    </p>
+  </footer>
 </body>
 </html>
