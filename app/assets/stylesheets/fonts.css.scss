@@ -1,336 +1,335 @@
 @font-face {
   font-family: "alright_sansmedium";
-  src: url("alrightsans-medium-webfont.eot");
-  src: url("alrightsans-medium-webfont.eot?#iefix") format("embedded-opentype"),
-    url("alrightsans-medium-webfont.woff2") format("woff2"),
-    url("alrightsans-medium-webfont.woff") format("woff"),
-    url("alrightsans-medium-webfont.ttf") format("truetype"),
-    url("alrightsans-medium-webfont.svg#alright_sansmedium") format("svg");
+  src: url(<%= asset_path "alrightsans-medium-webfont.eot" %>);
+  src: url(<%= asset_path "alrightsans-medium-webfont.eot?#iefix" %>) format("embedded-opentype" %>),
+    url(<%= asset_path "alrightsans-medium-webfont.woff2" %>) format("woff2" %>),
+    url(<%= asset_path "alrightsans-medium-webfont.woff" %>) format("woff" %>),
+    url(<%= asset_path "alrightsans-medium-webfont.ttf" %>) format("truetype" %>),
+    url(<%= asset_path "alrightsans-medium-webfont.svg#alright_sansmedium" %>) format("svg" %>);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "alright_sanslight_italic";
-  src: url("alrightsans-lightitalic-webfont.eot");
-  src: url("alrightsans-lightitalic-webfont.eot?#iefix") format("embedded-opentype"),
-    url("alrightsans-lightitalic-webfont.woff2") format("woff2"),
-    url("alrightsans-lightitalic-webfont.woff") format("woff"),
-    url("alrightsans-lightitalic-webfont.ttf") format("truetype"),
-    url("alrightsans-lightitalic-webfont.svg#alright_sanslight_italic") format("svg");
+  src: url(<%= asset_path "alrightsans-lightitalic-webfont.eot" %>);
+  src: url(<%= asset_path "alrightsans-lightitalic-webfont.eot?#iefix" %>) format("embedded-opentype" %>),
+    url(<%= asset_path "alrightsans-lightitalic-webfont.woff2" %>) format("woff2" %>),
+    url(<%= asset_path "alrightsans-lightitalic-webfont.woff" %>) format("woff" %>),
+    url(<%= asset_path "alrightsans-lightitalic-webfont.ttf" %>) format("truetype" %>),
+    url(<%= asset_path "alrightsans-lightitalic-webfont.svg#alright_sanslight_italic" %>) format("svg" %>);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "alright_sanslight";
-  src: url("alrightsans-light-webfont.eot");
-  src: url("alrightsans-light-webfont.eot?#iefix") format("embedded-opentype"),
-    url("alrightsans-light-webfont.woff2") format("woff2"),
-    url("alrightsans-light-webfont.woff") format("woff"),
-    url("alrightsans-light-webfont.ttf") format("truetype"),
-    url("alrightsans-light-webfont.svg#alright_sanslight") format("svg");
+  src: url(<%= asset_path "alrightsans-light-webfont.eot" %>);
+  src: url(<%= asset_path "alrightsans-light-webfont.eot?#iefix" %>) format("embedded-opentype" %>),
+    url(<%= asset_path "alrightsans-light-webfont.woff2" %>) format("woff2" %>),
+    url(<%= asset_path "alrightsans-light-webfont.woff" %>) format("woff" %>),
+    url(<%= asset_path "alrightsans-light-webfont.ttf" %>) format("truetype" %>),
+    url(<%= asset_path "alrightsans-light-webfont.svg#alright_sanslight" %>) format("svg" %>);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "alright_sansextra_thin";
-  src: url("alrightsans-extrathin-webfont.eot");
-  src: url("alrightsans-extrathin-webfont.eot?#iefix") format("embedded-opentype"),
-    url("alrightsans-extrathin-webfont.woff2") format("woff2"),
-    url("alrightsans-extrathin-webfont.woff") format("woff"),
-    url("alrightsans-extrathin-webfont.ttf") format("truetype"),
-    url("alrightsans-extrathin-webfont.svg#alright_sansextra_thin") format("svg");
+  src: url(<%= asset_path "alrightsans-extrathin-webfont.eot" %>);
+  src: url(<%= asset_path "alrightsans-extrathin-webfont.eot?#iefix" %>) format("embedded-opentype" %>),
+    url(<%= asset_path "alrightsans-extrathin-webfont.woff2" %>) format("woff2" %>),
+    url(<%= asset_path "alrightsans-extrathin-webfont.woff" %>) format("woff" %>),
+    url(<%= asset_path "alrightsans-extrathin-webfont.ttf" %>) format("truetype" %>),
+    url(<%= asset_path "alrightsans-extrathin-webfont.svg#alright_sansextra_thin" %>) format("svg" %>);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "alright_sansbold";
-  src: url("alrightsans-bold-webfont.eot");
-  src: url("alrightsans-bold-webfont.eot?#iefix") format("embedded-opentype"),
-    url("alrightsans-bold-webfont.woff2") format("woff2"),
-    url("alrightsans-bold-webfont.woff") format("woff"),
-    url("alrightsans-bold-webfont.ttf") format("truetype"),
-    url("alrightsans-bold-webfont.svg#alright_sansbold") format("svg");
+  src: url(<%= asset_path "alrightsans-bold-webfont.eot" %>);
+  src: url(<%= asset_path "alrightsans-bold-webfont.eot?#iefix" %>) format("embedded-opentype" %>),
+    url(<%= asset_path "alrightsans-bold-webfont.woff2" %>) format("woff2" %>),
+    url(<%= asset_path "alrightsans-bold-webfont.woff" %>) format("woff" %>),
+    url(<%= asset_path "alrightsans-bold-webfont.ttf" %>) format("truetype" %>),
+    url(<%= asset_path "alrightsans-bold-webfont.svg#alright_sansbold" %>) format("svg" %>);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "alright_sansblack";
-  src: url("alrightsans-black-webfont.eot");
-  src: url("alrightsans-black-webfont.eot?#iefix") format("embedded-opentype"),
-    url("alrightsans-black-webfont.woff2") format("woff2"),
-    url("alrightsans-black-webfont.woff") format("woff"),
-    url("alrightsans-black-webfont.ttf") format("truetype"),
-    url("alrightsans-black-webfont.svg#alright_sansblack") format("svg");
+  src: url(<%= asset_path "alrightsans-black-webfont.eot" %>);
+  src: url(<%= asset_path "alrightsans-black-webfont.eot?#iefix" %>) format("embedded-opentype" %>),
+    url(<%= asset_path "alrightsans-black-webfont.woff2" %>) format("woff2" %>),
+    url(<%= asset_path "alrightsans-black-webfont.woff" %>) format("woff" %>),
+    url(<%= asset_path "alrightsans-black-webfont.ttf" %>) format("truetype" %>),
+    url(<%= asset_path "alrightsans-black-webfont.svg#alright_sansblack" %>) format("svg" %>);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "alright_sansmedium_italic";
-  src: url("alrightsans-mediumitalic-webfont.eot");
-  src: url("alrightsans-mediumitalic-webfont.eot?#iefix") format("embedded-opentype"),
-    url("alrightsans-mediumitalic-webfont.woff2") format("woff2"),
-    url("alrightsans-mediumitalic-webfont.woff") format("woff"),
-    url("alrightsans-mediumitalic-webfont.ttf") format("truetype"),
-    url("alrightsans-mediumitalic-webfont.svg#alright_sansmedium_italic") format("svg");
+  src: url(<%= asset_path "alrightsans-mediumitalic-webfont.eot" %>);
+  src: url(<%= asset_path "alrightsans-mediumitalic-webfont.eot?#iefix" %>) format("embedded-opentype" %>),
+    url(<%= asset_path "alrightsans-mediumitalic-webfont.woff2" %>) format("woff2" %>),
+    url(<%= asset_path "alrightsans-mediumitalic-webfont.woff" %>) format("woff" %>),
+    url(<%= asset_path "alrightsans-mediumitalic-webfont.ttf" %>) format("truetype" %>),
+    url(<%= asset_path "alrightsans-mediumitalic-webfont.svg#alright_sansmedium_italic" %>) format("svg" %>);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "alright_sansextra_thin_italic";
-  src: url("alrightsans-extrathinitalic-webfont.eot");
-  src: url("alrightsans-extrathinitalic-webfont.eot?#iefix") format("embedded-opentype"),
-    url("alrightsans-extrathinitalic-webfont.woff2") format("woff2"),
-    url("alrightsans-extrathinitalic-webfont.woff") format("woff"),
-    url("alrightsans-extrathinitalic-webfont.ttf") format("truetype"),
-    url("alrightsans-extrathinitalic-webfont.svg#alright_sansextra_thin_italic") format("svg");
+  src: url(<%= asset_path "alrightsans-extrathinitalic-webfont.eot" %>);
+  src: url(<%= asset_path "alrightsans-extrathinitalic-webfont.eot?#iefix" %>) format("embedded-opentype" %>),
+    url(<%= asset_path "alrightsans-extrathinitalic-webfont.woff2" %>) format("woff2" %>),
+    url(<%= asset_path "alrightsans-extrathinitalic-webfont.woff" %>) format("woff" %>),
+    url(<%= asset_path "alrightsans-extrathinitalic-webfont.ttf" %>) format("truetype" %>),
+    url(<%= asset_path "alrightsans-extrathinitalic-webfont.svg#alright_sansextra_thin_italic" %>) format("svg" %>);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "alright_sansregular";
-  src: url("alrightsans-regular-webfont.eot");
-  src: url("alrightsans-regular-webfont.eot?#iefix") format("embedded-opentype"),
-    url("alrightsans-regular-webfont.woff2") format("woff2"),
-    url("alrightsans-regular-webfont.woff") format("woff"),
-    url("alrightsans-regular-webfont.ttf") format("truetype"),
-    url("alrightsans-regular-webfont.svg#alright_sansregular") format("svg");
+  src: url(<%= asset_path "alrightsans-regular-webfont.eot" %>);
+  src: url(<%= asset_path "alrightsans-regular-webfont.eot?#iefix" %>) format("embedded-opentype" %>),
+    url(<%= asset_path "alrightsans-regular-webfont.woff2" %>) format("woff2" %>),
+    url(<%= asset_path "alrightsans-regular-webfont.woff" %>) format("woff" %>),
+    url(<%= asset_path "alrightsans-regular-webfont.ttf" %>) format("truetype" %>),
+    url(<%= asset_path "alrightsans-regular-webfont.svg#alright_sansregular" %>) format("svg" %>);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "alright_sansregular_italic";
-  src: url("alrightsans-regularitalic-webfont.eot");
-  src: url("alrightsans-regularitalic-webfont.eot?#iefix") format("embedded-opentype"),
-    url("alrightsans-regularitalic-webfont.woff2") format("woff2"),
-    url("alrightsans-regularitalic-webfont.woff") format("woff"),
-    url("alrightsans-regularitalic-webfont.ttf") format("truetype"),
-    url("alrightsans-regularitalic-webfont.svg#alright_sansregular_italic") format("svg");
+  src: url(<%= asset_path "alrightsans-regularitalic-webfont.eot" %>);
+  src: url(<%= asset_path "alrightsans-regularitalic-webfont.eot?#iefix" %>) format("embedded-opentype" %>),
+    url(<%= asset_path "alrightsans-regularitalic-webfont.woff2" %>) format("woff2" %>),
+    url(<%= asset_path "alrightsans-regularitalic-webfont.woff" %>) format("woff" %>),
+    url(<%= asset_path "alrightsans-regularitalic-webfont.ttf" %>) format("truetype" %>),
+    url(<%= asset_path "alrightsans-regularitalic-webfont.svg#alright_sansregular_italic" %>) format("svg" %>);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "alright_sansbold_italic";
-  src: url("alrightsans-bolditalic-webfont.eot");
-  src: url("alrightsans-bolditalic-webfont.eot?#iefix") format("embedded-opentype"),
-    url("alrightsans-bolditalic-webfont.woff2") format("woff2"),
-    url("alrightsans-bolditalic-webfont.woff") format("woff"),
-    url("alrightsans-bolditalic-webfont.ttf") format("truetype"),
-    url("alrightsans-bolditalic-webfont.svg#alright_sansbold_italic") format("svg");
+  src: url(<%= asset_path "alrightsans-bolditalic-webfont.eot" %>);
+  src: url(<%= asset_path "alrightsans-bolditalic-webfont.eot?#iefix" %>) format("embedded-opentype" %>),
+    url(<%= asset_path "alrightsans-bolditalic-webfont.woff2" %>) format("woff2" %>),
+    url(<%= asset_path "alrightsans-bolditalic-webfont.woff" %>) format("woff" %>),
+    url(<%= asset_path "alrightsans-bolditalic-webfont.ttf" %>) format("truetype" %>),
+    url(<%= asset_path "alrightsans-bolditalic-webfont.svg#alright_sansbold_italic" %>) format("svg" %>);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "alright_sansblack_italic";
-  src: url("alrightsans-blackitalic-webfont.eot");
-  src: url("alrightsans-blackitalic-webfont.eot?#iefix") format("embedded-opentype"),
-    url("alrightsans-blackitalic-webfont.woff2") format("woff2"),
-    url("alrightsans-blackitalic-webfont.woff") format("woff"),
-    url("alrightsans-blackitalic-webfont.ttf") format("truetype"),
-    url("alrightsans-blackitalic-webfont.svg#alright_sansblack_italic") format("svg");
+  src: url(<%= asset_path "alrightsans-blackitalic-webfont.eot" %>);
+  src: url(<%= asset_path "alrightsans-blackitalic-webfont.eot?#iefix" %>) format("embedded-opentype" %>),
+    url(<%= asset_path "alrightsans-blackitalic-webfont.woff2" %>) format("woff2" %>),
+    url(<%= asset_path "alrightsans-blackitalic-webfont.woff" %>) format("woff" %>),
+    url(<%= asset_path "alrightsans-blackitalic-webfont.ttf" %>) format("truetype" %>),
+    url(<%= asset_path "alrightsans-blackitalic-webfont.svg#alright_sansblack_italic" %>) format("svg" %>);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "alright_sansultra";
-  src: url("alrightsans-ultra-webfont.eot");
-  src: url("alrightsans-ultra-webfont.eot?#iefix") format("embedded-opentype"),
-    url("alrightsans-ultra-webfont.woff2") format("woff2"),
-    url("alrightsans-ultra-webfont.woff") format("woff"),
-    url("alrightsans-ultra-webfont.ttf") format("truetype"),
-    url("alrightsans-ultra-webfont.svg#alright_sansultra") format("svg");
+  src: url(<%= asset_path "alrightsans-ultra-webfont.eot" %>);
+  src: url(<%= asset_path "alrightsans-ultra-webfont.eot?#iefix" %>) format("embedded-opentype" %>),
+    url(<%= asset_path "alrightsans-ultra-webfont.woff2" %>) format("woff2" %>),
+    url(<%= asset_path "alrightsans-ultra-webfont.woff" %>) format("woff" %>),
+    url(<%= asset_path "alrightsans-ultra-webfont.ttf" %>) format("truetype" %>),
+    url(<%= asset_path "alrightsans-ultra-webfont.svg#alright_sansultra" %>) format("svg" %>);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "alright_sansthin_italic";
-  src: url("alrightsans-thinitalic-webfont.eot");
-  src: url("alrightsans-thinitalic-webfont.eot?#iefix") format("embedded-opentype"),
-    url("alrightsans-thinitalic-webfont.woff2") format("woff2"),
-    url("alrightsans-thinitalic-webfont.woff") format("woff"),
-    url("alrightsans-thinitalic-webfont.ttf") format("truetype"),
-    url("alrightsans-thinitalic-webfont.svg#alright_sansthin_italic") format("svg");
+  src: url(<%= asset_path "alrightsans-thinitalic-webfont.eot" %>);
+  src: url(<%= asset_path "alrightsans-thinitalic-webfont.eot?#iefix" %>) format("embedded-opentype" %>),
+    url(<%= asset_path "alrightsans-thinitalic-webfont.woff2" %>) format("woff2" %>),
+    url(<%= asset_path "alrightsans-thinitalic-webfont.woff" %>) format("woff" %>),
+    url(<%= asset_path "alrightsans-thinitalic-webfont.ttf" %>) format("truetype" %>),
+    url(<%= asset_path "alrightsans-thinitalic-webfont.svg#alright_sansthin_italic" %>) format("svg" %>);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "alright_sansultra_italic";
-  src: url("alrightsans-ultraitalic-webfont.eot");
-  src: url("alrightsans-ultraitalic-webfont.eot?#iefix") format("embedded-opentype"),
-    url("alrightsans-ultraitalic-webfont.woff2") format("woff2"),
-    url("alrightsans-ultraitalic-webfont.woff") format("woff"),
-    url("alrightsans-ultraitalic-webfont.ttf") format("truetype"),
-    url("alrightsans-ultraitalic-webfont.svg#alright_sansultra_italic") format("svg");
+  src: url(<%= asset_path "alrightsans-ultraitalic-webfont.eot" %>);
+  src: url(<%= asset_path "alrightsans-ultraitalic-webfont.eot?#iefix" %>) format("embedded-opentype" %>),
+    url(<%= asset_path "alrightsans-ultraitalic-webfont.woff2" %>) format("woff2" %>),
+    url(<%= asset_path "alrightsans-ultraitalic-webfont.woff" %>) format("woff" %>),
+    url(<%= asset_path "alrightsans-ultraitalic-webfont.ttf" %>) format("truetype" %>),
+    url(<%= asset_path "alrightsans-ultraitalic-webfont.svg#alright_sansultra_italic" %>) format("svg" %>);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "alright_sansthin";
-  src: url("alrightsans-thin-webfont.eot");
-  src: url("alrightsans-thin-webfont.eot?#iefix") format("embedded-opentype"),
-    url("alrightsans-thin-webfont.woff2") format("woff2"),
-    url("alrightsans-thin-webfont.woff") format("woff"),
-    url("alrightsans-thin-webfont.ttf") format("truetype"),
-    url("alrightsans-thin-webfont.svg#alright_sansthin") format("svg");
+  src: url(<%= asset_path "alrightsans-thin-webfont.eot" %>);
+  src: url(<%= asset_path "alrightsans-thin-webfont.eot?#iefix" %>) format("embedded-opentype" %>),
+    url(<%= asset_path "alrightsans-thin-webfont.woff2" %>) format("woff2" %>),
+    url(<%= asset_path "alrightsans-thin-webfont.woff" %>) format("woff" %>),
+    url(<%= asset_path "alrightsans-thin-webfont.ttf" %>) format("truetype" %>),
+    url(<%= asset_path "alrightsans-thin-webfont.svg#alright_sansthin" %>) format("svg" %>);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "harriet_displaylight_italic";
-  src: url("harrietdisplay-lightitalic-webfont.eot");
-  src: url("harrietdisplay-lightitalic-webfont.eot?#iefix") format("embedded-opentype"),
-    url("harrietdisplay-lightitalic-webfont.woff2") format("woff2"),
-    url("harrietdisplay-lightitalic-webfont.woff") format("woff"),
-    url("harrietdisplay-lightitalic-webfont.ttf") format("truetype"),
-    url("harrietdisplay-lightitalic-webfont.svg#harriet_displaylight_italic") format("svg");
+  src: url(<%= asset_path "harrietdisplay-lightitalic-webfont.eot" %>);
+  src: url(<%= asset_path "harrietdisplay-lightitalic-webfont.eot?#iefix" %>) format("embedded-opentype" %>),
+    url(<%= asset_path "harrietdisplay-lightitalic-webfont.woff2" %>) format("woff2" %>),
+    url(<%= asset_path "harrietdisplay-lightitalic-webfont.woff" %>) format("woff" %>),
+    url(<%= asset_path "harrietdisplay-lightitalic-webfont.ttf" %>) format("truetype" %>),
+    url(<%= asset_path "harrietdisplay-lightitalic-webfont.svg#harriet_displaylight_italic" %>) format("svg" %>);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "harriet_displaylight";
-  src: url("harrietdisplay-light-webfont.eot");
-  src: url("harrietdisplay-light-webfont.eot?#iefix") format("embedded-opentype"),
-    url("harrietdisplay-light-webfont.woff2") format("woff2"),
-    url("harrietdisplay-light-webfont.woff") format("woff"),
-    url("harrietdisplay-light-webfont.ttf") format("truetype"),
-    url("harrietdisplay-light-webfont.svg#harriet_displaylight") format("svg");
+  src: url(<%= asset_path "harrietdisplay-light-webfont.eot" %>);
+  src: url(<%= asset_path "harrietdisplay-light-webfont.eot?#iefix" %>) format("embedded-opentype" %>),
+    url(<%= asset_path "harrietdisplay-light-webfont.woff2" %>) format("woff2" %>),
+    url(<%= asset_path "harrietdisplay-light-webfont.woff" %>) format("woff" %>),
+    url(<%= asset_path "harrietdisplay-light-webfont.ttf" %>) format("truetype" %>),
+    url(<%= asset_path "harrietdisplay-light-webfont.svg#harriet_displaylight" %>) format("svg" %>);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "harriet_displaybold";
-  src: url("harrietdisplay-bold-webfont.eot");
-  src: url("harrietdisplay-bold-webfont.eot?#iefix") format("embedded-opentype"),
-    url("harrietdisplay-bold-webfont.woff2") format("woff2"),
-    url("harrietdisplay-bold-webfont.woff") format("woff"),
-    url("harrietdisplay-bold-webfont.ttf") format("truetype"),
-    url("harrietdisplay-bold-webfont.svg#harriet_displaybold") format("svg");
+  src: url(<%= asset_path "harrietdisplay-bold-webfont.eot" %>);
+  src: url(<%= asset_path "harrietdisplay-bold-webfont.eot?#iefix" %>) format("embedded-opentype" %>),
+    url(<%= asset_path "harrietdisplay-bold-webfont.woff2" %>) format("woff2" %>),
+    url(<%= asset_path "harrietdisplay-bold-webfont.woff" %>) format("woff" %>),
+    url(<%= asset_path "harrietdisplay-bold-webfont.ttf" %>) format("truetype" %>),
+    url(<%= asset_path "harrietdisplay-bold-webfont.svg#harriet_displaybold" %>) format("svg" %>);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "harriet_displaymedium";
-  src: url("harrietdisplay-medium-webfont.eot");
-  src: url("harrietdisplay-medium-webfont.eot?#iefix") format("embedded-opentype"),
-    url("harrietdisplay-medium-webfont.woff2") format("woff2"),
-    url("harrietdisplay-medium-webfont.woff") format("woff"),
-    url("harrietdisplay-medium-webfont.ttf") format("truetype"),
-    url("harrietdisplay-medium-webfont.svg#harriet_displaymedium") format("svg");
+  src: url(<%= asset_path "harrietdisplay-medium-webfont.eot" %>);
+  src: url(<%= asset_path "harrietdisplay-medium-webfont.eot?#iefix" %>) format("embedded-opentype" %>),
+    url(<%= asset_path "harrietdisplay-medium-webfont.woff2" %>) format("woff2" %>),
+    url(<%= asset_path "harrietdisplay-medium-webfont.woff" %>) format("woff" %>),
+    url(<%= asset_path "harrietdisplay-medium-webfont.ttf" %>) format("truetype" %>),
+    url(<%= asset_path "harrietdisplay-medium-webfont.svg#harriet_displaymedium" %>) format("svg" %>);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "harriet_displaymedium_italic";
-  src: url("harrietdisplay-mediumitalic-webfont.eot");
-  src: url("harrietdisplay-mediumitalic-webfont.eot?#iefix") format("embedded-opentype"),
-    url("harrietdisplay-mediumitalic-webfont.woff2") format("woff2"),
-    url("harrietdisplay-mediumitalic-webfont.woff") format("woff"),
-    url("harrietdisplay-mediumitalic-webfont.ttf") format("truetype"),
-    url("harrietdisplay-mediumitalic-webfont.svg#harriet_displaymedium_italic") format("svg");
+  src: url(<%= asset_path "harrietdisplay-mediumitalic-webfont.eot" %>);
+  src: url(<%= asset_path "harrietdisplay-mediumitalic-webfont.eot?#iefix" %>) format("embedded-opentype" %>),
+    url(<%= asset_path "harrietdisplay-mediumitalic-webfont.woff2" %>) format("woff2" %>),
+    url(<%= asset_path "harrietdisplay-mediumitalic-webfont.woff" %>) format("woff" %>),
+    url(<%= asset_path "harrietdisplay-mediumitalic-webfont.ttf" %>) format("truetype" %>),
+    url(<%= asset_path "harrietdisplay-mediumitalic-webfont.svg#harriet_displaymedium_italic" %>) format("svg" %>);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "harriet_displaybold_italic";
-  src: url("harrietdisplay-bolditalic-webfont.eot");
-  src: url("harrietdisplay-bolditalic-webfont.eot?#iefix") format("embedded-opentype"),
-    url("harrietdisplay-bolditalic-webfont.woff2") format("woff2"),
-    url("harrietdisplay-bolditalic-webfont.woff") format("woff"),
-    url("harrietdisplay-bolditalic-webfont.ttf") format("truetype"),
-    url("harrietdisplay-bolditalic-webfont.svg#harriet_displaybold_italic") format("svg");
+  src: url(<%= asset_path "harrietdisplay-bolditalic-webfont.eot" %>);
+  src: url(<%= asset_path "harrietdisplay-bolditalic-webfont.eot?#iefix" %>) format("embedded-opentype" %>),
+    url(<%= asset_path "harrietdisplay-bolditalic-webfont.woff2" %>) format("woff2" %>),
+    url(<%= asset_path "harrietdisplay-bolditalic-webfont.woff" %>) format("woff" %>),
+    url(<%= asset_path "harrietdisplay-bolditalic-webfont.ttf" %>) format("truetype" %>),
+    url(<%= asset_path "harrietdisplay-bolditalic-webfont.svg#harriet_displaybold_italic" %>) format("svg" %>);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "harriet_displayblack";
-  src: url("harrietdisplay-black-webfont.eot");
-  src: url("harrietdisplay-black-webfont.eot?#iefix") format("embedded-opentype"),
-    url("harrietdisplay-black-webfont.woff2") format("woff2"),
-    url("harrietdisplay-black-webfont.woff") format("woff"),
-    url("harrietdisplay-black-webfont.ttf") format("truetype"),
-    url("harrietdisplay-black-webfont.svg#harriet_displayblack") format("svg");
+  src: url(<%= asset_path "harrietdisplay-black-webfont.eot" %>);
+  src: url(<%= asset_path "harrietdisplay-black-webfont.eot?#iefix" %>) format("embedded-opentype" %>),
+    url(<%= asset_path "harrietdisplay-black-webfont.woff2" %>) format("woff2" %>),
+    url(<%= asset_path "harrietdisplay-black-webfont.woff" %>) format("woff" %>),
+    url(<%= asset_path "harrietdisplay-black-webfont.ttf" %>) format("truetype" %>),
+    url(<%= asset_path "harrietdisplay-black-webfont.svg#harriet_displayblack" %>) format("svg" %>);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "harriet_displayblack_italic";
-  src: url("harrietdisplay-blackitalic-webfont.eot");
-  src: url("harrietdisplay-blackitalic-webfont.eot?#iefix") format("embedded-opentype"),
-    url("harrietdisplay-blackitalic-webfont.woff2") format("woff2"),
-    url("harrietdisplay-blackitalic-webfont.woff") format("woff"),
-    url("harrietdisplay-blackitalic-webfont.ttf") format("truetype"),
-    url("harrietdisplay-blackitalic-webfont.svg#harriet_displayblack_italic") format("svg");
+  src: url(<%= asset_path "harrietdisplay-blackitalic-webfont.eot" %>);
+  src: url(<%= asset_path "harrietdisplay-blackitalic-webfont.eot?#iefix" %>) format("embedded-opentype" %>),
+    url(<%= asset_path "harrietdisplay-blackitalic-webfont.woff2" %>) format("woff2" %>),
+    url(<%= asset_path "harrietdisplay-blackitalic-webfont.woff" %>) format("woff" %>),
+    url(<%= asset_path "harrietdisplay-blackitalic-webfont.ttf" %>) format("truetype" %>),
+    url(<%= asset_path "harrietdisplay-blackitalic-webfont.svg#harriet_displayblack_italic" %>) format("svg" %>);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "harriet_displaythin";
-  src: url("harrietdisplay-thin-webfont.eot");
-  src: url("harrietdisplay-thin-webfont.eot?#iefix") format("embedded-opentype"),
-    url("harrietdisplay-thin-webfont.woff2") format("woff2"),
-    url("harrietdisplay-thin-webfont.woff") format("woff"),
-    url("harrietdisplay-thin-webfont.ttf") format("truetype"),
-    url("harrietdisplay-thin-webfont.svg#harriet_displaythin") format("svg");
+  src: url(<%= asset_path "harrietdisplay-thin-webfont.eot" %>);
+  src: url(<%= asset_path "harrietdisplay-thin-webfont.eot?#iefix" %>) format("embedded-opentype" %>),
+    url(<%= asset_path "harrietdisplay-thin-webfont.woff2" %>) format("woff2" %>),
+    url(<%= asset_path "harrietdisplay-thin-webfont.woff" %>) format("woff" %>),
+    url(<%= asset_path "harrietdisplay-thin-webfont.ttf" %>) format("truetype" %>),
+    url(<%= asset_path "harrietdisplay-thin-webfont.svg#harriet_displaythin" %>) format("svg" %>);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "harriet_displaythin_italic";
-  src: url("harrietdisplay-thinitalic-webfont.eot");
-  src: url("harrietdisplay-thinitalic-webfont.eot?#iefix") format("embedded-opentype"),
-    url("harrietdisplay-thinitalic-webfont.woff2") format("woff2"),
-    url("harrietdisplay-thinitalic-webfont.woff") format("woff"),
-    url("harrietdisplay-thinitalic-webfont.ttf") format("truetype"),
-    url("harrietdisplay-thinitalic-webfont.svg#harriet_displaythin_italic") format("svg");
+  src: url(<%= asset_path "harrietdisplay-thinitalic-webfont.eot" %>);
+  src: url(<%= asset_path "harrietdisplay-thinitalic-webfont.eot?#iefix" %>) format("embedded-opentype" %>),
+    url(<%= asset_path "harrietdisplay-thinitalic-webfont.woff2" %>) format("woff2" %>),
+    url(<%= asset_path "harrietdisplay-thinitalic-webfont.woff" %>) format("woff" %>),
+    url(<%= asset_path "harrietdisplay-thinitalic-webfont.ttf" %>) format("truetype" %>),
+    url(<%= asset_path "harrietdisplay-thinitalic-webfont.svg#harriet_displaythin_italic" %>) format("svg" %>);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "harriet_displayregular_italic";
-  src: url("harrietdisplay-regularitalic-webfont.eot");
-  src: url("harrietdisplay-regularitalic-webfont.eot?#iefix") format("embedded-opentype"),
-    url("harrietdisplay-regularitalic-webfont.woff2") format("woff2"),
-    url("harrietdisplay-regularitalic-webfont.woff") format("woff"),
-    url("harrietdisplay-regularitalic-webfont.ttf") format("truetype"),
-    url("harrietdisplay-regularitalic-webfont.svg#harriet_displayregular_italic") format("svg");
+  src: url(<%= asset_path "harrietdisplay-regularitalic-webfont.eot" %>);
+  src: url(<%= asset_path "harrietdisplay-regularitalic-webfont.eot?#iefix" %>) format("embedded-opentype" %>),
+    url(<%= asset_path "harrietdisplay-regularitalic-webfont.woff2" %>) format("woff2" %>),
+    url(<%= asset_path "harrietdisplay-regularitalic-webfont.woff" %>) format("woff" %>),
+    url(<%= asset_path "harrietdisplay-regularitalic-webfont.ttf" %>) format("truetype" %>),
+    url(<%= asset_path "harrietdisplay-regularitalic-webfont.svg#harriet_displayregular_italic" %>) format("svg" %>);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "harriet_display_regularRg";
-  src: url("harrietdisplay-regular-webfont.eot");
-  src: url("harrietdisplay-regular-webfont.eot?#iefix") format("embedded-opentype"),
-    url("harrietdisplay-regular-webfont.woff2") format("woff2"),
-    url("harrietdisplay-regular-webfont.woff") format("woff"),
-    url("harrietdisplay-regular-webfont.ttf") format("truetype"),
-    url("harrietdisplay-regular-webfont.svg#harriet_display_regularRg") format("svg");
+  src: url(<%= asset_path "harrietdisplay-regular-webfont.eot" %>);
+  src: url(<%= asset_path "harrietdisplay-regular-webfont.eot?#iefix" %>) format("embedded-opentype" %>),
+    url(<%= asset_path "harrietdisplay-regular-webfont.woff2" %>) format("woff2" %>),
+    url(<%= asset_path "harrietdisplay-regular-webfont.woff" %>) format("woff" %>),
+    url(<%= asset_path "harrietdisplay-regular-webfont.ttf" %>) format("truetype" %>),
+    url(<%= asset_path "harrietdisplay-regular-webfont.svg#harriet_display_regularRg" %>) format("svg" %>);
   font-weight: normal;
   font-style: normal;
-
 }
