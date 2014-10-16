@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.screen-reader-only {
+  display: none;
+}
+
+header[role=banner] {
+  background: black;
+  color: white;
+  padding: 25px;
+
+  h1,
+  form[role=search] {
+    width: 50%;
+    float: left;
+    margin: 0;
+  }
+
+  form[role=search] {
+    text-align: right;
+  }
+
+  br { clear: both; }
+}
+
+footer[role=contentinfo] {
+  border-top: 1px solid black;
+  margin-top: 50px;
+  padding: 5px 25px 25px 25px;
+
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  input,
+  #about,
+  #contact {
+    width: 50%;
+    float: left;
+    margin: 0;
+    padding: 25px;
+    box-sizing: border-box;
+  }
+
+  input,
+  textarea {
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    clear: both;
+    margin-top: 2em;
+    height: 6em;
+  }
+
+  .cancel {
+    padding: 5px 0;
+    float: left;
+  }
+
+  button {
+    padding: 5px;
+    float: right;
+  }
+
+  .license {
+    text-align: center;
+    padding: 50px 0 10px 0;
+    clear: both;
+  }
+}

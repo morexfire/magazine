@@ -54,7 +54,7 @@
       <label for="search">Archive</label>
       <input type="text" name="search" value="" id="search" placeholder="Search" />
     </form>
-    <br>
+    <br />
   </header>
 
 
@@ -73,23 +73,31 @@
     </div>
 
     <div id="contact" class="h-card">
-      <%= mail_to "us@allattacknoholdback.com", "us@allattacknoholdback.com", class: "p-email" %>
-
-      <%= link_to "@AllAttackMag", "https://twitter.com/AllAttackMag", class: "u-url" %>
+      <h1>Contact Us</h1>
+      <p>
+        <%= mail_to "us@allattacknoholdback.com", "us@allattacknoholdback.com", class: "p-email" %>
+        <br />
+        <%= link_to "@AllAttackMag", "https://twitter.com/AllAttackMag", class: "u-url" %>
+      </p>
 
       <form method="post">
-        <label for="name">Name</label>
+        <label class="screen-reader-only" for="name">Name</label>
         <input type="text" name="name" value="" id="name" placeholder="Your Name" />
 
-        <label for="email">Email</label>
+        <label class="screen-reader-only" for="email">Email</label>
         <input type="email" name="email" value="" id="email" placeholder="Your Email" />
 
-        <label for="comments">Comments</label>
-        <textarea name="comments" rows="8" cols="40" placeholder="What's on your mind?"></textarea>
+        <br>
+
+        <label class="screen-reader-only" for="comments">Comments</label>
+        <textarea name="comments" placeholder="What's on your mind?"></textarea>
+
+        <a href="<%= request.url %>" class="cancel">Cancel</a>
+        <button type="submit">Submit</button>
       </form>
     </div>
 
-    <p>
+    <p class="license">
       Some Rights Reserved 2014
       <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">(CC-BY-ND-NC)</a>
     </p>
