@@ -29,6 +29,10 @@ header[role=banner] {
     margin: 0;
   }
 
+  a[rel=archives] {
+    font-family: "alright_sansextra_thin";
+  }
+
   form[role=search] {
     text-align: right;
   }

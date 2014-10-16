@@ -60,16 +60,18 @@
 
     .contributors {
       margin: 0 auto;
+      font-family: "alright_sansthin";
 
       th {
         text-align: right;
         padding-right: .25em;
         font-weight: normal;
+        font-family: "harriet_displaylight_italic";
       }
 
       td {
         text-align: left;
-        font-weight: bold;
+        font-family: "alright_sansmedium";
       }
     }
   } /* .h-entry */
