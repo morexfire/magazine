@@ -1,0 +1,18 @@
+header[role=banner] {
+  background: black;
+  color: white;
+  padding: 25px;
+
+  h1,
+  form[role=search] {
+    width: 50%;
+    float: left;
+    margin: 0;
+  }
+
+  form[role=search] {
+    text-align: right;
+  }
+
+  br { clear: both; }
+}
