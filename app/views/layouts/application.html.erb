@@ -2,7 +2,6 @@
 <html dir="ltr"
       lang="en-US"
       id="<%= controller_name %>"
-      class="<%= action_name %>"
       prefix="og: http://ogp.me/ns#">
 
 <head>
@@ -15,27 +14,29 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 
-  <meta name="viewport"            content="user-scalable=no"   />
-  <meta name="viewport"            content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport"           content="user-scalable=no"   />
+  <meta name="viewport"           content="width=device-width, initial-scale=1.0" />
 
   <!-- Backward compatibility: Facebook (Open Graph) -->
-  <meta property="og:type"         content="website" />
-  <meta property="og:url"          content="http://allattacknoholdback.com" />
-  <meta property="og:image"        content="<%= rel_og_image_tag @article %>" />
-  <meta property="og:title"        content="All Attack, No Hold Back" />
-  <meta property="og:description"  content="" />
-  <meta property="fb:app_id"       content="" />
+  <%= meta_og_site_name_tag       @article %>
+  <%= meta_fb_app_id_tag          @article %>
+  <%= meta_og_type_tag            @article %>
+  <%= meta_og_url_tag             @article %>
+  <%= meta_og_image_tag           @article %>
+  <%= meta_og_title_tag           @article %>
+  <%= meta_og_description_tag     @article %>
 
   <!-- Backward compatibility: Twitter Cards -->
   <%# shared properties across the whole site %>
-  <meta name="twitter:site"        content="@AllAttackMag" />
-  <meta name="twitter:creator"     content="@AllAttackMag" />
+  <meta name="twitter:site"       content="@AllAttackMag" />
+  <meta name="twitter:creator"    content="@AllAttackMag" />
+  <%# TODO Add article specific properties %>
 
   <!-- Backward compatibility: Atom -->
-  <%= auto_discovery_link_tag(:atom, feed_url, title: page_title(@article)) %>
+  <%= auto_discovery_link_tag :atom, feed_url, title: page_title(@article) %>
 
   <!-- Canonical URLs -->
-  <%= rel_canonical_link_tag @article %>
+  <%= tag :link, id: "canonical", rel: "canonical", type: "text/html", href: canonical_url(@article) %>
 
   <!-- fav and touch icons -->
   <link rel="shortcut icon"                    href="/favicon.ico" />
