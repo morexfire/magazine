@@ -6,16 +6,35 @@
     list-style: none;
   }
 
-  .h-entry {
-    background: red;
+  .row {
+    clear: both;
+  }
+
+  .row .h-entry:first-child {
+    border-right: 1px solid white;
+  }
+
+  .row .h-entry {
     width: 50%;
     float: left;
+  }
 
+  .h-entry {
+    *zoom: 1;
+    background-color:        black;
+    background-position:     center;
+    background-size:         cover;
+    -moz-background-size:    cover;
+    -webkit-background-size: cover;
+    border-bottom: 1px solid white;
     box-sizing: border-box;
+    color: white;
+    float: none;
     margin:  0;
     padding: 25px;
-    border-bottom: 1px solid white;
+    position: relative;
     text-align: center;
+    width: 100%;
 
     h1,
     h2 {
@@ -38,15 +57,5 @@
       }
     }
   } /* .h-entry */
-
-  .h-entry:first-child {
-    background: blue;
-    width: 100%;
-    float: none;
-  }
-
-  .h-entry:nth-child(even) {
-    border-right: 1px solid white;
-  }
 
 }
