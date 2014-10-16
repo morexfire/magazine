@@ -6,13 +6,12 @@
     list-style: none;
   }
 
-  .h-feed > li {
-    margin:  0;
-    padding: 0;
-  }
-
   .h-entry {
     background: red;
+    width: 50%;
+    float: left;
+
+    box-sizing: border-box;
     margin:  0;
     padding: 25px;
     border-bottom: 1px solid white;
@@ -38,8 +37,16 @@
         font-weight: bold;
       }
     }
+  } /* .h-entry */
 
+  .h-entry:first-child {
+    background: blue;
+    width: 100%;
+    float: none;
+  }
 
+  .h-entry:nth-child(even) {
+    border-right: 1px solid white;
   }
 
 }
