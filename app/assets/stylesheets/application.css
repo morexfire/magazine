@@ -1,4 +1,6 @@
 //= require reset
 //= require base
-//= require_self
-//= require_tree .
+//= require fonts
+//= require header
+//= require footer
+//= require welcome

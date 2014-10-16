@@ -27,7 +27,6 @@
     -moz-background-size:    cover;
     -webkit-background-size: cover;
     border-bottom: 1px solid white;
-    box-sizing: border-box;
     color: white;
     float: none;
     margin:  0;
@@ -40,6 +39,14 @@
     h2 {
       margin:  0;
       padding: 0;
+    }
+
+    h1 {
+      font-family: "alrightsans-bold";
+    }
+
+    h2 {
+      font-family: "alrightsans-regular";
     }
 
     .contributors {
