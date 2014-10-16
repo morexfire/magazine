@@ -1,5 +1,45 @@
 #home {
 
+  .h-feed {
+    margin:  0;
+    padding: 0;
+    list-style: none;
+  }
 
+  .h-feed > li {
+    margin:  0;
+    padding: 0;
+  }
+
+  .h-entry {
+    background: red;
+    margin:  0;
+    padding: 25px;
+    border-bottom: 1px solid white;
+    text-align: center;
+
+    h1,
+    h2 {
+      margin:  0;
+      padding: 0;
+    }
+
+    .contributors {
+      margin: 0 auto;
+
+      th {
+        text-align: right;
+        padding-right: .25em;
+        font-weight: normal;
+      }
+
+      td {
+        text-align: left;
+        font-weight: bold;
+      }
+    }
+
+
+  }
 
 }

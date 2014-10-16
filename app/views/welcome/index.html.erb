@@ -1,21 +1,27 @@
 <ol class="h-feed">
   <% 5.times do %>
-    <li>
-      <article class="h-entry">
-        <div class="p-name">
-          <h1>Latest Post Up Top Full Width</h1>
-          <h2>Subtitle Goes Below The Title</h2>
-        </div>
+  <li>
+    <article class="h-entry">
+      <div class="p-name">
+        <h1>Latest Post Up Top Full Width</h1>
+        <h2>Subtitle Goes Below The Title</h2>
+      </div>
 
-        <dl>
-          <dt>Words by</dt>
-          <dd class="p-author">Author Name</dd>
-          <dt>Photos by</dt>
-          <dd class="p-author p-photographer">Photographer Name</dd>
-          <dt>Illustrations by</dt>
-          <dd class="p-author p-illustrator">Illustrator Name</dd>
-        </dl>
-      </article>
-    </li>
+      <table class="contributors">
+        <tr>
+          <th>Words by</th>
+          <td class="p-author">Author Name</td>
+        </tr>
+        <tr>
+          <th>Photos by</th>
+          <td class="p-author p-photographer">Photographer Name</td>
+        </tr>
+        <tr>
+          <th>Illustrations by</th>
+          <td class="p-author p-illustrator">Illustrator Name</td>
+        </tr>
+      </table>
+    </article>
+  </li>
   <% end %>
 </ol>
