@@ -19,10 +19,13 @@ ActiveRecord::Schema.define(version: 20141015214633) do
   create_table "articles", force: true do |t|
     t.text     "title"
     t.text     "subtitle"
+    t.text     "content"
+    t.string   "photo"
+    t.string   "slug"
     t.string   "year"
     t.string   "month"
     t.string   "day"
-    t.string   "photo"
+    t.datetime "published_at"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

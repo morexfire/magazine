@@ -2,9 +2,12 @@
   Role.create!(name: role)
 end
 
+placeholder_content = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
 Article.create!(
   title:    "Summer Holidays vs Punk Routine",
   subtitle: "A Liberation Frequency",
+  content:  placeholder_content,
   year:     "2014",
   month:    "10",
   day:      "20",
@@ -14,6 +17,7 @@ Article.create!(
 Article.create!(
   title:    "The Only Good Fascist Is A Very Dead Fascist",
   subtitle: %q(Apparently I'm A "P.C. Facist"),
+  content:  placeholder_content,
   year:     "2014",
   month:    "10",
   day:      "21",
@@ -23,6 +27,7 @@ Article.create!(
 Article.create!(
   title:    "Freedom",
   subtitle: "Darkness",
+  content:  placeholder_content,
   year:     "2014",
   month:    "10",
   day:      "22",
@@ -32,6 +37,7 @@ Article.create!(
 Article.create!(
   title:    "Roots Radicals",
   subtitle: "I Wanna Riot",
+  content:  placeholder_content,
   year:     "2014",
   month:    "10",
   day:      "23",
@@ -41,6 +47,7 @@ Article.create!(
 Article.create!(
   title:    "Collapse (Post-Amerika)",
   subtitle: "Long Forgotten Sons",
+  content:  placeholder_content,
   year:     "2014",
   month:    "10",
   day:      "24",
