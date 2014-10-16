@@ -17,6 +17,11 @@
   .row .h-entry {
     width: 50%;
     float: left;
+
+    h1 {
+      font-family: "alright_sansbold";
+      font-size: 2em;
+    }
   }
 
   .h-entry {
@@ -42,11 +47,15 @@
     }
 
     h1 {
-      font-family: "alrightsans-bold";
+      font-family: "harriet_displayblack_italic";
+      font-size: 4em;
+      letter-spacing: -.01em;
+      line-height: 1em;
+      margin-bottom: .1em;
     }
 
     h2 {
-      font-family: "alrightsans-regular";
+      font-family: "alright_sansthin";
     }
 
     .contributors {
