@@ -48,10 +48,12 @@
 
 <body>
   <header role="banner">
-    <h1>All Attack, No Hold Back</h1>
+    <h1>
+      <%= link_to "All Attack, No Hold Back", root_path, rel: "home" %>
+    </h1>
 
     <form role="search">
-      <label for="search">Archive</label>
+      <a href="/archives" rel="archives">Archives</a>
       <input type="text" name="search" value="" id="search" placeholder="Search" />
     </form>
     <br />
