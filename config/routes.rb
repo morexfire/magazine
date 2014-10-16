@@ -9,8 +9,8 @@ Rails.application.routes.draw do
   get "(/:year)(/:month)(/:day)", to: "articles#index"
 
   # namespace :admin do
-  #   # Directs /admin/products/* to Admin::ProductsController
-  #   # (app/controllers/admin/products_controller.rb)
-  #   resources :products
+  #   # Directs /admin/articles/* to Admin::ArticlesController
+  #   # (app/controllers/admin/articles_controller.rb)
+  #   resources :articles
   # end
 end
