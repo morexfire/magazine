@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 20141015214633) do
 
   create_table "people", force: true do |t|
     t.string   "name"
+    t.string   "twitter"
     t.text     "url"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -39,6 +40,7 @@ ActiveRecord::Schema.define(version: 20141015214633) do
 
   create_table "roles", force: true do |t|
     t.string   "name"
+    t.string   "thing"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

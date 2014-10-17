@@ -15,3 +15,19 @@
   </div>
 
 </div>
+
+<div id="contributors">
+  <h1>Contributors</h1>
+
+  <% @people.each do |person| %>
+    <div class="h-card">
+      <%= link_to image_tag("http://assets.allattacknoholdback.com.s3.amazonaws.com/people/#{person.slug}.jpg", class: "u-photo"),
+                  "/people/#{person.slug}",
+                  class: "u-url" %>
+      <%= link_to person.name, person.url, class: "p-name u-url" %>
+      <%= link_to "@#{person.twitter}", "https://twitter.com/#{person.twitter}", class: "p-name u-url" %>
+    </div>
+  <% end %>
+
+  <br />
+</div>

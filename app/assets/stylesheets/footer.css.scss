@@ -10,13 +10,20 @@ footer[role=contentinfo] {
     margin-bottom: 1em;
   }
 
+  #about {
+    padding: 25px 25px 25px 0;
+  }
+
+  #contact {
+    padding: 25px 0 25px 25px;
+  }
+
   input,
   #about,
   #contact {
     width: 50%;
     float: left;
     margin: 0;
-    padding: 25px;
 
     h1 {
       font-family: "alright_sansbold";
@@ -51,7 +58,10 @@ footer[role=contentinfo] {
   }
 
   button {
-    padding: 5px;
+    background: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
     float: right;
   }
 

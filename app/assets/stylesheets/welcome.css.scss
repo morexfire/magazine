@@ -76,4 +76,35 @@
     }
   } /* .h-entry */
 
-}
+
+  #contributors {
+    clear: both;
+    padding: 25px 0;
+
+    h1 {
+      font-family: "alright_sansbold";
+      padding: 0 25px;
+    }
+
+    .h-card {
+      display: inline-block;
+      float: left;
+      margin: 0;
+      padding: 0;
+      outline: 1px solid white;
+      overflow: hidden;
+      width: 16.666%;
+    }
+
+    img {
+      width: 100%;
+      margin-bottom: .5em;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+    }
+  }
+
+} /* #home */

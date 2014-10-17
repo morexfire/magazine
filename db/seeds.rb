@@ -1,9 +1,23 @@
-%w(author photographer illustrator editor publisher).each do |role|
-  Role.create!(name: role)
+# Roles and Things
+{
+  author:       "word",
+  photographer: "photo",
+  illustrator:  "illustration",
+  editor:       "edit"
+}.each do |role, thing|
+  Role.create!(name: role, thing: thing)
 end
 
-placeholder_content = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+placeholder_content = "Lorem ipsum dolor sit amet, consectetur
+                       adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                       dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                       exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                       dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                       non proident, sunt in culpa qui officia deserunt mollit anim id est
+                       laborum."
 
+# Placeholder Articles
 Article.create!(
   title:    "Summer Holidays vs Punk Routine",
   subtitle: "A Liberation Frequency",
@@ -53,3 +67,17 @@ Article.create!(
   day:      "24",
   photo:    "https://farm4.staticflickr.com/3917/15161059929_98947c1d75_b.jpg"
 )
+
+# Placeholder People
+[
+  "Lorem Ipsum",
+  "Dolor Sit Amet",
+  "Consectetur Adipisicing",
+  "Elit Sed",
+  "Eiusmod Tempor",
+  "Incididunt Labore"
+].each do |name|
+  Person.create!(name: name,
+                 url: "http://example.com/#{name.downcase.gsub(/ /, "-")}",
+                 twitter: name.downcase.gsub(/ /, ""))
+end
