@@ -6,4 +6,8 @@ class Person < ActiveRecord::Base
   def slug
     name.downcase.gsub(/ /, "-")
   end
+
+  def path
+    "/people/#{slug}"
+  end
 end

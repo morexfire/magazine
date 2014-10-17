@@ -1,21 +1,27 @@
 <article class="h-entry" style="background-image: url(<%= article.photo %>)">
   <div class="p-name">
-    <h1 class="p-x-title"><%= article.title %></h1>
-    <h2 class="p-x-subtitle"><%= article.subtitle %></h2>
+    <h1 class="p-x-title"><%= link_to article.title, article.path %></h1>
+    <h2 class="p-x-subtitle"><%= link_to article.subtitle, article.path %></h2>
   </div>
 
   <table class="contributors">
     <tr>
       <th>Words by</em></th>
-      <td class="p-author">Author Name</td>
+      <td class="p-author">
+        <%= link_to @people.shuffle.first.name, @people.shuffle.first.path %>
+      </td>
     </tr>
     <tr>
       <th>Photos by</th>
-      <td class="p-author p-photographer">Photographer Name</td>
+      <td class="p-author p-photographer">
+        <%= link_to @people.shuffle.first.name, @people.shuffle.first.path %>
+      </td>
     </tr>
     <tr>
       <th>Illustrations by</th>
-      <td class="p-author p-illustrator">Illustrator Name</td>
+      <td class="p-author p-illustrator">
+        <%= link_to @people.shuffle.first.name, @people.shuffle.first.path %>
+      </td>
     </tr>
   </table>
 </article>
