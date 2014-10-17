@@ -20,8 +20,10 @@
       <%= link_to image_tag("http://assets.allattacknoholdback.com.s3.amazonaws.com/people/#{person.slug}.jpg", class: "u-photo"),
                   "/people/#{person.slug}",
                   class: "u-url" %>
-      <%= link_to person.name, person.url, class: "p-name u-url" %>
-      <%= link_to "@#{person.twitter}", "https://twitter.com/#{person.twitter}", class: "p-name u-url" %>
+      <p>
+        <%= link_to person.name, person.url, class: "p-name u-url" %>
+        <%= link_to "@#{person.twitter}", "https://twitter.com/#{person.twitter}", class: "p-name u-url" %>
+      </p>
     </div>
   <% end %>
 
