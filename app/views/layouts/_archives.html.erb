@@ -1,0 +1,20 @@
+<% Time.now.year.downto(starting_year).each do |year| %>
+
+  <p>
+    <%= link_to year, "/#{year}",  class: "year" %>
+
+    <i>&mdash;</i>
+
+    <% 12.downto(1).each do |month| %>
+      <% if year_month(year, month) >= starting_year_month &&
+            year_month(year, month) <= now_year_month %>
+
+        <%= link_to month.to_s.rjust(2, "0"),
+                    "/#{year}/#{month.to_s.rjust(2, "0")}",
+                    class: "month" %>
+
+      <% end %>
+    <% end %>
+  </p>
+
+<% end %>
