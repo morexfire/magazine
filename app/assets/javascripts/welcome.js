@@ -1,6 +1,6 @@
 (function($) {
 
-  $(function() {
+  function resizeTiles() {
     heights = [[0, 0],[0, 0]];
 
     $rows = $(".row")
@@ -28,6 +28,14 @@
     if(heights[1][0] > heights[1][1]) {
       $(".h-entry", $rows[1]).css("height", heights[1][0]);
     }
+  };
 
+  $(function() {
+    resizeTiles();
+  });
+
+  $(window).resize(function() {
+    resizeTiles();
+    console.log("in resize function call");
   });
 })(window.jQuery);
