@@ -8,7 +8,7 @@
   <!-- Some Rights Reserved 2014 (CC-BY-ND-NC) -->
 
   <meta charset="utf-8">
-  <title>All Attack No Hold Back</title>
+  <title><%= page_title %></title>
 
   <%= stylesheet_link_tag    "application", media: "all" %>
   <%= javascript_include_tag "application" %>
@@ -33,7 +33,7 @@
   <%# TODO Add article specific properties %>
 
   <!-- Backward compatibility: Atom -->
-  <%= auto_discovery_link_tag :atom, feed_url, title: page_title(@article) %>
+  <%= auto_discovery_link_tag :atom, feed_url, title: page_title %>
 
   <!-- Canonical URLs -->
   <%= tag :link, id: "canonical", rel: "canonical", type: "text/html", href: canonical_url(@article) %>
@@ -46,7 +46,7 @@
   <link rel="apple-touch-icon"                 href="/apple-touch-icon-57.png"  />
 </head>
 
-<body>
+<body id="<%= @article.try(:slug) %>">
   <header role="banner">
     <h1>
       <%= link_to "All Attack, No Hold Back", root_path, rel: "home" %>

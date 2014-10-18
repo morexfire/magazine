@@ -1,0 +1,82 @@
+#article {
+  .h-entry {
+
+    header {
+      position: relative;
+      border-top: 1pt solid white;
+      color: white;
+      margin-bottom: 2em;
+
+      .u-photo {
+        width: 100%;
+      }
+
+      .meta {
+        text-align: center;
+        padding: 100pt 50pt;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+
+      h1 {
+        font-family: "harriet_displayblack_italic";
+        font-size: 4em;
+        letter-spacing: -.01em;
+        line-height: 1em;
+        margin-bottom: .1em;
+      }
+
+      h2 {
+        font-family: "alright_sansthin";
+      }
+
+      a {
+        color: white;
+      }
+
+      .contributors {
+        margin: 0 auto;
+        font-family: "alright_sansthin";
+
+        th {
+          text-align: right;
+          padding-right: .25em;
+          font-weight: normal;
+          font-family: "harriet_displaylight_italic";
+        }
+
+        td {
+          text-align: left;
+          font-family: "alright_sansmedium";
+        }
+      } /* .contributors */
+    } /* header */
+
+
+    .e-content {
+      color: #444;
+      padding: 0 50pt;
+      font-family: "harriet_displaylight";
+      font-size: 1em;
+      letter-spacing: .02em;
+
+      > :first-child {
+        font-size: 1.5em;
+      }
+    }
+
+
+    footer {
+      text-align: center;
+
+      p {
+        display: inline-block;
+        margin:  50pt 0;
+        padding: 25pt;
+        border-top: 1pt solid #ccc;
+        font-family: "harriet_displaylight_italic";
+      }
+    }
+  } /* .h-entry */
+} /* #article */

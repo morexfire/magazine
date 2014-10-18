@@ -14,8 +14,14 @@ module ApplicationHelper
     year_month(starting_year, starting_month)
   end
 
+  def page_title
+    site_title = "All Attack, No Hold Back"
 
-  def page_title(page=nil)
+    if @title.nil?
+      site_title
+    else
+      [@title, site_title].join(" | ")
+    end
   end
 
   def canonical_url(page=nil)

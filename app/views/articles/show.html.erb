@@ -1,24 +1,49 @@
-<style>
-  .h-entry .u-photo {
-    width: 100%;
-  }
-</style>
-
 <article role="article" class="h-entry">
   <header>
-    <div class="p-name">
-      <h1 class="p-x-title"><%= @article.title %></h1>
-      <h2 class="p-x-subtitle"><%= @article.subtitle %></h2>
-    </div>
+    <%= image_tag @article.photo, class: "u-photo" %>
 
-    <time class="dt-published" datetime="<%= @article.year %>-<%= @article.month %>-<%= @article.day %>">
-      <%= @article.year %>-<%= @article.month %>-<%= @article.day %>
-    </time>
+    <div class="meta">
+      <div class="p-name">
+        <h1 class="p-x-title"><%= @article.title %></h1>
+        <h2 class="p-x-subtitle"><%= @article.subtitle %></h2>
+      </div>
+
+      <table class="contributors">
+        <tr>
+          <th>Words by</em></th>
+          <td class="p-author">
+            <%= link_to @people.shuffle.first.name, @people.shuffle.first.path, rel: "author" %>
+          </td>
+        </tr>
+        <tr>
+          <th>Photos by</th>
+          <td class="p-author p-photographer">
+            <%= link_to @people.shuffle.first.name, @people.shuffle.first.path, rel: "author" %>
+          </td>
+        </tr>
+        <tr>
+          <th>Illustrations by</th>
+          <td class="p-author p-illustrator">
+            <%= link_to @people.shuffle.first.name, @people.shuffle.first.path, rel: "author" %>
+          </td>
+        </tr>
+      </table>
+    </div>
   </header>
 
-  <%= image_tag @article.photo, class: "u-photo" %>
-
   <div class="e-content">
-    <%= @article.content %>
+    <p><%= @article.content %></p>
+    <p><%= @article.content %></p>
+    <p><%= @article.content %></p>
+    <div><p><%= @article.content %></p></div>
   </div>
+
+  <footer>
+    <p>
+      Published on
+      <time class="dt-published" datetime="<%= @article.year %>-<%= @article.month %>-<%= @article.day %>">
+        <%= @article.year %>-<%= @article.month %>-<%= @article.day %>
+      </time>
+    </p>
+  </footer>
 </article>
