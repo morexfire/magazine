@@ -11,8 +11,7 @@ class Article < ActiveRecord::Base
   before_update :set_published_at_attrs, :set_slug
 
   def path
-    klass = self.class.to_s.downcase.pluralize
-    "/" + [klass, year, month, day, slug].compact.join("/")
+    "/" + [year, month, day, slug].compact.join("/")
   end
 
   def params
