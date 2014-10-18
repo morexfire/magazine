@@ -91,6 +91,8 @@
       </p>
 
       <form method="post">
+        <%= hidden_field_tag :url, request.url %>
+
         <label class="screen-reader-only" for="name">Name</label>
         <input type="text" name="name" value="" id="name" placeholder="Your Name" />
 
