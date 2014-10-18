@@ -1,36 +1,24 @@
-<p id="notice"><%= notice %></p>
+<style>
+  .h-entry .u-photo {
+    width: 100%;
+  }
+</style>
 
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
+<article role="article" class="h-entry">
+  <header>
+    <div class="p-name">
+      <h1 class="p-x-title"><%= @article.title %></h1>
+      <h2 class="p-x-subtitle"><%= @article.subtitle %></h2>
+    </div>
 
-<p>
-  <strong>Subtitle:</strong>
-  <%= @article.subtitle %>
-</p>
+    <time class="dt-published" datetime="<%= @article.year %>-<%= @article.month %>-<%= @article.day %>">
+      <%= @article.year %>-<%= @article.month %>-<%= @article.day %>
+    </time>
+  </header>
 
-<p>
-  <strong>Year:</strong>
-  <%= @article.year %>
-</p>
+  <%= image_tag @article.photo, class: "u-photo" %>
 
-<p>
-  <strong>Month:</strong>
-  <%= @article.month %>
-</p>
-
-<p>
-  <strong>Day:</strong>
-  <%= @article.day %>
-</p>
-
-<p>
-  <strong>Photo:</strong>
-  <%= @article.photo %>
-</p>
-
-<p>
-  <strong>Content:</strong>
-  <%= @article.content %>
-</p>
+  <div class="e-content">
+    <%= @article.content %>
+  </div>
+</article>
