@@ -8,19 +8,19 @@
     <tr>
       <th>Words by</em></th>
       <td class="p-author">
-        <%= link_to @people.shuffle.first.name, @people.shuffle.first.path, rel: "author" %>
+        <%= @people.shuffle.first.name %>
       </td>
     </tr>
     <tr>
       <th>Photos by</th>
       <td class="p-author p-photographer">
-        <%= link_to @people.shuffle.first.name, @people.shuffle.first.path, rel: "author" %>
+        <%= @people.shuffle.first.name %>
       </td>
     </tr>
     <tr>
       <th>Illustrations by</th>
       <td class="p-author p-illustrator">
-        <%= link_to @people.shuffle.first.name, @people.shuffle.first.path, rel: "author" %>
+        <%= @people.shuffle.first.name %>
       </td>
     </tr>
   </table>
