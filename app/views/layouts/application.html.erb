@@ -5,114 +5,16 @@
       prefix="og: http://ogp.me/ns#">
 
 <head>
-  <!-- Some Rights Reserved 2014 (CC-BY-ND-NC) -->
-
-  <meta charset="utf-8">
-  <title><%= page_title %></title>
-
-  <%= stylesheet_link_tag    "application", media: "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-
-  <meta name="viewport"           content="user-scalable=no"   />
-  <meta name="viewport"           content="width=device-width, initial-scale=1.0" />
-
-  <!-- Backward compatibility: Facebook (Open Graph) -->
-  <%= meta_og_site_name_tag       @article %>
-  <%= meta_fb_app_id_tag          @article %>
-  <%= meta_og_type_tag            @article %>
-  <%= meta_og_url_tag             @article %>
-  <%= meta_og_image_tag           @article %>
-  <%= meta_og_title_tag           @article %>
-  <%= meta_og_description_tag     @article %>
-
-  <!-- Backward compatibility: Twitter Cards -->
-  <%# shared properties across the whole site %>
-  <meta name="twitter:site"       content="@AllAttackMag" />
-  <meta name="twitter:creator"    content="@AllAttackMag" />
-  <%# TODO Add article specific properties %>
-
-  <!-- Backward compatibility: Atom -->
-  <%= auto_discovery_link_tag :atom, feed_url, title: page_title %>
-
-  <!-- Canonical URLs -->
-  <%= tag :link, id: "canonical", rel: "canonical", type: "text/html", href: canonical_url(@article) %>
-
-  <!-- fav and touch icons -->
-  <link rel="shortcut icon"                    href="/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png" />
-  <link rel="apple-touch-icon" sizes="72x72"   href="/apple-touch-icon-72.png"  />
-  <link rel="apple-touch-icon"                 href="/apple-touch-icon-57.png"  />
+  <%= render "/layouts/head" %>
 </head>
 
 <body id="<%= @article.try(:slug) %>">
-  <header role="banner">
-    <h1>
-      <%= link_to "All Attack, No Hold Back", root_path, rel: "home" %>
-    </h1>
-
-    <form role="search">
-      <a href="/archives" rel="archives">Archives</a>
-      <input type="text" name="search" value="" id="search" placeholder="Search" />
-    </form>
-    <br />
-  </header>
-
+  <%= render "/layouts/header" %>
 
   <main role="main">
     <%= yield %>
   </main>
 
-
-  <footer role="contentinfo">
-    <div id="about">
-      <h1>About All Attack, No Hold Back</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
-      <p>
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-
-      <div id="archives">
-        <h1>Archives</h1>
-
-        <%= render "/layouts/archives" %>
-      </div>
-    </div>
-
-    <div id="contact" class="h-card">
-      <h1>Contact Us</h1>
-      <p>
-        <%= mail_to "us@allattacknoholdback.com", "us@allattacknoholdback.com", class: "p-email" %>
-        <br />
-        <%= link_to "@AllAttackMag", "https://twitter.com/AllAttackMag", class: "u-url" %>
-      </p>
-
-      <form method="post">
-        <%= hidden_field_tag :url, request.url %>
-
-        <label class="screen-reader-only" for="name">Name</label>
-        <input type="text" name="name" value="" id="name" placeholder="Your Name" />
-
-        <label class="screen-reader-only" for="email">Email</label>
-        <input type="email" name="email" value="" id="email" placeholder="Your Email" />
-
-        <br>
-
-        <label class="screen-reader-only" for="comments">Comments</label>
-        <textarea name="comments" placeholder="What's on your mind?"></textarea>
-
-        <a href="<%= request.url %>" class="cancel">Cancel</a>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-
-    <p class="license">
-      Some Rights Reserved 2014
-      <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">(CC-BY-ND-NC)</a>
-    </p>
-  </footer>
+  <%= render "/layouts/footer" %>
 </body>
 </html>

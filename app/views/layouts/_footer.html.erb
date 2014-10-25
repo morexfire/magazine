@@ -1,0 +1,49 @@
+<footer role="contentinfo">
+  <div id="about">
+    <h1>About All Attack, No Hold Back</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <p>
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+    <div id="archives">
+      <h1>Archives</h1>
+
+      <%= render "/layouts/archives" %>
+    </div>
+  </div>
+
+  <div id="contact" class="h-card">
+    <h1>Contact Us</h1>
+    <p>
+      <%= mail_to "us@allattacknoholdback.com", "us@allattacknoholdback.com", class: "p-email" %>
+      <br />
+      <%= link_to "@AllAttackMag", "https://twitter.com/AllAttackMag", class: "u-url" %>
+    </p>
+
+    <form method="post">
+      <%= hidden_field_tag :url, request.url %>
+
+      <label class="screen-reader-only" for="name">Name</label>
+      <input type="text" name="name" value="" id="name" placeholder="Your Name" />
+
+      <label class="screen-reader-only" for="email">Email</label>
+      <input type="email" name="email" value="" id="email" placeholder="Your Email" />
+
+      <br>
+
+      <label class="screen-reader-only" for="comments">Comments</label>
+      <textarea name="comments" placeholder="What's on your mind?"></textarea>
+
+      <a href="<%= request.url %>" class="cancel">Cancel</a>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <p class="license">
+    Some Rights Reserved 2014
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">(CC-BY-ND-NC)</a>
+  </p>
+</footer>

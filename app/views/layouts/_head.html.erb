@@ -1,0 +1,39 @@
+<!-- Some Rights Reserved 2014 (CC-BY-ND-NC) -->
+
+<meta charset="utf-8">
+<title><%= page_title %></title>
+
+<%= stylesheet_link_tag    "application", media: "all" %>
+<%= javascript_include_tag "application" %>
+<%= csrf_meta_tags %>
+
+<meta name="viewport"           content="user-scalable=no"   />
+<meta name="viewport"           content="width=device-width, initial-scale=1.0" />
+
+<!-- Backward compatibility: Facebook (Open Graph) -->
+<%= meta_og_site_name_tag       @article %>
+<%= meta_fb_app_id_tag          @article %>
+<%= meta_og_type_tag            @article %>
+<%= meta_og_url_tag             @article %>
+<%= meta_og_image_tag           @article %>
+<%= meta_og_title_tag           @article %>
+<%= meta_og_description_tag     @article %>
+
+<!-- Backward compatibility: Twitter Cards -->
+<%# shared properties across the whole site %>
+<meta name="twitter:site"       content="@AllAttackMag" />
+<meta name="twitter:creator"    content="@AllAttackMag" />
+<%# TODO Add article specific properties %>
+
+<!-- Backward compatibility: Atom -->
+<%= auto_discovery_link_tag :atom, feed_url, title: page_title %>
+
+<!-- Canonical URLs -->
+<%= tag :link, id: "canonical", rel: "canonical", type: "text/html", href: canonical_url(@article) %>
+
+<!-- fav and touch icons -->
+<link rel="shortcut icon"                    href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png" />
+<link rel="apple-touch-icon" sizes="72x72"   href="/apple-touch-icon-72.png"  />
+<link rel="apple-touch-icon"                 href="/apple-touch-icon-57.png"  />
