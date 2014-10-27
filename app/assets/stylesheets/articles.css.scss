@@ -75,6 +75,50 @@
         color: black;
         text-decoration: underline;
       }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-family: "alright_sansbold";
+        font-weight: normal;
+      }
+
+      i, cite, em, var, address, dfn {
+        font-style: normal;
+        font-family: "harriet_displaylight_italic";
+      }
+
+      dt, b, strong {
+        font-family: "harriet_displaybold";
+      }
+
+      dd {
+        margin-left: 20px;
+        -webkit-margin-start: 20px;
+      }
+
+      hr {
+        border: none;
+        border-bottom: 1pt solid #ccc;
+        margin: 3em auto;
+        width: 50%;
+        display: block;
+      }
+
+      caption {
+        text-align: left;
+        font-family: "alright_sansbold";
+        padding: .5em;
+      }
+
+      th {
+        font-family: "harriet_display_bold";
+        text-align: left;
+        background: #eee;
+        border-bottom: 1px solid white;
+      }
+
+      th, td {
+        padding: .5em;
+      }
     }
 
 
