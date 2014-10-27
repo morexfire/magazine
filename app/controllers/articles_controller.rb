@@ -1,6 +1,15 @@
 class ArticlesController < ApplicationController
   def index
-    @articles = Article.all
+    @page_title = "Articles"
+
+    @articles = Article.paginate(per_page: 5, page: params[:page])
+    @articles = @articles.where(year:  params[:year])  if params[:year]
+    @articles = @articles.where(month: params[:month]) if params[:month]
+    @articles = @articles.where(day:   params[:day])   if params[:day]
+
+    if @articles.length == 1
+      return redirect_to @articles.first.path
+    end
   end
 
   def show

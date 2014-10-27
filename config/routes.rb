@@ -8,8 +8,11 @@ Rails.application.routes.draw do
       constraints: { year: /\d{4}/, month: /\d{2}/, day: /\d{2}/ },
       as:          "article"
 
+  get "(/:year)(/:month)(/:day)",
+      to:          "articles#index",
+      constraints: { year: /\d{4}/, month: /\d{2}/, day: /\d{2}/ },
+      as:          "articles"
 
-  get "(/:year)(/:month)(/:day)", to: "articles#index"
 
   # namespace :admin do
   #   # Directs /admin/articles/* to Admin::ArticlesController

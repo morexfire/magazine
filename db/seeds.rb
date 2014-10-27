@@ -1,3 +1,7 @@
+# don't set published_at for new records
+Article.skip_callback(:create, :before, :set_published_at_attrs)
+
+
 # Roles and Things
 {
   author:       "word",
