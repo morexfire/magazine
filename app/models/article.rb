@@ -1,4 +1,7 @@
 class Article < ActiveRecord::Base
+  has_many :contributions
+  has_many :people, :through => :contributions
+  
   default_scope { order("published_at desc") }
 
   validates :title,    presence: true
