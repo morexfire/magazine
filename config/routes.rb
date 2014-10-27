@@ -13,13 +13,13 @@ Rails.application.routes.draw do
       constraints: { year: /\d{4}/, month: /\d{2}/, day: /\d{2}/ },
       as:          "articles"
 
+  # atom feed
+  get "/feed", to: "articles#index", defaults: { format: "atom" }, as: :feed
+
 
   # namespace :admin do
   #   # Directs /admin/articles/* to Admin::ArticlesController
   #   # (app/controllers/admin/articles_controller.rb)
   #   resources :articles
   # end
-
-  # atom feed
-  get "/feed", to: "articles#index", defaults: { format: "atom" }, as: :feed
 end

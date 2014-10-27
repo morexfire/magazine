@@ -1,4 +1,6 @@
 class ArticlesController < ApplicationController
+  respond_to :html, :atom, :json
+
   def index
     @page_title = "Articles"
 
@@ -10,6 +12,8 @@ class ArticlesController < ApplicationController
     if @articles.length == 1
       return redirect_to @articles.first.path
     end
+
+    respond_with @articles
   end
 
   def show
