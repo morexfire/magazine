@@ -53,7 +53,7 @@
   <% @articles.each do |article| %>
     <entry>
       <id><%= "http://allattacknoholdback.com#{article.path}" %></id>
-      <published><%# article.published_at.xmlschema %></published>
+      <published><% article.published_at.xmlschema %></published>
       <updated><%= article.updated_at.xmlschema %></updated>
       <link rel="alternate" type="text/html"
             href="<%= "http://allattacknoholdback.com#{article.path}" %>"/>

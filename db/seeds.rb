@@ -72,6 +72,12 @@ Article.create!(
   photo:    "https://farm4.staticflickr.com/3917/15161059929_98947c1d75_b.jpg"
 )
 
+# Set published_at dates
+Article.all.each do |article|
+  article.published_at = Date.parse("#{article.year}-#{article.month}-#{article.day}")
+  article.save!
+end
+
 # Placeholder People
 [
   "Lorem Ipsum",
