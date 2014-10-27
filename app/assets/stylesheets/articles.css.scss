@@ -64,6 +64,17 @@
       > :first-child {
         font-size: 1.5em;
       }
+
+      a {
+        color: #666;
+        text-decoration: underline;
+        font-family: "harriet_displaybold";
+      }
+
+      a:hover {
+        color: black;
+        text-decoration: underline;
+      }
     }
 
 
