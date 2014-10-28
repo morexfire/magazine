@@ -2,8 +2,11 @@ class FeedbacksController < ApplicationController
   def create
     @feedback = Feedback.new(feedback_params)
 
-    @feedback.save
-    redirect_to @feedback.url, notice: "Thank you for your feedback."
+    if @feedback.save
+      redirect_to @feedback.url, notice: "Thank you for your feedback."
+    else
+      redirect_to @feedback.url, error:  "Sorry. It looks like something went wrong."
+    end
   end
 
   private

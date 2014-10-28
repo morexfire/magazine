@@ -11,6 +11,8 @@
 <body id="<%= @article.try(:slug) %>">
   <%= render "/layouts/header" %>
 
+  <%= render "/layouts/alerts" %>
+
   <main role="main">
     <%= yield %>
   </main>
