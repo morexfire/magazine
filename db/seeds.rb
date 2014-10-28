@@ -3,6 +3,7 @@ Article.skip_callback(:create, :before, :set_published_at_attrs)
 
 
 # Roles and Things
+puts "Creating roles..."
 {
   author:       "word",
   photographer: "photo",
@@ -11,6 +12,9 @@ Article.skip_callback(:create, :before, :set_published_at_attrs)
 }.each do |role, thing|
   Role.create!(name: role, thing: thing)
 end
+puts "Creating roles... done."
+puts
+
 
 placeholder_content = "Lorem ipsum dolor sit amet, consectetur
                        adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -21,8 +25,10 @@ placeholder_content = "Lorem ipsum dolor sit amet, consectetur
                        non proident, sunt in culpa qui officia deserunt mollit anim id est
                        laborum."
 
+
 # Placeholder Articles
-Article.create!(
+puts "Creating articles..."
+a = Article.create!(
   title:    "Summer Holidays vs Punk Routine",
   subtitle: "A Liberation Frequency",
   content:  placeholder_content,
@@ -31,8 +37,9 @@ Article.create!(
   day:      "20",
   photo:    "https://farm4.staticflickr.com/3903/15161122850_fdac1c97a5_b.jpg"
 )
+puts "  #{a.name}"
 
-Article.create!(
+a = Article.create!(
   title:    "The Only Good Fascist Is A Very Dead Fascist",
   subtitle: %q(Apparently I'm A "P.C. Facist"),
   content:  placeholder_content,
@@ -41,8 +48,9 @@ Article.create!(
   day:      "21",
   photo:    "https://farm4.staticflickr.com/3924/15161068809_35801aa35f_b.jpg"
 )
+puts "  #{a.name}"
 
-Article.create!(
+a = Article.create!(
   title:    "Freedom",
   subtitle: "Darkness",
   content:  placeholder_content,
@@ -51,8 +59,9 @@ Article.create!(
   day:      "22",
   photo:    "https://farm4.staticflickr.com/3879/15161310747_5e23c1c2f4_b.jpg"
 )
+puts "  #{a.name}"
 
-Article.create!(
+a = Article.create!(
   title:    "Roots Radicals",
   subtitle: "I Wanna Riot",
   content:  placeholder_content,
@@ -61,8 +70,9 @@ Article.create!(
   day:      "23",
   photo:    "https://farm4.staticflickr.com/3837/15161111170_76a5c64a2b_b.jpg"
 )
+puts "  #{a.name}"
 
-Article.create!(
+a = Article.create!(
   title:    "Collapse (Post-Amerika)",
   subtitle: "Long Forgotten Sons",
   content:  placeholder_content,
@@ -71,14 +81,24 @@ Article.create!(
   day:      "24",
   photo:    "https://farm4.staticflickr.com/3917/15161059929_98947c1d75_b.jpg"
 )
+puts "  #{a.name}"
+
+puts "Creating articles... done."
+puts
+
 
 # Set published_at dates
+puts "Setting published_at for articles..."
 Article.all.each do |article|
   article.published_at = Date.parse("#{article.year}-#{article.month}-#{article.day}")
   article.save!
 end
+puts "Setting published_at for articles... done."
+puts
+
 
 # Placeholder People
+puts "Creating people..."
 [
   "Lorem Ipsum",
   "Dolor Sit Amet",
@@ -91,3 +111,5 @@ end
                  url: "http://example.com/#{name.downcase.gsub(/ /, "-")}",
                  twitter: name.downcase.gsub(/ /, ""))
 end
+puts "Creating people... done."
+puts
