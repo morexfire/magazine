@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+  # TODO refactor these away
   resources :roles, :people
+
+  resources :feedbacks, only: [:create]
 
   root "welcome#index"
 
@@ -17,6 +20,7 @@ Rails.application.routes.draw do
   get "/feed", to: "articles#index", defaults: { format: "atom" }, as: :feed
 
 
+  # TODO make this
   # namespace :admin do
   #   # Directs /admin/articles/* to Admin::ArticlesController
   #   # (app/controllers/admin/articles_controller.rb)

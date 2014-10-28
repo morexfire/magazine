@@ -18,32 +18,32 @@
   <div id="contact" class="h-card">
     <h1>Contact Us</h1>
     <p>
-      <%= mail_to "us@allattacknoholdback.com", "us@allattacknoholdback.com", class: "p-email" %>
+      <%= mail_to "editor@allattacknoholdback.com", "editor@allattacknoholdback.com", class: "p-email" %>
       <br />
       <%= link_to "@AllAttackMag", "https://twitter.com/AllAttackMag", class: "u-url" %>
     </p>
 
-    <form method="post">
-      <%= hidden_field_tag :url, request.url %>
+    <%= form_for @feedback do |f| %>
+      <%= f.hidden_field :url, value: request.url %>
 
-      <label class="screen-reader-only" for="name">Name</label>
-      <input type="text" name="name" value="" id="name" placeholder="Your Name" />
+      <%= f.label :name, class: "screen-reader-only" %>
+      <%= f.text_field :name, placeholder: "Your Name" %>
 
-      <label class="screen-reader-only" for="email">Email</label>
-      <input type="email" name="email" value="" id="email" placeholder="Your Email" />
+      <%= f.label :name, class: "screen-reader-only" %>
+      <%= f.email_field :name, placeholder: "Email" %>
 
-      <br>
+      <br />
 
-      <label class="screen-reader-only" for="comments">Comments</label>
-      <textarea name="comments" placeholder="What's on your mind?"></textarea>
+      <%= f.label :content, class: "screen-reader-only" %>
+      <%= f.text_area :content, placeholder: "What's on your mind?" %>
 
-      <a href="<%= request.url %>" class="cancel">Cancel</a>
-      <button type="submit">Submit</button>
-    </form>
+      <%= link_to "Cancel", request.url, class: "cancel" %>      
+      <%= f.button "Submit" %>
+    <% end %>
   </div>
 
   <p class="license">
     Some Rights Reserved 2014
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">(CC-BY-ND-NC)</a>
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">(CC-BY-NC-ND)</a>
   </p>
 </footer>
