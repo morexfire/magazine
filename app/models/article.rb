@@ -1,7 +1,7 @@
 class Article < ActiveRecord::Base
   has_many :contributions
   has_many :people, :through => :contributions
-  
+
   default_scope { order("published_at desc") }
 
   validates :title,    presence: true
@@ -23,6 +23,30 @@ class Article < ActiveRecord::Base
 
   def name
     [title, subtitle].join(" : ")
+  end
+
+  def contributors(role)
+    people = []
+
+    self.contributions.each do |c|
+      if c.role.name == role
+        people << c
+      end
+    end
+
+    people
+  end
+
+  def authors
+    contributors("author")
+  end
+
+  def photographers
+    contributors("photographer")
+  end
+
+  def illustrators
+    contributors("illustrator")
   end
 
   private

@@ -120,10 +120,23 @@ puts "Add contributors to articles..."
 Article.all.each do |article|
   c = Contribution.new
   c.person  = Person.all.shuffle.first
-  c.role    = Role.all.shuffle.first
+  c.role    = Role.where(name: "author").first
   c.article = article
   c.save!
-  puts c.inspect
+end
+Article.all.each do |article|
+  c = Contribution.new
+  c.person  = Person.all.shuffle.first
+  c.role    = Role.where(name: "photographer").first
+  c.article = article
+  c.save!
+end
+Article.all.each do |article|
+  c = Contribution.new
+  c.person  = Person.all.shuffle.first
+  c.role    = Role.where(name: "illustrator").first
+  c.article = article
+  c.save!
 end
 puts "Add contributors to articles... done."
 puts

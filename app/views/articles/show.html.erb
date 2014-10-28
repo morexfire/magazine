@@ -8,26 +8,7 @@
         <h2 class="p-x-subtitle"><%= @article.subtitle %></h2>
       </div>
 
-      <table class="contributors">
-        <tr>
-          <th>Words by</em></th>
-          <td class="p-author">
-            <%= link_to @people.shuffle.first.name, @people.shuffle.first.path, rel: "author" %>
-          </td>
-        </tr>
-        <tr>
-          <th>Photos by</th>
-          <td class="p-author p-photographer">
-            <%= link_to @people.shuffle.first.name, @people.shuffle.first.path, rel: "author" %>
-          </td>
-        </tr>
-        <tr>
-          <th>Illustrations by</th>
-          <td class="p-author p-illustrator">
-            <%= link_to @people.shuffle.first.name, @people.shuffle.first.path, rel: "author" %>
-          </td>
-        </tr>
-      </table>
+      <%= render "contributors" %>
     </div>
   </header>
 
