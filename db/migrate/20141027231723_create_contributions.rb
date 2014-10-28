@@ -3,6 +3,7 @@ class CreateContributions < ActiveRecord::Migration
     create_table :contributions do |t|
       t.integer :person_id
       t.integer :article_id
+      t.integer :role_id
 
       t.timestamps
     end

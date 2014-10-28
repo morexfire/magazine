@@ -113,3 +113,17 @@ puts "Creating people..."
 end
 puts "Creating people... done."
 puts
+
+
+# Link up articles/people/roles
+puts "Add contributors to articles..."
+Article.all.each do |article|
+  c = Contribution.new
+  c.person  = Person.all.shuffle.first
+  c.role    = Role.all.shuffle.first
+  c.article = article
+  c.save!
+  puts c.inspect
+end
+puts "Add contributors to articles... done."
+puts

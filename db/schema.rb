@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20141027231723) do
   create_table "contributions", force: true do |t|
     t.integer  "person_id"
     t.integer  "article_id"
+    t.integer  "role_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
