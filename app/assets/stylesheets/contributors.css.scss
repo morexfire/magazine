@@ -37,32 +37,40 @@
 
 
 #contributor {
-  main {
-    padding: 50pt;
+  padding: 50pt;
 
-    h1 {
-      font-family: "alright_sansbold";
-      padding: 0;
-      margin:  0;
-    }
+  .h-feed,
+  .h-card {
+    padding: 0;
+    width: 48%;
+    float: left;
+  }
 
-    .h-card {
-      margin: 0;
-      padding: 0;
-    }
+  .h-feed { margin: 0 0 0 1%; }
+  .h-card { margin: 0 1% 0 0; }
 
-    img {
-      margin-bottom: .5em;
-    }
+  h1 {
+    font-family: "alright_sansthin";
+    padding: 0;
+    margin:  0;
+  }
 
-    p {
-      font-family: "harriet_displaylight";
-      font-size: 13pt;
-    }
+  .p-name {
+    font-family: "alright_sansbold";
+  }
 
-    a {
-      display: block;
-    }
-  } /* main */
+  img {
+    margin-bottom: .5em;
+    max-width: 100%;
+  }
+
+  p {
+    font-family: "harriet_displaylight";
+    font-size: 13pt;
+  }
+
+  a {
+    display: block;
+  }
 } /* #contributors */
 

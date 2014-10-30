@@ -1,15 +1,24 @@
-<div id="contributor" class="h-card">
-  <h1>
-    <%= link_to "Contributors", contributors_path %>
-    <%= link_to @contributor.name, @contributor.path, class: "p-name u-url" %>
-  </h1>
+<div id="contributor">
+  <div class="h-card">
+    <h1>
+      <%= link_to "Contributors", contributors_path %>
+      <%= link_to @contributor.name, @contributor.path, class: "p-name u-url" %>
+    </h1>
 
-  <%= link_to image_tag(asset_url(:contributor, @contributor.slug, :jpg), class: "u-photo"),
-              @contributor.path,
-              class: "u-url" %>
+    <%= link_to image_tag(asset_url(:contributor, @contributor.slug, :jpg), class: "u-photo"),
+                @contributor.path,
+                class: "u-url" %>
 
-  <p>
-    <%= link_to @contributor.url, @contributor.url, class: "u-url" %>
-    <%= link_to "@#{@contributor.twitter}", "https://twitter.com/#{@contributor.twitter}", class: "p-name u-url" %>
-  </p>
-</div>
+    <p>
+      <%= link_to @contributor.url, @contributor.url, class: "u-url" %>
+      <%= link_to "@#{@contributor.twitter}", "https://twitter.com/#{@contributor.twitter}", class: "p-nickname u-url" %>
+    </p>
+  </div> <!-- .h-card -->
+
+  <div class="h-feed">
+    <h1>
+      Contributions
+      <%= link_to "by&nbsp;#{@contributor.name.gsub(/ /, "&nbsp;")}".html_safe, @contributor.path %>
+    </h1>
+  </div>
+</div> <!-- #contributor -->
