@@ -34,8 +34,7 @@ a = Article.create!(
   content:  placeholder_content,
   year:     "2014",
   month:    "10",
-  day:      "20",
-  photo:    "https://farm4.staticflickr.com/3903/15161122850_fdac1c97a5_b.jpg"
+  day:      "20"
 )
 
 a = Article.create!(
@@ -44,8 +43,7 @@ a = Article.create!(
   content:  placeholder_content,
   year:     "2014",
   month:    "10",
-  day:      "21",
-  photo:    "https://farm4.staticflickr.com/3924/15161068809_35801aa35f_b.jpg"
+  day:      "21"
 )
 
 a = Article.create!(
@@ -54,8 +52,7 @@ a = Article.create!(
   content:  placeholder_content,
   year:     "2014",
   month:    "10",
-  day:      "22",
-  photo:    "https://farm4.staticflickr.com/3879/15161310747_5e23c1c2f4_b.jpg"
+  day:      "22"
 )
 
 a = Article.create!(
@@ -64,8 +61,7 @@ a = Article.create!(
   content:  placeholder_content,
   year:     "2014",
   month:    "10",
-  day:      "23",
-  photo:    "https://farm4.staticflickr.com/3837/15161111170_76a5c64a2b_b.jpg"
+  day:      "23"
 )
 
 a = Article.create!(
@@ -74,8 +70,7 @@ a = Article.create!(
   content:  placeholder_content,
   year:     "2014",
   month:    "10",
-  day:      "24",
-  photo:    "https://farm4.staticflickr.com/3917/15161059929_98947c1d75_b.jpg"
+  day:      "24"
 )
 
 puts "Creating articles... done."

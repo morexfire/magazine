@@ -49,6 +49,10 @@ class Article < ActiveRecord::Base
     contributors("illustrator")
   end
 
+  def photo
+    "http://assets.allattacknoholdback.com.s3.amazonaws.com/articles/#{year}/#{month}/#{day}/photo.jpg"
+  end
+
   private
 
   def set_published_at_attrs
