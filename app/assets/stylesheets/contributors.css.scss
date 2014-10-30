@@ -1,0 +1,68 @@
+/* used on homepage and /contributors */
+#contributors {
+  clear: both;
+  padding: 50pt 50pt 0 50pt;
+
+  h1 {
+    font-family: "alright_sansbold";
+    padding: 0;
+    margin: 0 0 .75em 0;
+  }
+
+  .h-card {
+    display: inline-block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    outline: 1px solid white;
+    overflow: hidden;
+    width: 16.666%;
+
+    a {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  img {
+    width: 100%;
+    margin-bottom: .5em;
+  }
+
+  p {
+    font-family: "harriet_displaylight";
+    font-size: 13pt;
+  }
+} /* #contributors */
+
+
+#contributor {
+  main {
+    padding: 50pt;
+
+    h1 {
+      font-family: "alright_sansbold";
+      padding: 0;
+      margin:  0;
+    }
+
+    .h-card {
+      margin: 0;
+      padding: 0;
+    }
+
+    img {
+      margin-bottom: .5em;
+    }
+
+    p {
+      font-family: "harriet_displaylight";
+      font-size: 13pt;
+    }
+
+    a {
+      display: block;
+    }
+  } /* main */
+} /* #contributors */
+

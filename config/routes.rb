@@ -3,9 +3,9 @@ Rails.application.routes.draw do
   resources :roles
 
 
-  # contributors listings and their articles
-  # TODO slug url for contributors#show
-  resources :contributors, only: [:show, :index]
+  # homepage and footer form
+  root "welcome#index"
+  resources :feedbacks, only: [:create]
 
 
   # authentication
@@ -15,9 +15,9 @@ Rails.application.routes.draw do
   get "/sessions", to: redirect("/login")
 
 
-  # homepage and footer form
-  resources :feedbacks, only: [:create]
-  root "welcome#index"
+  # contributors listings and their contributor page
+  get "/contributors/:slug", to: "contributors#show",  as: "contributor"
+  get "/contributors",       to: "contributors#index", as: "contributors"
 
 
   # articles and archives

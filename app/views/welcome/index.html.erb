@@ -12,20 +12,4 @@
 
 </div>
 
-<div id="contributors">
-  <h1>Contributors</h1>
-
-  <% @contributors.each do |contributor| %>
-    <div class="h-card">
-      <%= link_to image_tag("http://assets.allattacknoholdback.com.s3.amazonaws.com/contributors/#{contributor.slug}.jpg", class: "u-photo"),
-                  "/contributors/#{contributor.slug}",
-                  class: "u-url" %>
-      <p>
-        <%= link_to contributor.name, contributor.url, class: "p-name u-url" %>
-        <%= link_to "@#{contributor.twitter}", "https://twitter.com/#{contributor.twitter}", class: "p-name u-url" %>
-      </p>
-    </div>
-  <% end %>
-
-  <br />
-</div>
+<%= render "/contributors/contributors" %>

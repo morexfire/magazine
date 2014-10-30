@@ -60,4 +60,15 @@ module ApplicationHelper
     content = page.nil? ? "website" : "article"
     tag(:meta, property: "og:type", content: content)
   end
+
+  def asset_url(type, file, extension)
+    [
+      "http://assets.allattacknoholdback.com.s3.amazonaws.com/",
+      type.to_s.downcase.pluralize,
+      "/",
+      file,
+      ".",
+      extension.to_s.downcase,
+    ].join
+  end
 end

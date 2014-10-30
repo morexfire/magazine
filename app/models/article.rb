@@ -59,10 +59,11 @@ class Article < ActiveRecord::Base
   end
 
   def set_slug
-    blank       = ""
-    separator   = "-"
-    self.slug ||= name
-    self.slug   = slug.downcase.
+    blank     = ""
+    separator = "-"
+
+    self.slug = name
+    self.slug = slug.downcase.
       gsub(/\(|\)|\[|\]\./, blank).
       gsub(/&amp;/,         blank).
       gsub(/\W+/,           separator).

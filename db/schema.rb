@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 20141030010058) do
   create_table "contributors", force: true do |t|
     t.string   "name"
     t.string   "twitter"
+    t.string   "slug"
     t.text     "url"
     t.datetime "created_at"
     t.datetime "updated_at"

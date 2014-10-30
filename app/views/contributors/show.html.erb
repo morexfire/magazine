@@ -1,14 +1,15 @@
-<p id="notice"><%= notice %></p>
+<div id="contributor" class="h-card">
+  <h1>
+    <%= link_to "Contributors", contributors_path %>
+    <%= link_to @contributor.name, @contributor.path, class: "p-name u-url" %>
+  </h1>
 
-<p>
-  <strong>Name:</strong>
-  <%= @contributor.name %>
-</p>
+  <%= link_to image_tag(asset_url(:contributor, @contributor.slug, :jpg), class: "u-photo"),
+              @contributor.path,
+              class: "u-url" %>
 
-<p>
-  <strong>Url:</strong>
-  <%= @contributor.url %>
-</p>
-
-<%= link_to 'Edit', edit_contributor_path(@contributor) %> |
-<%= link_to 'Back', contributors_path %>
+  <p>
+    <%= link_to @contributor.url, @contributor.url, class: "u-url" %>
+    <%= link_to "@#{@contributor.twitter}", "https://twitter.com/#{@contributor.twitter}", class: "p-name u-url" %>
+  </p>
+</div>
