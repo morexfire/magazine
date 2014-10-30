@@ -22,7 +22,7 @@ class ArticlesController < ApplicationController
     @slug = "article"
 
     # temp just for placedholder during development
-    @people = Person.all
+    @contributors = Contributor.all
 
     # get the article
     @article = Article.where(year:  params[:year]

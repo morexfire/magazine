@@ -92,8 +92,8 @@ puts "Setting published_at for articles... done."
 puts
 
 
-# Placeholder People
-puts "Creating people..."
+# Placeholder Contributors
+puts "Creating contributors..."
 [
   "Lorem Ipsum",
   "Dolor Sit Amet",
@@ -102,33 +102,33 @@ puts "Creating people..."
   "Eiusmod Tempor",
   "Incididunt Labore"
 ].each do |name|
-  Person.create!(name: name,
+  Contributor.create!(name: name,
                  url: "http://example.com/#{name.downcase.gsub(/ /, "-")}",
                  twitter: name.downcase.gsub(/ /, ""))
 end
-puts "Creating people... done."
+puts "Creating contributors... done."
 puts
 
 
-# Link up articles/people/roles
+# Link up articles/contributors/roles
 puts "Add contributors to articles..."
 Article.all.each do |article|
   c = Contribution.new
-  c.person  = Person.all.shuffle.first
+  c.contributor  = Contributor.all.shuffle.first
   c.role    = Role.where(name: "author").first
   c.article = article
   c.save!
 end
 Article.all.each do |article|
   c = Contribution.new
-  c.person  = Person.all.shuffle.first
+  c.contributor  = Contributor.all.shuffle.first
   c.role    = Role.where(name: "photographer").first
   c.article = article
   c.save!
 end
 Article.all.each do |article|
   c = Contribution.new
-  c.person  = Person.all.shuffle.first
+  c.contributor  = Contributor.all.shuffle.first
   c.role    = Role.where(name: "illustrator").first
   c.article = article
   c.save!

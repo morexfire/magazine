@@ -2,6 +2,6 @@ class WelcomeController < ApplicationController
   def index
     @slug     = "home"
     @articles = Article.all.shuffle
-    @people   = Person.all
+    @contributors   = Contributor.all
   end
 end

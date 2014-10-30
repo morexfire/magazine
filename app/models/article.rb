@@ -1,6 +1,6 @@
 class Article < ActiveRecord::Base
   has_many :contributions
-  has_many :people, :through => :contributions
+  has_many :contributors, :through => :contributions
 
   default_scope { order("published_at desc") }
 
@@ -26,15 +26,15 @@ class Article < ActiveRecord::Base
   end
 
   def contributors(role)
-    people = []
+    contributors = []
 
     self.contributions.each do |c|
       if c.role.name == role
-        people << c
+        contributors << c
       end
     end
 
-    people
+    contributors
   end
 
   def authors

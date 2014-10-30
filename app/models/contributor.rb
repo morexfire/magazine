@@ -1,4 +1,4 @@
-class Person < ActiveRecord::Base
+class Contributor < ActiveRecord::Base
   has_many :contributions
   has_many :articles, :through => :contributions
   
@@ -11,6 +11,6 @@ class Person < ActiveRecord::Base
   end
 
   def path
-    "/people/#{slug}"
+    "/contributors/#{slug}"
   end
 end

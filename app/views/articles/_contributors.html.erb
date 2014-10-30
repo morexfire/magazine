@@ -6,7 +6,7 @@
       <tr>
         <th><%= contribution.role.thing.capitalize.pluralize %> by</em></th>
         <td class="p-author p-<%= contribution.role.name %>">
-          <%= link_to contribution.person.name, contribution.person.path, rel: "author" %>
+          <%= link_to contribution.contributor.name, contribution.contributor.path, rel: "author" %>
         </td>
       </tr>
 

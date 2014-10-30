@@ -3,9 +3,9 @@ Rails.application.routes.draw do
   resources :roles
 
 
-  # people listings and their articles
-  # TODO slug url for people#show
-  resources :people, only: [:show, :index]
+  # contributors listings and their articles
+  # TODO slug url for contributors#show
+  resources :contributors, only: [:show, :index]
 
 
   # authentication

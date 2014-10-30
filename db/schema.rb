@@ -31,9 +31,17 @@ ActiveRecord::Schema.define(version: 20141030010058) do
   end
 
   create_table "contributions", force: true do |t|
-    t.integer  "person_id"
+    t.integer  "contributor_id"
     t.integer  "article_id"
     t.integer  "role_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "contributors", force: true do |t|
+    t.string   "name"
+    t.string   "twitter"
+    t.text     "url"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -43,14 +51,6 @@ ActiveRecord::Schema.define(version: 20141030010058) do
     t.text     "content"
     t.string   "name"
     t.string   "email"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "people", force: true do |t|
-    t.string   "name"
-    t.string   "twitter"
-    t.text     "url"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -63,7 +63,7 @@
         <%= article.content %>
       </content>
       <author>
-        <name><%= article.people.map{ |p| p.name }.join(", ") %></name>
+        <name><%= article.contributors.map{ |p| p.name }.join(", ") %></name>
       </author>
     </entry>
   <% end %>
