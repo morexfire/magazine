@@ -4,8 +4,28 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   before_action :set_feedback
+  before_action :current_user
+  before_action :logged_in?
 
   def set_feedback
     @feedback = Feedback.new
+  end
+
+  def current_user
+    @current_user ||= User.find(session[:user_id]) if session[:user_id]
+  end
+
+  def logged_in?
+    @current_user.present?
+  end
+  helper_method :logged_in?
+
+  def current_user
+    @current_user ||= User.find(session[:user_id]) if session[:user_id]
+  end
+  helper_method :current_user
+
+  def authorize
+    redirect_to login_url, alert: "Not authorized" if current_user.nil?
   end
 end

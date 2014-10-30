@@ -1,0 +1,7 @@
+<div id="login">
+  <%= form_tag sessions_path do %>
+    <%= email_field_tag    :email,    params[:email], placeholder: "Email" %>
+    <%= password_field_tag :password,                 placeholder: "Password" %>
+    <%= button_tag "Login" %>
+  <% end %>
+</div>

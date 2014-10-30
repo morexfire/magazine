@@ -37,7 +37,6 @@ a = Article.create!(
   day:      "20",
   photo:    "https://farm4.staticflickr.com/3903/15161122850_fdac1c97a5_b.jpg"
 )
-puts "  #{a.name}"
 
 a = Article.create!(
   title:    "The Only Good Fascist Is A Very Dead Fascist",
@@ -48,7 +47,6 @@ a = Article.create!(
   day:      "21",
   photo:    "https://farm4.staticflickr.com/3924/15161068809_35801aa35f_b.jpg"
 )
-puts "  #{a.name}"
 
 a = Article.create!(
   title:    "Freedom",
@@ -59,7 +57,6 @@ a = Article.create!(
   day:      "22",
   photo:    "https://farm4.staticflickr.com/3879/15161310747_5e23c1c2f4_b.jpg"
 )
-puts "  #{a.name}"
 
 a = Article.create!(
   title:    "Roots Radicals",
@@ -70,7 +67,6 @@ a = Article.create!(
   day:      "23",
   photo:    "https://farm4.staticflickr.com/3837/15161111170_76a5c64a2b_b.jpg"
 )
-puts "  #{a.name}"
 
 a = Article.create!(
   title:    "Collapse (Post-Amerika)",
@@ -81,7 +77,6 @@ a = Article.create!(
   day:      "24",
   photo:    "https://farm4.staticflickr.com/3917/15161059929_98947c1d75_b.jpg"
 )
-puts "  #{a.name}"
 
 puts "Creating articles... done."
 puts
@@ -139,4 +134,14 @@ Article.all.each do |article|
   c.save!
 end
 puts "Add contributors to articles... done."
+puts
+
+
+# Temporary admin users
+puts "Add temporary admin users..."
+User.create!(name:                  "Editor in Chief",
+             email:                 "editor@allattacknoholdback.com",
+             password:              "gogo1234",
+             password_confirmation: "gogo1234")
+puts "Add temporary admin users... done."
 puts

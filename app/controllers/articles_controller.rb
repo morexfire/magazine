@@ -13,6 +13,8 @@ class ArticlesController < ApplicationController
       return redirect_to @articles.first.path
     end
 
+    # TODO if responding to json, covert it to mf2 json first
+
     respond_with @articles
   end
 
@@ -34,5 +36,9 @@ class ArticlesController < ApplicationController
     else
       @title = @article.name
     end
+
+    # TODO if responding to json, covert it to mf2 json first
+
+    respond_with @article
   end
 end

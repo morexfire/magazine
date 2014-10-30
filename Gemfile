@@ -12,7 +12,7 @@ gem "jquery-rails"
 gem "quiet_assets"
 gem "will_paginate"
 
-gem "bcrypt",      "~> 3.1.7"
+gem "bcrypt"
 gem "puma"
 
 group :production do
