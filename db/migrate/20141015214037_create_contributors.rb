@@ -1,6 +1,6 @@
-class CreatePeople < ActiveRecord::Migration
+class CreateContributors < ActiveRecord::Migration
   def change
-    create_table :people do |t|
+    create_table :contributors do |t|
       t.string :name, :twitter, :slug
       t.text :url
 
