@@ -8,7 +8,7 @@
         <h2 class="p-x-subtitle"><%= @article.subtitle %></h2>
       </div>
 
-      <%= render "contributors" %>
+      <%= render "/articles/contributors", article: @article %>
     </div>
   </header>
 

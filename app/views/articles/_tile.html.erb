@@ -7,26 +7,6 @@
   <%= render "/articles/published_on", article: article %>
 
   <% unless controller_name == "contributors" %>
-    <table class="contributors">
-      <tr>
-        <th>Words by</em></th>
-        <td class="p-author">
-          <%= @contributors.shuffle.first.name %>
-        </td>
-      </tr>
-      <tr>
-        <th>Photos by</th>
-        <td class="p-author p-photographer">
-          <%= @contributors.shuffle.first.name %>
-        </td>
-      </tr>
-      <tr>
-        <th>Illustrations by</th>
-        <td class="p-author p-illustrator">
-          <%= @contributors.shuffle.first.name %>
-        </td>
-      </tr>
-    </table>
+    <%= render "/articles/contributors", article: article %>
   <% end %>
-
 </article>
