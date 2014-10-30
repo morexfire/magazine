@@ -1,0 +1,11 @@
+<% if controller_name == "contributors" %>
+  <p class="screen-reader-only">
+<% else %>
+  <p>
+<% end %>
+  
+  Published on
+  <time class="dt-published" datetime="<%= article.year %>-<%= article.month %>-<%= article.day %>">
+    <%= article.year %>-<%= article.month %>-<%= article.day %>
+  </time>
+</p>

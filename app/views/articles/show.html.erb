@@ -19,11 +19,6 @@
   </div>
 
   <footer>
-    <p>
-      Published on
-      <time class="dt-published" datetime="<%= @article.year %>-<%= @article.month %>-<%= @article.day %>">
-        <%= @article.year %>-<%= @article.month %>-<%= @article.day %>
-      </time>
-    </p>
+    <%= render "/articles/published_on", article: @article %>
   </footer>
 </article>
