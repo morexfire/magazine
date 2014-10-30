@@ -24,20 +24,20 @@
     </p>
 
     <%= form_for @feedback do |f| %>
-      <%= f.hidden_field :url, value: request.url %>
-
       <%= f.label :name, class: "screen-reader-only" %>
       <%= f.text_field :name, placeholder: "Your Name" %>
 
       <%= f.label :name, class: "screen-reader-only" %>
       <%= f.email_field :name, placeholder: "Email" %>
 
+      <%= f.hidden_field :url, value: request.url %>
+
       <br />
 
       <%= f.label :content, class: "screen-reader-only" %>
       <%= f.text_area :content, placeholder: "What's on your mind?" %>
 
-      <%= link_to "Cancel", request.url, class: "cancel" %>      
+      <%= link_to "Cancel", request.url, class: "cancel" %>
       <%= f.button "Submit" %>
     <% end %>
   </div>
