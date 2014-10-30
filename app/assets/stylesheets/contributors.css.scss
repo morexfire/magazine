@@ -1,4 +1,4 @@
-/* used on homepage and /contributors */
+/* used on homepage and /contributors for table of people */
 #contributors {
   clear: both;
   padding: 50pt 50pt 0 50pt;
@@ -34,43 +34,3 @@
     font-size: 13pt;
   }
 } /* #contributors */
-
-
-#contributor {
-  padding: 50pt;
-
-  .h-feed,
-  .h-card {
-    padding: 0;
-    width: 48%;
-    float: left;
-  }
-
-  .h-feed { margin: 0 0 0 1%; }
-  .h-card { margin: 0 1% 0 0; }
-
-  h1 {
-    font-family: "alright_sansthin";
-    padding: 0;
-    margin:  0;
-  }
-
-  .p-name {
-    font-family: "alright_sansbold";
-  }
-
-  img {
-    margin-bottom: .5em;
-    max-width: 100%;
-  }
-
-  p {
-    font-family: "harriet_displaylight";
-    font-size: 13pt;
-  }
-
-  a {
-    display: block;
-  }
-} /* #contributors */
-

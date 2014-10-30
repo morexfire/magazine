@@ -1,0 +1,91 @@
+#contributor {
+  padding: 50pt;
+
+  .h-feed,
+  .h-card {
+    padding: 0;
+    width: 48%;
+    float: left;
+
+    .p-nickname,
+    .u-url,
+    header a {
+      display: block;
+    }
+  }
+
+  .h-feed { margin: 0 0 0 1%; }
+  .h-card { margin: 0 1% 0 0; }
+
+  h1 {
+    font-family: "alright_sansthin";
+    padding: 0;
+    margin:  0;
+  }
+
+  .h-card {
+    .p-name {
+      font-family: "alright_sansbold";
+    }
+
+    img {
+      margin-bottom: .5em;
+      max-width: 100%;
+    }
+
+    p {
+      font-family: "harriet_displaylight";
+      font-size: 13pt;
+    }
+  } /* .h-card */
+
+  .h-feed {
+  } /* .h-feed */
+
+
+  .h-feed {
+    margin:  0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .h-entry {
+    *zoom: 1;
+    background-color:        black;
+    background-position:     center;
+    background-size:         cover;
+    -moz-background-size:    cover;
+    -webkit-background-size: cover;
+    border-top: 1px solid white;
+    color: white;
+    float: none;
+    margin:  0;
+    padding: 50pt 25pt;
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    h1,
+    h2 {
+      margin:  0;
+      padding: 0;
+    }
+
+    h1 {
+      font-family: "harriet_displayblack_italic";
+      font-size: 2.5em;
+      line-height: 1em;
+      margin-bottom: .1em;
+    }
+
+    h2 {
+      font-family: "alright_sansthin";
+      font-size: 1.25em;
+    }
+
+    a {
+      color: white;
+    }
+  } /* .h-entry */
+
+} /* #contributor */

@@ -40,7 +40,7 @@ a = Article.create!(
 
 a = Article.create!(
   title:    "The Only Good Fascist Is A Very Dead Fascist",
-  subtitle: %q(Apparently I'm A "P.C. Facist"),
+  subtitle: "Nailing Descartes To The Wall",
   content:  placeholder_content,
   year:     "2014",
   month:    "10",
