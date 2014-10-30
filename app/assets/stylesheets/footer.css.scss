@@ -30,6 +30,14 @@ footer[role=contentinfo] {
     h1 {
       font-family: "alright_sansbold";
       font-size: 2em;
+
+      em {
+        font-weight: normal;
+        font-family: "harriet_displayblack_italic";
+        letter-spacing: -.01em;
+        line-height: 1em;
+        margin-bottom: .25em;
+      }
     }
   }
 
