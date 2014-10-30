@@ -1,9 +1,8 @@
-<% if controller_name == "contributors" %>
-  <p class="screen-reader-only">
-<% else %>
+<% if @slug == "article" %>
   <p>
+<% else %>
+  <p class="screen-reader-only">
 <% end %>
-  
   Published on
   <time class="dt-published" datetime="<%= article.year %>-<%= article.month %>-<%= article.day %>">
     <%= article.year %>-<%= article.month %>-<%= article.day %>
