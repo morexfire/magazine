@@ -16,6 +16,10 @@
       <%= link_to @contributor.url, @contributor.url, class: "u-url" %>
       <%= link_to "@#{@contributor.twitter}", "https://twitter.com/#{@contributor.twitter}", class: "p-nickname u-url" %>
     </p>
+
+    <div class="p-note">
+      <%= simple_format @contributor.bio %>
+    </div>
   </section> <!-- .h-card -->
 
   <section class="h-feed">

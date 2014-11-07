@@ -16,14 +16,7 @@ puts "Creating roles... done."
 puts
 
 
-placeholder_content = "Lorem ipsum dolor sit amet, consectetur
-                       adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                       dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                       exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                       dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                       non proident, sunt in culpa qui officia deserunt mollit anim id est
-                       laborum."
+placeholder_content = "Lorem ipsum <a href='http://example.com'>dolor</a> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
 
 # Placeholder Articles
@@ -97,9 +90,12 @@ puts "Creating contributors..."
   "Eiusmod Tempor",
   "Incididunt Labore"
 ].each do |name|
-  Contributor.create!(name: name,
-                 url: "http://example.com/#{name.downcase.gsub(/ /, "-")}",
-                 twitter: name.downcase.gsub(/ /, ""))
+  Contributor.create!(
+                name: name,
+                url: "http://example.com/#{name.downcase.gsub(/ /, "-")}",
+                twitter: name.downcase.gsub(/ /, ""),
+                bio:  placeholder_content + "\n\n" + placeholder_content
+              )
 end
 puts "Creating contributors... done."
 puts
@@ -108,24 +104,24 @@ puts
 # Link up articles/contributors/roles
 puts "Add contributors to articles..."
 Article.all.each do |article|
-  c = Contribution.new
-  c.contributor  = Contributor.all.shuffle.first
-  c.role    = Role.where(name: "author").first
-  c.article = article
+  c             = Contribution.new
+  c.contributor = Contributor.all.shuffle.first
+  c.role        = Role.where(name: "author").first
+  c.article     = article
   c.save!
 end
 Article.all.each do |article|
-  c = Contribution.new
-  c.contributor  = Contributor.all.shuffle.first
-  c.role    = Role.where(name: "photographer").first
-  c.article = article
+  c             = Contribution.new
+  c.contributor = Contributor.all.shuffle.first
+  c.role        = Role.where(name: "photographer").first
+  c.article     = article
   c.save!
 end
 Article.all.each do |article|
-  c = Contribution.new
-  c.contributor  = Contributor.all.shuffle.first
-  c.role    = Role.where(name: "illustrator").first
-  c.article = article
+  c             = Contribution.new
+  c.contributor = Contributor.all.shuffle.first
+  c.role        = Role.where(name: "illustrator").first
+  c.article     = article
   c.save!
 end
 puts "Add contributors to articles... done."
