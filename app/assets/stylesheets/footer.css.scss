@@ -51,21 +51,34 @@ footer[role=contentinfo] {
 
   input,
   textarea {
+    width: 49%;
     padding: 5pt;
+    border: 1px solid #ccc;
+    outline: none;
   }
 
-  input:nth-of-type(1) {
-    width: 49%;
+  input:focus,
+  textarea:focus {
+    border: 1px solid #666;
+  }
+
+  input[type=text] {
     margin-right: 1%;
   }
 
+  input[type=email] {
+    margin-left: 1%;
+  }
+
   textarea {
+    width: 100%;
     clear: both;
-    margin-top: 2em;
+    margin-top: .75em;
     height: 6em;
   }
 
   .cancel {
+    color: #ccc;
     padding: 5pt 0;
     float: left;
   }
