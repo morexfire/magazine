@@ -1,3 +1,19 @@
+#articles {
+  main header > h1 {
+    text-align: center;
+    padding: 0 50pt;
+
+    font-family: "alright_sansthin";
+    font-size: 2em;
+    letter-spacing: -.01em;
+    line-height: 1em;
+
+    time {
+      font-family: "alright_sansbold";
+    }
+  }
+}
+
 #article {
   .h-entry {
 

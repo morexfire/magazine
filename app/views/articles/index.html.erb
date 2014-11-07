@@ -1,5 +1,14 @@
-<% @articles.each do |article| %>
-  <h1><%= link_to article.title, article.path %></h1>
-  <h2><%= link_to article.subtitle, article.path %></h2>
-  <%= image_tag article.photo %>
-<% end %>
+<header>
+  <h1>
+    Articles :
+    <time><%= @articles_date %></time>
+  </h1>
+</header>
+
+<div class="h-feed">
+
+  <% @articles.each do |article| %>
+    <%= render "/articles/tile", article: article %>
+  <% end %>
+
+</div>

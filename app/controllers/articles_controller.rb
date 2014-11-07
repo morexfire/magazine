@@ -2,7 +2,10 @@ class ArticlesController < ApplicationController
   respond_to :html, :atom, :json
 
   def index
+    @slug       = "articles"
     @page_title = "Articles"
+
+    @articles_date = [params[:year], params[:month], params[:day]].compact.join("-")
 
     @articles = Article.paginate(per_page: 5, page: params[:page])
     @articles = @articles.where(year:  params[:year])  if params[:year]
