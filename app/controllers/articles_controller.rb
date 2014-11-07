@@ -1,6 +1,5 @@
 class ArticlesController < ApplicationController
-  require "microformats2"
-  respond_to :html, :atom, :json
+  respond_to :html, :atom
 
   def index
     @slug       = "articles"
@@ -16,9 +15,6 @@ class ArticlesController < ApplicationController
     if @articles.length == 1
       return redirect_to @articles.first.path
     end
-
-    # if responding to json, render the full page for microformats2 gem to convert to JSON
-    @page_html = render_to_string(template: "/articles/index.html.erb")
 
     respond_with @articles
   end
@@ -41,9 +37,6 @@ class ArticlesController < ApplicationController
     else
       @title = @article.name
     end
-
-    # if responding to json, render the full page for microformats2 gem to convert to JSON
-    @page_html = render_to_string(template: "/articles/show.html.erb")
 
     respond_with @article
   end
