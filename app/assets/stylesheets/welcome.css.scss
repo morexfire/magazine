@@ -35,10 +35,24 @@
     color: white;
     float: none;
     margin:  0;
-    padding: 100pt 50pt;
+    padding: 0pt 50pt;
     position: relative;
     text-align: center;
     width: 100%;
+    height: 400pt;
+
+    /* for vertically aligning title/subtitle/contributors */
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style:    preserve-3d;
+    transform-style:         preserve-3d;
+
+    header {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform:     translateY(-50%);
+      transform:         translateY(-50%);
+    }
 
     h1,
     h2 {
