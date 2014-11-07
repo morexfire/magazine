@@ -12,20 +12,13 @@ footer[role=contentinfo] {
     margin-bottom: 1em;
   }
 
-  #about {
-    padding: 25pt 50pt 25pt 0;
-  }
-
-  #contact {
-    padding: 25pt 0 25pt 50pt;
-  }
-
   input,
   #about,
   #contact {
-    width: 50%;
+    width: 49%;
     float: left;
     margin: 0;
+    padding: 25pt;
 
     h1 {
       font-family: "alright_sansbold";
@@ -39,6 +32,16 @@ footer[role=contentinfo] {
         margin-bottom: .25em;
       }
     }
+  }
+
+  #about {
+    padding-left: 0;
+    margin-right:  1%;
+  }
+
+  #contact {
+    padding-right: 0;
+    margin-left:  1%;
   }
 
   p {
