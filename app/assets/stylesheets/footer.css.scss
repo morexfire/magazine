@@ -14,11 +14,13 @@ footer[role=contentinfo] {
 
   input,
   #about,
-  #contact {
+  #contact,
+  #archives,
+  #support {
     width: 49%;
     float: left;
     margin: 0;
-    padding: 25pt;
+    padding: 25pt 25pt 0 25pt;
 
     h1 {
       font-family: "alright_sansbold";
@@ -34,12 +36,14 @@ footer[role=contentinfo] {
     }
   }
 
-  #about {
+  #about,
+  #archives {
     padding-left: 0;
     margin-right:  1%;
   }
 
-  #contact {
+  #contact,
+  #support {
     padding-right: 0;
     margin-left:  1%;
   }
