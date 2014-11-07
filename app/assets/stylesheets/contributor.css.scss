@@ -3,6 +3,7 @@
 
   .h-feed,
   .h-card {
+    margin: 0;
     padding: 0;
     width: 48%;
     float: left;
@@ -14,8 +15,8 @@
     }
   }
 
-  .h-feed { margin: 0 0 0 1%; }
-  .h-card { margin: 0 1% 0 0; }
+  .h-feed { margin-left:  1%; padding-left:  25pt; }
+  .h-card { margin-right: 1%; padding-right: 25pt; }
 
   h1 {
     font-family: "alright_sansthin";
@@ -38,16 +39,6 @@
       font-size: 13pt;
     }
   } /* .h-card */
-
-  .h-feed {
-  } /* .h-feed */
-
-
-  .h-feed {
-    margin:  0;
-    padding: 0;
-    list-style: none;
-  }
 
   .h-entry {
     *zoom: 1;
