@@ -11,6 +11,7 @@ gem "uglifier",    ">= 1.3.0"
 gem "jquery-rails"
 gem "quiet_assets"
 gem "will_paginate"
+gem "microformats2"
 
 gem "bcrypt"
 gem "puma"
