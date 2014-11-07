@@ -11,4 +11,6 @@
       <%= render "/articles/contributors", article: article %>
     <% end %>
   </header>
+
+  <%= link_to "Read More...", article.path, class: "read-more" %>
 </article>

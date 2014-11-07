@@ -37,7 +37,7 @@
     color: white;
     float: none;
     margin:  0;
-    padding: 0pt 50pt;
+    padding: 0;
     position: relative;
     text-align: center;
     width: 100%;
@@ -54,6 +54,8 @@
       -webkit-transform: translateY(-50%);
       -ms-transform:     translateY(-50%);
       transform:         translateY(-50%);
+      margin: 0 50pt;
+      z-index: 10;
     }
 
     h1,
