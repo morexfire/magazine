@@ -7,6 +7,11 @@
       color: white;
       margin-bottom: 2em;
 
+      /* for vertically aligning title/subtitle/contributors */
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style:    preserve-3d;
+      transform-style:         preserve-3d;
+
       .u-photo {
         width: 100%;
       }
@@ -17,6 +22,12 @@
         position: absolute;
         top: 0;
         width: 100%;
+
+        /* for vertically aligning title/subtitle/contributors */
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform:     translateY(-50%);
+        transform:         translateY(-50%);
       }
 
       h1 {
