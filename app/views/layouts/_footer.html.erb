@@ -12,9 +12,9 @@
   <div id="contact" class="h-card">
     <h1><%= link_to "Contact", contact_path %></h1>
     <p>
-      <%= mail_to "editor@allattacknoholdback.com", "editor@allattacknoholdback.com", class: "p-email" %>
+      <%= mail_to setting(:email), setting(:email), class: "p-email" %>
       <br />
-      <%= link_to "@AllAttackMag", "https://twitter.com/AllAttackMag", class: "u-url" %>
+      <%= link_to "@#{setting(:twitter_username)}", "https://twitter.com/#{setting(:twitter_username)}", class: "u-url" %>
     </p>
 
     <%= form_for @feedback do |f| %>

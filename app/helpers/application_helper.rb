@@ -15,43 +15,46 @@ module ApplicationHelper
   end
 
   def page_title
-    site_title = "All Attack, No Hold Back"
-
     if @title.nil?
-      site_title
+      setting(:site_name)
     else
-      [@title, site_title].join(" | ")
+      [@title, setting(:site_name)].join(" | ")
     end
   end
 
   def canonical_url(page=nil)
-    page.nil? ? "http://allattacknoholdback.com" : "page.url"
+    # TODO
+    page.nil? ? setting(:site_url) : "page.url"
   end
 
   def meta_og_site_name_tag(page=nil)
-    tag(:meta, property: "og:site_name", content: "All Attack, No Hold Back")
+    tag(:meta, property: "og:site_name", content: setting(:site_name))
   end
 
   def meta_fb_app_id_tag(page=nil)
+    # TODO
     tag(:meta, property: "fb:app_id", content: "")
   end
 
   def meta_og_image_tag(page=nil)
+    # TODO
     content = page.nil? ? "site image" : "page.photo"
     tag(:meta, property: "og:image", content: content)
   end
 
   def meta_og_url_tag(page=nil)
-    content = page.nil? ? "http://allattacknoholdback.com" : canonical_url(page)
+    content = page.nil? ? setting(:site_url) : canonical_url(page)
     tag(:meta, property: "og:url", content: content)
   end
 
   def meta_og_title_tag(page=nil)
-    content = page.nil? ? "All Attack, No Hold Back" : "Title of the article"
+    # TODO
+    content = page.nil? ? setting(:site_name) : "Title of the article"
     tag(:meta, property: "og:description", content: content)
   end
 
   def meta_og_description_tag(page=nil)
+    # TODO
     content = page.nil? ? "Description of the website" : "Description of the article"
     tag(:meta, property: "og:description", content: content)
   end

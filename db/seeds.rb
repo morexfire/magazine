@@ -1,3 +1,19 @@
+# populate /settings with my details
+[
+  ["Site URL",         "http://allattacknoholdback.com" ],
+  ["Site Name",        "All Attack, No Hold Back"],
+  ["Site Description", "Radical politics aimed at the digerati and privileged class. Kids gloves off. Coming out swinging. Pulling no punches."],
+  ["Twitter Username", "AllAttackMag"],
+  ["Email",            "editor@allattacknoholdback.com"],
+].each do |setting|
+  s         = Setting.new
+  s.name    = setting.first
+  s.content = setting.last
+  s.save!
+end
+
+
+
 # don't set published_at for new records
 Article.skip_callback(:create, :before, :set_published_at_attrs)
 
