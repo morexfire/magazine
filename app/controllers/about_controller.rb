@@ -1,10 +1,11 @@
 class AboutController < ApplicationController
   def archives
-    @slug         = "archives"
+    @slug     = "archives"
+    @articles = Article.all
   end
 
   def contact
-    @slug         = "contact"
+    @slug = "contact"
   end
 
   def home
@@ -14,10 +15,10 @@ class AboutController < ApplicationController
   end
 
   def support
-    @slug         = "home"
+    @slug = "home"
   end
 
   def us
-    @slug         = "support"
+    @slug = "support"
   end
 end

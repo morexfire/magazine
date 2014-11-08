@@ -1,0 +1,8 @@
+<ul class="h-feed">
+  <% @articles.each do |article| %>
+    <article role="article" class="h-entry">
+      <time class="dt-published"><%= article.published_at.strftime("%Y-%m-%d") %></time>
+      <h1><%= article.name %></h1>
+    </article>
+  <% end %>
+</ul>
