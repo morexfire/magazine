@@ -1,6 +1,6 @@
 <footer role="contentinfo">
   <div id="about">
-    <h1>About</h1>
+    <h1><%= link_to "About", about_path %></h1>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </p>
@@ -10,7 +10,7 @@
   </div>
 
   <div id="contact" class="h-card">
-    <h1>Contact</h1>
+    <h1><%= link_to "Contact", contact_path %></h1>
     <p>
       <%= mail_to "editor@allattacknoholdback.com", "editor@allattacknoholdback.com", class: "p-email" %>
       <br />
@@ -18,11 +18,11 @@
     </p>
 
     <%= form_for @feedback do |f| %>
-      <%= f.label :name, class: "screen-reader-only" %>
+      <%= f.label :name, class: "screen-reader-only"   %>
       <%= f.text_field :name, placeholder: "Your Name" %>
 
       <%= f.label :name, class: "screen-reader-only" %>
-      <%= f.email_field :name, placeholder: "Email" %>
+      <%= f.email_field :name, placeholder: "Email"  %>
 
       <%= f.hidden_field :url, value: request.url %>
 
@@ -37,13 +37,13 @@
   </div>
 
   <div id="archives">
-    <h1>Archives</h1>
+    <h1><%= link_to  "Archives", archives_path %></h1>
 
     <%= render "/layouts/archives" %>
   </div>
 
   <div id="support">
-    <h1>Support</h1>
+    <h1><%= link_to "Support", support_path %></h1>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>

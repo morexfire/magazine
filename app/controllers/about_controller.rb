@@ -1,4 +1,12 @@
 class AboutController < ApplicationController
+  def archives
+    @slug         = "archives"
+  end
+
+  def contact
+    @slug         = "contact"
+  end
+
   def home
     @slug         = "home"
     @articles     = Article.all.shuffle

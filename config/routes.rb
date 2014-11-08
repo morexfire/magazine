@@ -5,7 +5,8 @@ Rails.application.routes.draw do
 
   # about pages
   get "support", to: "about#support", as: "support"
-  get "about",   to: "about#us",      as: "us"
+  get "about",   to: "about#us",      as: "about"
+  get "contact", to: "about#contact", as: "contact"
 
 
   # authentication
@@ -21,6 +22,9 @@ Rails.application.routes.draw do
 
 
   # articles and archives
+  get "archives", to: "about#archives", as: "archives"
+  get "/archive", to: redirect("/archives")
+
   get "/:year/:month/:day/:slug",
       to:          "articles#show",
       constraints: { year: /\d{4}/, month: /\d{2}/, day: /\d{2}/ },
