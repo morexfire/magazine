@@ -81,4 +81,8 @@ module ApplicationHelper
 
     links.join("-").html_safe
   end
+
+  def setting(key)
+    Setting.where(key: key).first.content
+  end
 end
