@@ -1,6 +1,6 @@
 class AboutController < ApplicationController
   def archives
-    @slug     = "archives"
+    @slug     = "the-archives"
     @articles = Article.all
   end
 

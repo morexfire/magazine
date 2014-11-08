@@ -75,9 +75,9 @@ module ApplicationHelper
   def link_to_dates(year=nil, month=nil, day=nil)
     links = []
 
-    links << link_to_unless_current(year,  articles_path(year),               rel: "archives") if year
-    links << link_to_unless_current(month, articles_path(year, month),        rel: "archives") if month
-    links << link_to_unless_current(day,   articles_path(year, month, day),   rel: "archives") if day
+    links << link_to_unless_current(year,  articles_path(year),               rel: "archives", class: "year")  if year
+    links << link_to_unless_current(month, articles_path(year, month),        rel: "archives", class: "month") if month
+    links << link_to_unless_current(day,   articles_path(year, month, day),   rel: "archives", class: "day")   if day
 
     links.join("-").html_safe
   end

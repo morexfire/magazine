@@ -62,7 +62,7 @@ a = Article.create!(
   subtitle: "Long Forgotten Sons",
   content:  placeholder_content,
   year:     "2014",
-  month:    "10",
+  month:    "11",
   day:      "24"
 )
 

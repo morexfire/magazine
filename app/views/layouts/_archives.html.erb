@@ -9,10 +9,7 @@
       <% if year_month(year, month) >= starting_year_month &&
             year_month(year, month) <= now_year_month %>
 
-        <%= link_to month.to_s.rjust(2, "0"),
-                    "/#{year}/#{month.to_s.rjust(2, "0")}",
-                    class: "month",
-                    rel: "archives" %>
+        <%= link_to_dates(nil, month) %>
 
       <% end %>
     <% end %>

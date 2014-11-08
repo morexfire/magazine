@@ -1,8 +1,35 @@
-<ul class="h-feed">
-  <% @articles.each do |article| %>
-    <article role="article" class="h-entry">
-      <time class="dt-published"><%= article.published_at.strftime("%Y-%m-%d") %></time>
-      <h1><%= article.name %></h1>
-    </article>
+<header>
+  <h1>The Complete Archives</h1>
+</header>
+
+<div class="h-feed">
+  <% Time.now.year.downto(starting_year).each do |year| %>
+
+    <h1 class="year-section"><%= link_to_dates(year) %></h1>
+
+    <% 12.downto(1).each do |month| %>
+      <% if year_month(year, month) >= starting_year_month &&
+            year_month(year, month) <= now_year_month %>
+
+        <h2 class="month-section"><%= link_to_dates(year, month) %></h2>
+
+        <% @articles.each do |article| %>
+          <% if article.published_at.strftime("%Y-%m") == "#{year}-#{month}" %>
+
+            <article role="article" class="h-entry">
+              <time class="dt-published screen-reader-only"><%= article.published_at.strftime("%Y-%m-%d") %></time>
+
+              <%= link_to article.path, class: "p-name u-url u-uid" do %>
+                <span class="p-x-title"><%= article.title %></span>
+                <span class="p-x-subtitle"><%= article.subtitle %></span>
+              <% end %>
+            </article>
+
+          <% end %>
+        <% end %>
+
+      <% end %>
+    <% end %>
+
   <% end %>
-</ul>
+</div>
