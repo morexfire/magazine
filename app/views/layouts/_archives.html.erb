@@ -11,7 +11,8 @@
 
         <%= link_to month.to_s.rjust(2, "0"),
                     "/#{year}/#{month.to_s.rjust(2, "0")}",
-                    class: "month" %>
+                    class: "month",
+                    rel: "archives" %>
 
       <% end %>
     <% end %>

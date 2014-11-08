@@ -1,6 +1,7 @@
 <header>
   <h1>
-    Articles :
+    <%= link_to "Articles", archives_path, rel: "archives" %>
+    :
     <time><%= link_to_dates(@articles_year, @articles_month, @articles_day) %></time>
   </h1>
 </header>
