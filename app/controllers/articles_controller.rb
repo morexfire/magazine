@@ -5,7 +5,9 @@ class ArticlesController < ApplicationController
     @slug       = "articles"
     @page_title = "Articles"
 
-    @articles_date = [params[:year], params[:month], params[:day]].compact.join("-")
+    @articles_year  = params[:year]
+    @articles_month = params[:month]
+    @articles_day   = params[:day]
 
     @articles = Article.paginate(per_page: 5, page: params[:page])
     @articles = @articles.where(year:  params[:year])  if params[:year]
