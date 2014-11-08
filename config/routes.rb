@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
-  # TODO refactor this away
-  resources :roles
-
-
   # homepage and footer form
-  root "welcome#index"
+  root "about#home"
   resources :feedbacks, only: [:create]
+
+  # about pages
+  get "support", to: "about#support", as: "support"
+  get "about",   to: "about#us",      as: "us"
 
 
   # authentication
