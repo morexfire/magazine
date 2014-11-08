@@ -5,6 +5,8 @@
   ["Site Description", "Radical politics aimed at the digerati and privileged class. Kids gloves off. Coming out swinging. Pulling no punches."],
   ["Twitter Username", "AllAttackMag"],
   ["Email",            "editor@allattacknoholdback.com"],
+  ["FB app id",        "TODO"],
+  ["Asset Host",       "http://assets.allattacknoholdback.com.s3.amazonaws.com/"],
 ].each do |setting|
   s         = Setting.new
   s.name    = setting.first

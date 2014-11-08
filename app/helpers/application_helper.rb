@@ -23,8 +23,15 @@ module ApplicationHelper
   end
 
   def canonical_url(page=nil)
-    # TODO
-    page.nil? ? setting(:site_url) : "page.url"
+    # TODO urls for pages other than home and article
+
+    url = setting(:site_url)
+
+    if page.is_a?(Article)
+      url += page.path
+    end
+
+    page.nil? ? setting(:site_url) : url
   end
 
   def meta_og_site_name_tag(page=nil)
@@ -32,8 +39,7 @@ module ApplicationHelper
   end
 
   def meta_fb_app_id_tag(page=nil)
-    # TODO
-    tag(:meta, property: "fb:app_id", content: "")
+    tag(:meta, property: "fb:app_id", content: setting(:fb_app_id))
   end
 
   def meta_og_image_tag(page=nil)
@@ -55,7 +61,7 @@ module ApplicationHelper
 
   def meta_og_description_tag(page=nil)
     # TODO
-    content = page.nil? ? "Description of the website" : "Description of the article"
+    content = page.nil? ? setting(:site_description) : "Description of the article"
     tag(:meta, property: "og:description", content: content)
   end
 
@@ -66,7 +72,7 @@ module ApplicationHelper
 
   def asset_url(type, file, extension)
     [
-      "http://assets.allattacknoholdback.com.s3.amazonaws.com/",
+      setting(:asset_host),
       type.to_s.downcase.pluralize,
       "/",
       file,
@@ -76,6 +82,8 @@ module ApplicationHelper
   end
 
   def link_to_dates(year=nil, month=nil, day=nil)
+    # TODO add display pattern
+
     links = []
 
     links << link_to_unless_current(year,  articles_path(year),               rel: "archives", class: "year")  if year
