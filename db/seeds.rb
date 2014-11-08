@@ -1,4 +1,66 @@
-# populate /settings with my details
+puts "Populating licenses table..."
+[
+  [
+    "Public Domain",
+    "CC0",
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "http://creativecommons.org/publicdomain/zero/1.0/"
+  ],
+  [
+    "Some Rights Reserved",
+    "CC BY",
+    "Attribution",
+    "http://creativecommons.org/licenses/by/4.0/"
+  ],
+  [
+    "Some Rights Reserved",
+    "CC BY-SA",
+    "Attribution Share Alike",
+    "http://creativecommons.org/licenses/by-sa/4.0/"
+  ],
+  [
+    "Some Rights Reserved",
+    "CC BY-ND",
+    "Attribution No Derivatives",
+    "http://creativecommons.org/licenses/by-nd/4.0/"
+  ],
+  [
+    "Some Rights Reserved",
+    "CC BY-NC",
+    "Attribution Non-Commercial",
+    "http://creativecommons.org/licenses/by-nc/4.0/"
+  ],
+  [
+    "Some Rights Reserved",
+    "CC BY-NC-SA",
+    "Attribution Non-Commercial Share Alike",
+    "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+  ],
+  [
+    "Some Rights Reserved",
+    "CC BY-NC-ND",
+    "Attribution Non-Commercial No Derivatives",
+    "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+  ],
+  [
+    "All Rights Reserved",
+    "&copy;",
+    "",
+    ""
+  ],
+].each do |license|
+  l             = License.new
+  l.name        = license.first
+  l.short_code  = license[1]
+  l.description = license[2]
+  l.url         = license.last
+  l.save!
+end
+puts "Populating licenses table... done."
+puts
+
+
+puts "Populating settings..."
 [
   ["Site URL",         "http://allattacknoholdback.com" ],
   ["Site Name",        "All Attack, No Hold Back"],
@@ -13,7 +75,17 @@
   s.content = setting.last
   s.save!
 end
+puts "Populating settings... done."
+puts
 
+
+puts "Setting content license..."
+s         = Setting.new
+s.name    = "License"
+s.content = License.find_by(short_code: "CC BY-NC-ND").id
+s.save!
+puts "Setting content license... done."
+puts
 
 
 # don't set published_at for new records
