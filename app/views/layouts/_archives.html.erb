@@ -9,8 +9,7 @@
       <% if year_month(year, month) >= starting_year_month &&
             year_month(year, month) <= now_year_month %>
 
-        <%= link_to_dates(nil, month) %>
-
+        <%= link_to_dates(year: year, month: month, show_year: false) %>
       <% end %>
     <% end %>
   </p>
