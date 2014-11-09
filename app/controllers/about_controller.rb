@@ -19,6 +19,6 @@ class AboutController < ApplicationController
   end
 
   def us
-    @slug = "support"
+    @slug = "about"
   end
 end

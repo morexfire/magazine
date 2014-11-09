@@ -12,6 +12,13 @@
     </p>
   </div>
 
+  <nav role="nav">
+    <ul>
+      <li><%= link_to "About",  about_path   %></li>
+      <li><%= link_to "Conact", contact_path %></li>
+    </ul>
+  </nav>
+
   <p class="license">
     <%= license :name %>
     <%=  link_to setting(:start_year), articles_path(setting(:start_year)), rel: "license" %>

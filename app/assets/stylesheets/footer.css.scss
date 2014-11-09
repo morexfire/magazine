@@ -5,14 +5,6 @@ footer[role=contentinfo] {
   margin-top: 50pt;
   padding: 5pt 50pt 25pt 50pt;
 
-  input,
-  textarea {
-    display: block;
-    width: 100%;
-    margin-bottom: 1em;
-  }
-
-  input,
   #about,
   #contact,
   #archives,
@@ -25,24 +17,14 @@ footer[role=contentinfo] {
     h1 {
       font-family: "alright_sansbold";
       font-size: 2em;
-
-      em {
-        font-weight: normal;
-        font-family: "harriet_displayblack_italic";
-        letter-spacing: -.01em;
-        line-height: 1em;
-        margin-bottom: .25em;
-      }
     }
   }
 
-  #about,
   #archives {
     padding-left: 0;
     margin-right:  1%;
   }
 
-  #contact,
   #support {
     padding-right: 0;
     margin-left:  1%;
@@ -51,48 +33,6 @@ footer[role=contentinfo] {
   p {
     font-family: "harriet_displaylight";
     font-size: 13pt;
-  }
-
-  input,
-  textarea {
-    width: 49%;
-    padding: 5pt;
-    border: 1px solid #ccc;
-    outline: none;
-  }
-
-  input:focus,
-  textarea:focus {
-    border: 1px solid #666;
-  }
-
-  input[type=text] {
-    margin-right: 1%;
-  }
-
-  input[type=email] {
-    margin-left: 1%;
-  }
-
-  textarea {
-    width: 100%;
-    clear: both;
-    margin-top: .75em;
-    height: 6em;
-  }
-
-  .cancel {
-    color: #ccc;
-    padding: 5pt 0;
-    float: left;
-  }
-
-  button {
-    background: black;
-    color: white;
-    border: none;
-    padding: 5pt 10pt;
-    float: right;
   }
 
   .license {
@@ -124,18 +64,4 @@ footer[role=contentinfo] {
       margin-left: 1em;
     }
   } /* #archives */
-}
-
-/* /login specific styles */
-#login {
-  input:nth-of-type(1),
-  input {
-    width: 100%;
-    float: none;
-    margin-bottom: 1em;
-  }
-
-  label {
-    font-family: "alright_sansmedium";
-  }
 }

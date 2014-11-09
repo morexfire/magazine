@@ -1,0 +1,82 @@
+/* /login specific styles */
+#login {
+  input:nth-of-type(1),
+  input {
+    width: 100%;
+    float: none;
+    margin-bottom: 1em;
+  }
+
+  label {
+    font-family: "alright_sansmedium";
+  }
+}
+
+#contact,
+#about {
+  article {
+    margin: 0 50pt;
+
+    h1 {
+      font-family: "alright_sansbold";
+      font-size: 2em;
+    }
+  }
+
+  p {
+    font-family: "harriet_displaylight";
+    font-size: 13pt;
+  }
+
+  input {
+    width: 49%;
+    float: left;
+    margin: 0;
+    padding: 25pt 25pt 0 25pt;
+  }
+
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+    width: 49%;
+    padding: 5pt;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+
+  input:focus,
+  textarea:focus {
+    border: 1px solid #666;
+  }
+
+  input[type=text] {
+    margin-right: 1%;
+  }
+
+  input[type=email] {
+    margin-left: 1%;
+  }
+
+  textarea {
+    width: 100%;
+    clear: both;
+    margin-top: .75em;
+    height: 6em;
+  }
+
+  .cancel {
+    color: #ccc;
+    padding: 5pt 0;
+    float: left;
+  }
+
+  button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 5pt 10pt;
+    float: right;
+  }
+}
