@@ -1,5 +1,6 @@
 class SessionsController < ApplicationController
   def new
+    @slug  = "login"
     @title = "Admin Login"
   end
 
