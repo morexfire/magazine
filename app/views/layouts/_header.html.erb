@@ -1,10 +1,9 @@
 <header role="banner">
   <h1>
-    <%= link_to setting(:site_name), root_path, rel: "home" %>
+    <%= link_to setting(:site_name).gsub(/ /, "&nbsp;").html_safe, root_path, rel: "home" %>
   </h1>
 
   <form role="search">
-    <a href="/archives" rel="archives">Archives</a>
     <input type="text" name="search" value="" id="search" placeholder="Search" />
   </form>
   <br />

@@ -19,18 +19,9 @@ header[role=banner] {
 
   h1,
   form[role=search] {
-    width: 50%;
-    float: left;
+    width: 100%;
     margin: 0;
-  }
-
-  a[rel=archives] {
-    font-family: "alright_sansextra_thin";
-    text-transform: uppercase;
-  }
-
-  form[role=search] {
-    text-align: right;
+    text-align: center;
   }
 
   input {
@@ -38,5 +29,45 @@ header[role=banner] {
     text-align: right;
     padding: 5pt;
     text-transform: uppercase;
+    width: 80%;
+    margin-top: 1em;
+  }
+}
+
+@media (min-width: 768px) {
+  header[role=banner] {
+    h1,
+    form[role=search] {
+      width: 50%;
+      float: left;
+      margin: 0;
+    }
+
+    h1 {
+      text-align: left;
+    }
+
+    form[role=search] {
+      float: right;
+      text-align: right;
+      width: 30%;
+    }
+
+    input {
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+}
+
+@media (min-width: 992px) {
+  body {
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
   }
 }
