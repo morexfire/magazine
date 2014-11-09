@@ -103,4 +103,8 @@ module ApplicationHelper
   def setting(key)
     Setting.where(key: key).first.try(:content)
   end
+
+  def license(key)
+    License.find(setting(:license)).send(key)
+  end
 end

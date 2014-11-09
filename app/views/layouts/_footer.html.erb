@@ -50,7 +50,8 @@
   </div>
 
   <p class="license">
-    Some Rights Reserved 2014
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">(CC-BY-NC-ND)</a>
+    <%= license :name %>
+    <%=  link_to setting(:start_year), articles_path(setting(:start_year)), rel: "license" %>
+    (<%= link_to license(:short_code), license(:url),                       rel: "license" %>)
   </p>
 </footer>

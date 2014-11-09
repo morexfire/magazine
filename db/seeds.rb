@@ -69,6 +69,8 @@ puts "Populating settings..."
   ["Email",            "editor@allattacknoholdback.com"],
   ["FB app id",        "TODO"],
   ["Asset Host",       "http://assets.allattacknoholdback.com.s3.amazonaws.com/"],
+  ["Start Year",       "2014"],
+  ["Start Month",      "10"],
 ].each do |setting|
   s         = Setting.new
   s.name    = setting.first
