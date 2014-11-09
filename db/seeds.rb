@@ -62,12 +62,18 @@ puts
 
 puts "Populating settings..."
 [
+  # Site Settings
   ["Site URL",         "http://allattacknoholdback.com" ],
   ["Site Name",        "All Attack, No Hold Back"],
   ["Site Description", "Radical politics aimed at the digerati and privileged class. Kids gloves off. Coming out swinging. Pulling no punches."],
-  ["Twitter Username", "AllAttackMag"],
+  ["Site About",       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."],
+
+  # Social Settings
   ["Email",            "editor@allattacknoholdback.com"],
+  ["Twitter Username", "AllAttackMag"],
   ["FB app id",        "TODO"],
+
+  # Misc Settings
   ["Asset Host",       "http://assets.allattacknoholdback.com.s3.amazonaws.com/"],
   ["Start Year",       "2014"],
   ["Start Month",      "10"],

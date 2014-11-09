@@ -1,4 +1,4 @@
-<% Time.now.year.downto(setting(:start_year)).each do |year| %>
+<% Time.now.year.downto(setting(:start_year).to_i).each do |year| %>
 
   <p>
     <%= link_to year, "/#{year}",  class: "year" %>
