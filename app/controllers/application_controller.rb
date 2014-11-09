@@ -3,13 +3,8 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-  before_action :set_feedback
   before_action :current_user
   before_action :logged_in?
-
-  def set_feedback
-    @feedback = Feedback.new
-  end
 
   def current_user
     @current_user ||= User.find(session[:user_id]) if session[:user_id]

@@ -5,7 +5,8 @@ class AboutController < ApplicationController
   end
 
   def contact
-    @slug = "contact"
+    @slug     = "contact"
+    @feedback = Feedback.new
   end
 
   def home
