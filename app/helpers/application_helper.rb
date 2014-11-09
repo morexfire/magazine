@@ -1,7 +1,4 @@
 module ApplicationHelper
-  def starting_year; 2014; end
-  def starting_month;  10; end
-
   def year_month(year, month)
     "#{year}-#{month.to_s.rjust(2, "0")}"
   end
@@ -10,8 +7,8 @@ module ApplicationHelper
     year_month(Time.now.year, Time.now.month)
   end
 
-  def starting_year_month
-    year_month(starting_year, starting_month)
+  def start_year_month
+    year_month(setting(:start_year), setting(:start_month))
   end
 
   def page_title

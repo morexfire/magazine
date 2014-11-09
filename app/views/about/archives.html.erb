@@ -3,12 +3,12 @@
 </header>
 
 <div class="h-feed">
-  <% Time.now.year.downto(starting_year).each do |year| %>
+  <% Time.now.year.downto(setting(:start_year)).each do |year| %>
 
     <h1 class="year-section"><%= link_to_dates(year: year) %></h1>
 
     <% 12.downto(1).each do |month| %>
-      <% if year_month(year, month) >= starting_year_month &&
+      <% if year_month(year, month) >= start_year_month &&
             year_month(year, month) <= now_year_month %>
 
         <h2 class="month-section"><%= link_to_dates(year: year, month: month) %></h2>
