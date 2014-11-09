@@ -1,0 +1,30 @@
+<header>
+  <h1>Contact</h1>
+</header>
+
+<article class="h-card">
+  <h1><%= link_to "Contact", contact_path %></h1>
+  <p>
+    <%= mail_to setting(:email), setting(:email), class: "p-email" %>
+    <br />
+    <%= link_to "@#{setting(:twitter_username)}", "https://twitter.com/#{setting(:twitter_username)}", class: "u-url" %>
+  </p>
+
+  <%= form_for @feedback do |f| %>
+    <%= f.label :name, class: "screen-reader-only"   %>
+    <%= f.text_field :name, placeholder: "Your Name" %>
+
+    <%= f.label :name, class: "screen-reader-only" %>
+    <%= f.email_field :name, placeholder: "Email"  %>
+
+    <%= f.hidden_field :url, value: request.url %>
+
+    <br />
+
+    <%= f.label :content, class: "screen-reader-only" %>
+    <%= f.text_area :content, placeholder: "What's on your mind?" %>
+
+    <%= link_to "Cancel", request.url, class: "cancel" %>
+    <%= f.button "Submit" %>
+  <% end %>
+</article>
