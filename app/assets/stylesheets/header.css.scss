@@ -26,6 +26,7 @@ header[role=banner] {
 
   a[rel=archives] {
     font-family: "alright_sansextra_thin";
+    text-transform: uppercase;
   }
 
   form[role=search] {
@@ -36,5 +37,6 @@ header[role=banner] {
     color: #444;
     text-align: right;
     padding: 5pt;
+    text-transform: uppercase;
   }
 }
