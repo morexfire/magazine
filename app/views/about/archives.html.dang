@@ -1,0 +1,35 @@
+<header
+  <h1 Archives h1>
+header>
+
+<div.h-feed
+  <: Time.now.year.downto(setting(:start_year).to_i).each do |year| :>
+
+    <h1.year-section <| link_to_dates(year: year) |> h1>
+
+    <: 12.downto(1).each do |month| :>
+      <: if year_month(year, month) >= start_year_month &&
+            year_month(year, month) <= now_year_month :>
+
+        <h2.month-section <: link_to_dates(year: year, month: month) :> h2>
+
+        <: @articles.each do |article| :>
+          <: if article.published_at.strftime("%Y-%m") == "#{year}-#{month}" :>
+
+            <article.h-entry[role=article]
+              <time.dt-published.screen-reader-only <| article.published_at.strftime("%Y-%m-%d") |> time>
+
+              <: link_to article.path, class: "p-name u-url u-uid" do :>
+                <span.p-x-title <| article.title |> span>
+                <span.p-x-subtitle <| article.subtitle |> span>
+              <: end :>
+            article>
+
+          <: end :>
+        <: end :>
+
+      <: end :>
+    <: end :>
+
+  <: end :>
+div>
