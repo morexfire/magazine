@@ -6,10 +6,6 @@ class ApplicationController < ActionController::Base
   before_action :current_user
   before_action :logged_in?
 
-  def current_user
-    @current_user ||= User.find(session[:user_id]) if session[:user_id]
-  end
-
   def logged_in?
     @current_user.present?
   end
@@ -21,6 +17,6 @@ class ApplicationController < ActionController::Base
   helper_method :current_user
 
   def authorize
-    redirect_to login_url, alert: "Not authorized" if current_user.nil?
+    redirect_to root_path unless logged_in?
   end
 end
