@@ -30,6 +30,7 @@ GEM
     arel (5.0.1.20140414130214)
     bcrypt (3.1.9)
     builder (3.2.2)
+    dang (2.0.0)
     erubis (2.7.0)
     execjs (2.2.2)
     hike (1.2.3)
@@ -109,6 +110,7 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt
+  dang
   jquery-rails
   microformats2
   pg
