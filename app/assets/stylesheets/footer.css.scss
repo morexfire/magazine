@@ -4,14 +4,10 @@ footer[role=contentinfo] {
   margin-top: 50pt;
   padding: 5pt 50pt 25pt 50pt;
 
-  #about,
-  #contact,
   #archives,
   #support {
-    width: 49%;
-    float: left;
     margin: 0;
-    padding: 25pt 25pt 0 25pt;
+    padding: 0;
 
     h1 {
       font-family: "alright_sansbold";
@@ -42,16 +38,6 @@ footer[role=contentinfo] {
     }
   }
 
-  #archives {
-    padding-left: 0;
-    margin-right:  1%;
-  }
-
-  #support {
-    padding-right: 0;
-    margin-left:  1%;
-  }
-
   p {
     font-family: "harriet_displaylight";
     font-size: 13pt;
@@ -63,9 +49,7 @@ footer[role=contentinfo] {
     clear: both;
   }
 
-
   #archives {
-    clear: both;
     padding: 25pt 0;
 
     h1 {
@@ -84,6 +68,53 @@ footer[role=contentinfo] {
 
     .month {
       margin-left: 1em;
+    } /* #archives */
+  }
+}
+
+
+@media (min-width: 768px) {
+  #archives,
+  #support {
+    width: 49%;
+    float: left;
+    margin: 0;
+    padding: 25pt 25pt 0 25pt;
+  }
+
+  #archives {
+    padding-left: 0;
+    margin-right:  1%;
+  }
+
+  #support {
+    padding-right: 0;
+    margin-left:  1%;
+  }
+
+  footer[role=contentinfo] {
+    nav[role=nav] {
+      clear: both;
+      padding-top: 4em;
+
+      ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      li {
+
+      }
     }
-  } /* #archives */
+  }
+}
+
+@media (min-width: 800px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
 }

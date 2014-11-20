@@ -56,6 +56,7 @@
       transform:         translateY(-50%);
       margin: 0 50pt;
       z-index: 10;
+      overflow: hidden;
     }
 
     h1,
@@ -66,7 +67,8 @@
 
     h1 {
       font-family: "harriet_displayblack_italic";
-      font-size: 4em;
+      font-size: 1em; /* TODO */
+      font-size: 4em; /* TODO */
       letter-spacing: -.01em;
       line-height: 1em;
       margin-bottom: .1em;
@@ -99,3 +101,16 @@
   } /* .h-entry */
 
 } /* #home */
+
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 800px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
