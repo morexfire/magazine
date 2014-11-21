@@ -36,6 +36,5 @@
 
   $(window).resize(function() {
     resizeTiles();
-    console.log("in resize function call");
   });
 })(window.jQuery);

@@ -5,7 +5,7 @@
       prefix="og: http://ogp.me/ns#">
 
 <head>
-  <%= render "/layouts/head" %>
+  <%= render("/layouts/head").html_safe %>
 </head>
 
 <body id="<%= @article.try(:slug) %>">

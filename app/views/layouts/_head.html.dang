@@ -1,0 +1,44 @@
+<! Some Rights Reserved 2014 (CC-BY-ND-NC) !>
+
+<meta[charset=utf-8] />
+<title <| page_title |> title>
+
+<| stylesheet_link_tag    "application", media: "all" |>
+<| javascript_include_tag "application" |>
+<| csrf_meta_tags |>
+
+<meta[name=viewport][content=user-scalable=no]                      />
+<meta[name=viewport][content=width=device-width, initial-scale=1.0] />
+
+<! Backward compatibility: Facebook (Open Graph) !>
+<| meta_og_site_name_tag       @article |>
+<| meta_fb_app_id_tag          @article |>
+<| meta_og_type_tag            @article |>
+<| meta_og_url_tag             @article |>
+<| meta_og_image_tag           @article |>
+<| meta_og_title_tag           @article |>
+<| meta_og_description_tag     @article |>
+
+<! Backward compatibility: Twitter Cards !>
+<: # shared properties across the whole site :>
+<! TODO FIXME !>
+<meta[name=twitter:site][content=@<|    setting :twitter_username |>] />
+<meta[name=twitter:creator][content=@<| setting :twitter_username |>] />
+<: # TODO Add article specific properties :>
+
+<! Backward compatibility: Atom !>
+<| auto_discovery_link_tag :atom, feed_url, title: page_title |>
+
+<| tag :link, id: "canonical", rel: "canonical", type: "text/html", href: canonical_url(@article) |>
+
+<! fav and touch icons !>
+<link[rel=shortcut icon][href=/favicon.ico] />
+<link[rel=icon][sizes=192x192][href=touch-icon-192x192.png]                   /> <! For Chrome for Android !>
+<link[rel=apple-touch-icon][sizes=180x180][href=apple-touch-icon-180x180.png] /> <! For iPhone 6 Plus with @3X display !>
+<link[rel=apple-touch-icon][sizes=152x152][href=apple-touch-icon-152x152.png] /> <! For iPad with @2X display running iOS >= 7 !>
+<link[rel=apple-touch-icon][sizes=144x144][href=apple-touch-icon-144x144.png] /> <! For iPad with @2X display running iOS =< 6 !>
+<link[rel=apple-touch-icon][sizes=120x120][href=apple-touch-icon-120x120.png] /> <! For iPhone with @2X display running iOS >= 7 !>
+<link[rel=apple-touch-icon][sizes=114x114][href=apple-touch-icon-114x114.png] /> <! For iPhone with @2X display running iOS =< 6 !>
+<link[rel=apple-touch-icon][sizes=76x76][href=apple-touch-icon-76x76.png]     /> <! For the iPad mini and the first- and second-generation iPad (@1X display) on iOS >= 7 !>
+<link[rel=apple-touch-icon][sizes=72x72][href=apple-touch-icon-72x72.png]     /> <! For the iPad mini and the first- and second-generation iPad (@1X display) on iOS =< 6 !>
+<link[rel=apple-touch-icon][href=apple-touch-icon.png]                        /> <! For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: 57X57px!>
