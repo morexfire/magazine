@@ -1,0 +1,24 @@
+<article.h-entry[role=article]
+  <header
+    <| image_tag @article.photo, class: "u-photo", alt: "" |>
+
+    <div.meta
+      <div.p-name
+        <h1.p-x-title    <| @article.title    |> h1>
+        <h2.p-x-subtitle <| @article.subtitle |> h2>
+      div>
+
+      <| render "/articles/contributors", article: @article |>
+    div>
+  header>
+
+  <div.e-content
+    <p      <| raw @article.content |> p>
+    <p      <| raw @article.content |> p>
+    <div <p <| raw @article.content |> p> div>
+  div>
+
+  <footer
+    <| render("/articles/published_on", article: @article).html_safe |>
+  footer>
+article>

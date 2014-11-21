@@ -1,16 +1,3 @@
 <article class="h-entry" style="background-image: url(<%= article.photo %>)">
-  <header>
-    <div class="p-name">
-      <h1 class="p-x-title"><%= link_to article.title, article.path %></h1>
-      <h2 class="p-x-subtitle"><%= link_to article.subtitle, article.path %></h2>
-    </div>
-
-    <%= render "/articles/published_on", article: article %>
-
-    <% unless controller_name == "contributors" %>
-      <%= render "/articles/contributors", article: article %>
-    <% end %>
-  </header>
-
-  <%= link_to "Read More...", article.path, class: "read-more" %>
+  <%= render("/articles/article_header", article: article).html_safe %>
 </article>

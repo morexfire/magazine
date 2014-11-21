@@ -1,0 +1,16 @@
+<table.contributors
+
+  <: [article.authors, article.photographers, article.illustrators].each do |contribution_type| :>
+    <: contribution_type.each do |contribution| :>
+
+      <tr
+        <th <| contribution.role.thing.capitalize.pluralize |> by th>
+        <td.p-author[class=p-<| contribution.role.name |>]
+          <| link_to contribution.contributor.name, contribution.contributor.path, rel: "author" |>
+        td>
+      tr>
+
+    <: end :>
+  <: end :>
+
+table>
