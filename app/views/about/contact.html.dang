@@ -9,6 +9,7 @@
     <| link_to "@#{setting(:twitter_username)}", "https://twitter.com/#{setting(:twitter_username)}", class: "u-url" |>
   p>
 
+  <: # TODO FIXME :>
   <form#new_feedback.new_feedback[accept-charset=UTF-8][action=/feedbacks][method=post]
     <div[style=display:none]
       <input[name=utf8][type=hidden][value=✓]                                                         />
