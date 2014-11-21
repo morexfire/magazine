@@ -1,0 +1,28 @@
+<footer[role=contentinfo]
+  <div#archives
+    <h1 <| link_to  "Archives", archives_path, rel: "archives" |> h1>
+
+    <| render "/layouts/archives" |>
+  div>
+
+  <div#support
+    <h1 <| link_to "Support", support_path |> h1>
+    <p
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    p>
+  div>
+
+  <nav[role=nav]
+    <ul
+      <li <| link_to "Archives", archives_path, rel: "archives" |> li>
+      <li <| link_to "About",    about_path                     |> li>
+      <li <| link_to "Conact",   contact_path                   |> li>
+    ul>
+  nav>
+
+  <p.license
+    <| license :name |>
+    <|  link_to setting(:start_year), articles_path(setting(:start_year)), rel: "license" |>
+    (<| link_to license(:short_code), license(:url),                       rel: "license" |>)
+  p>
+footer>

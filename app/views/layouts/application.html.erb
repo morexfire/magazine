@@ -9,7 +9,7 @@
 </head>
 
 <body id="<%= @article.try(:slug) %>">
-  <%= render "/layouts/header" %>
+  <%= render("/layouts/header").html_safe %>
 
   <%= render "/layouts/alerts" %>
 
@@ -17,6 +17,6 @@
     <%= yield %>
   </main>
 
-  <%= render "/layouts/footer" %>
+  <%= render("/layouts/footer").html_safe %>
 </body>
 </html>

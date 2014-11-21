@@ -1,0 +1,10 @@
+<header[role=banner]
+  <h1
+    <| link_to setting(:site_name).gsub(/ /, "&nbsp;").html_safe, root_path, rel: "home" |>
+  h1>
+
+  <form[role=search]
+    <input#search[type="text"][name="search"][value=""][placeholder="Search"] />
+  form>
+  <br />
+header>
