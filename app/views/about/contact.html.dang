@@ -1,0 +1,33 @@
+<article.h-card
+  <header
+    <h1 Contact h1>
+  header>
+
+  <p
+    <| mail_to setting(:email), setting(:email), class: "p-email" |>
+    <br />
+    <| link_to "@#{setting(:twitter_username)}", "https://twitter.com/#{setting(:twitter_username)}", class: "u-url" |>
+  p>
+
+  <form#new_feedback.new_feedback[accept-charset=UTF-8][action=/feedbacks][method=post]
+    <div style="display:none">
+      <input[name=utf8][type=hidden][value=✓]                                                         />
+      <input[name=authenticity_token][type=hidden][value=ZLh0nJ3P6nj3TBIveg7E1/C00KXl51AMYu/IvK2z1n0=] />
+    div>
+    <: form_for @feedback do |f| :>
+      <| f.label :name, class: "screen-reader-only"   |>
+      <| f.text_field :name, placeholder: "Your Name" |>
+
+      <| f.label :name, class: "screen-reader-only" |>
+      <| f.email_field :name, placeholder: "Email"  |>
+
+      <br />
+
+      <| f.label :content, class: "screen-reader-only" |>
+      <| f.text_area :content, placeholder: "What's on your mind?" |>
+
+      <| link_to "Cancel", contact_path, class: "cancel" |>
+      <| f.button "Submit" |>
+    <: end :>
+  form>
+article>
