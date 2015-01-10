@@ -1,8 +1,13 @@
 <header[role=banner]
   <h1 <| link_to setting(:site_name).gsub(/ /, "&nbsp;").html_safe, root_path, rel: "home" |> h1>
 
+  <: if false :>
   <form[role=search]
     <input#search[type=text][name=search][placeholder=Search] />
   form>
+  <: end :>
+
+  <| link_to "Support this site &rarr;".html_safe, support_path, rel: "", class: "support-button" |>
+
   <br />
 header>

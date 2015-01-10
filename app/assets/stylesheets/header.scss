@@ -32,6 +32,18 @@ header[role=banner] {
     width: 100%;
     margin-top: 1em;
   }
+
+  .support-button {
+    display: block;
+    background: #66CC00;
+    padding: 7pt 10pt 5pt 10pt;
+    font-family: "alright_sansmedium";
+    text-transform: uppercase;
+    float: none;
+    text-align: center;
+    width: 80%;
+    margin: .5em auto 0 auto;
+  }
 }
 
 /* narrower desktop browser window in between phone and tablet */
@@ -72,5 +84,14 @@ header[role=banner] {
     input {
       margin: 0;
     }
+
+    .support-button {
+      width: auto;
+      display: inline-block;
+      text-transform: uppercase;
+      float: right;
+      margin: 0;
+    }
+
   }
 }
