@@ -38,7 +38,7 @@ header[role=banner] {
 /* narrower desktop browser window in between phone and tablet */
 @media (min-width: 500px) {
   header[role=banner] {
-    padding: 20pt 10pt 5pt 10pt;
+    padding: 20pt 20pt 5pt 20pt;
 
     h1 { font-size: 1.75em; }
   }
