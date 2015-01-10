@@ -19,10 +19,10 @@ header>
             <article.h-entry[role=article]
               <time.dt-published.screen-reader-only <| article.published_at.strftime("%Y-%m-%d") |> time>
 
-              <: link_to article.path, class: "p-name u-url u-uid" do :>
-                <span.p-x-title <| article.title |> span>
-                <span.p-x-subtitle <| article.subtitle |> span>
-              <: end :>
+              <div.p-name.u-url.u-uid
+                <| link_to article.title,    article.path, class: "p-x-title"    |>
+                <| link_to article.subtitle, article.path, class: "p-x-subtitle" |>
+              div>
             article>
 
           <: end :>
