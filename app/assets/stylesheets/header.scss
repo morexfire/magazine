@@ -1,7 +1,7 @@
 header[role=banner] {
   background: black;
   color: white;
-  padding: 25pt 50pt;
+  padding: 10pt 5pt 0 5pt;
 
   a {
     color: white;
@@ -11,16 +11,27 @@ header[role=banner] {
   h1 {
     font-weight: normal;
     font-family: "harriet_displayblack_italic";
-    font-size: 2em;
+    font-size: 1.25em;
     letter-spacing: -.01em;
     line-height: 1em;
-    margin-bottom: .25em;
+    padding: 0;
+  }
+  
+  @media (min-width: 500px) {
+    padding: 20pt 10pt 5pt 10pt;
+    h1 { font-size: 1.75em; }
+  }
+
+  @media (min-width: 767px) {
+    padding: 25pt 50pt;
+    h1 { font-size: 2em; }
   }
 
   h1,
   form[role=search] {
     width: 100%;
     margin: 0;
+    padding: 0;
     text-align: center;
   }
 
