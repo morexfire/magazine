@@ -4,7 +4,7 @@
     <h2.p-x-subtitle <| link_to article.subtitle, article.path |> h2>
   div>
 
-  <| render "/articles/published_on", article: article |>
+  <| render("/articles/published_on", article: article).html_safe |>
 
   <: unless controller_name == "contributors" :>
     <| render "/articles/contributors", article: article |>
