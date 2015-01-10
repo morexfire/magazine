@@ -22,7 +22,7 @@
       position: relative;
       border-top: 1pt solid white;
       color: white;
-      margin-bottom: 2em;
+      margin-bottom: 1em;
 
       /* for vertically aligning title/subtitle/contributors */
       transform-style: preserve-3d;
@@ -34,7 +34,7 @@
 
       .meta {
         text-align: center;
-        padding: 100pt 50pt;
+        padding: 10pt;
         position: absolute;
         top: 0;
         width: 100%;
@@ -46,14 +46,16 @@
 
       h1 {
         font-family: "harriet_displayblack_italic";
-        font-size: 4em;
-        letter-spacing: -.01em;
+        font-size: 1.3em;
+        letter-spacing: -.08em;
         line-height: 1em;
         margin-bottom: .1em;
       }
 
       h2 {
         font-family: "alright_sansthin";
+        font-size: .8em;
+        letter-spacing: -.08em;
       }
 
       a {
@@ -61,6 +63,8 @@
       }
 
       .contributors {
+        font-size: .5em;
+        display: inline-block;
         margin: 0 auto;
         font-family: "alright_sansthin";
 
@@ -81,13 +85,13 @@
 
     .e-content {
       color: #444;
-      padding: 0 50pt;
+      padding: 0 5pt;
       font-family: "harriet_displaylight";
-      font-size: 1em;
+      font-size: .66em;
       letter-spacing: .02em;
 
       > :first-child {
-        font-size: 1.5em;
+        font-size: 1.2em;
       }
 
       a {
@@ -146,14 +150,13 @@
       }
     }
 
-
     footer {
       text-align: center;
 
       p {
         display: inline-block;
-        margin:  50pt 0;
-        padding: 50pt;
+        margin:  20pt 0;
+        padding: 20pt;
         border-top: 1pt solid #ccc;
         font-family: "harriet_displaylight_italic";
       }
@@ -161,3 +164,85 @@
 
   } /* .h-entry */
 } /* #article */
+
+/* narrower desktop browser window in between phone and tablet */
+@media (min-width: 500px) {
+  #article {
+    .h-entry {
+
+      header {
+        .meta {
+          padding: 25pt;
+        }
+
+        h1 {
+          font-size: 2em;
+          letter-spacing: -.01em;
+          line-height: 1em;
+        }
+
+        h2 {
+          font-size: 1.5em;
+          letter-spacing: -.01em;
+        }
+
+        .contributors {
+          font-size: 1em;
+        }
+      }
+      
+      .e-content {
+        padding: 0 10pt;
+        font-size: 1em;
+
+        > :first-child {
+          font-size: 1.5em;
+        }
+      }
+      
+      footer {
+        p {
+          margin:  50pt 0;
+          padding: 50pt;
+        }
+      }
+
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #article {
+    .h-entry {
+
+      header {
+        .meta {
+          padding: 100pt 50pt;
+          margin-bottom: 2em;
+        }
+
+        h1 {
+          font-size: 4em;
+          letter-spacing: -.01em;
+          line-height: 1em;
+        }
+
+        h2 {
+          font-size: 2em;
+        }
+      }
+      
+      .e-content {
+        padding: 0 50pt;
+      }
+      
+      footer {
+        p {
+          margin:  50pt 0;
+          padding: 50pt;
+        }
+      }
+
+    }
+  }
+}
