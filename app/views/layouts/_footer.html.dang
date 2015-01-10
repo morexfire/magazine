@@ -23,6 +23,8 @@
   <p.license
     <| license :name |>
     <|  link_to setting(:start_year), articles_path(setting(:start_year)), rel: "license" |>
-    (<| link_to license(:short_code), license(:url),                       rel: "license" |>)
+    <span.short-code
+      (<| link_to license(:short_code), license(:url),                       rel: "license" |>)
+    span>
   p>
 footer>
