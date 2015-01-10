@@ -88,6 +88,9 @@ module ApplicationHelper
 
     links = []
 
+    month = month.to_s.rjust(2, "0") unless month.nil?
+    day   = day.to_s.rjust(2, "0")   unless day.nil?
+
     if year && show_year
       links << link_to_unless_current(year,  articles_path(year),               rel: "archives", class: "year")
     end
