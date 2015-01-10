@@ -1,6 +1,11 @@
 #the-archives {
   .h-feed {
-    margin: 0 50pt;
+    margin: 10pt 5pt 0 5pt;
+
+    .year-section,
+    .month-section {
+      font-size: 1em;
+    }
 
     .year-section {
       font-family: "alright_sansbold";
@@ -30,7 +35,7 @@
       .p-x-title {
         display: block;
         font-family: "harriet_displayblack_italic";
-        font-size: 2em;
+        font-size: 1em;
         letter-spacing: -.01em;
         margin-right: .25em;
       }
@@ -38,11 +43,49 @@
       .p-x-subtitle {
         display: block;
         font-family: "alright_sansthin";
-        font-size: 2em;
+        font-size: 1em;
         line-height: 1em;
         margin: 0;
       }
     }
 
   }
+
+
+  @media (min-width: 500px) {
+    .h-feed {
+      margin: 20pt 10pt 5pt 10pt;
+
+      .year-section,
+      .month-section {
+        font-size: 1.5em;
+      }
+
+      .h-entry {
+        .p-x-title,
+        .p-x-subtitle {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .h-feed {
+      margin: 0 50pt;
+
+      .year-section,
+      .month-section {
+        font-size: 2em;
+      }
+
+      .h-entry {
+        .p-x-title,
+        .p-x-subtitle {
+          font-size: 2em;
+        }
+      }
+    }
+  }
+
 }
