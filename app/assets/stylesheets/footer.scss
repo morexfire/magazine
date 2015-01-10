@@ -26,9 +26,9 @@ footer[role=contentinfo] {
     }
 
     li {
-      display: inline-block;
-      margin: 0 1em 0 0;
-      padding: .5em .6em;
+      display: block;
+      margin: 0;
+      padding: 10pt 0;
       font-family: "alright_sansthin";
       text-transform: uppercase;
     }
@@ -102,7 +102,9 @@ footer[role=contentinfo] {
       }
 
       li {
-
+        display: inline-block;
+        margin: 0 1em 0 0;
+        padding: .5em .6em;
       }
     }
   }
