@@ -1,7 +1,7 @@
 /* used on homepage and /contributors for table of people */
 #contributors {
   clear: both;
-  padding: 50pt 50pt 0 50pt;
+  padding: 10pt 5pt 0 5pt;
 
   h1 {
     font-family: "alright_sansbold";
@@ -12,25 +12,53 @@
   .h-card {
     display: inline-block;
     float: left;
+    width: 50%;
     margin: 0;
     padding: 0;
     outline: 1px solid white;
     overflow: hidden;
-    width: 16.666%;
 
     a {
       display: block;
       text-align: center;
+      font-size: .66em;
     }
   }
 
   img {
     width: 100%;
-    margin-bottom: .5em;
+    margin-bottom: 0;
   }
 
   p {
     font-family: "harriet_displaylight";
     font-size: 13pt;
+    margin: .5em 0;
   }
 } /* #contributors */
+
+@media (min-width: 500px) {
+  #contributors {
+    padding: 20pt 10pt 5pt 10pt;
+
+    .h-card {
+      a {
+        font-size: 1em;
+      }
+    }
+
+    p {
+      margin: 1em 0;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #contributors {
+    padding: 50pt 50pt 0 50pt;
+
+    .h-card {
+      width: 16.666%;
+    }
+  }
+}
