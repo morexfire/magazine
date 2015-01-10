@@ -11,7 +11,7 @@ header>
       <: if year_month(year, month) >= start_year_month &&
             year_month(year, month) <= now_year_month :>
 
-        <h2.month-section <: link_to_dates(year: year, month: month) :> h2>
+        <h2.month-section <| link_to_dates(year: year, month: month) |> h2>
 
         <: @articles.each do |article| :>
           <: if article.published_at.strftime("%Y-%m") == "#{year}-#{month}" :>
