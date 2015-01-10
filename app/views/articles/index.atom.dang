@@ -54,11 +54,12 @@
         <| article.content |>
       content>
       
-      <author
-        <name
-          <| article.contributors.map{ |c| c.contributor.name }.join(", ") |>
-        name>
-      author>
+      <: article.contributors.each do |contribution| :>
+        <author
+          <name <| contribution.contributor.name |> name>
+          <uri <| setting(:site_url) |>/contributors/<| contribution.contributor.slug |> uri>
+        author>
+      <: end :>
     entry>
   <: end :>
 feed>
