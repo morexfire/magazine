@@ -1,4 +1,8 @@
 module ApplicationHelper
+  def xml_declaration
+    %q{<?xml version="1.0" encoding="UTF-8"?>}
+  end
+
   def year_month(year, month)
     "#{year}-#{month.to_s.rjust(2, "0")}"
   end
