@@ -7,31 +7,14 @@
     list-style: none;
   }
 
-  .row {
-    clear: both;
-  }
-
-  .row .h-entry:first-child {
-    border-right: 1px solid white;
-  }
-
-  .row .h-entry {
-    width: 50%;
-    float: left;
-    height: 300pt;
-
-    h1 {
-      font-family: "alright_sansbold";
-      font-size: 2em;
-    }
-  }
+  .row { clear: both; }
 
   .h-entry {
     *zoom: 1;
     background-color:    black;
     background-position: center;
     background-size:     cover;
-    border-top: 1px solid white;
+    border-top: 1pt solid white;
     color: white;
     float: none;
     margin:  0;
@@ -39,7 +22,7 @@
     position: relative;
     text-align: center;
     width: 100%;
-    height: 400pt;
+    height: 150pt;
 
     /* for vertically aligning title/subtitle/contributors */
     transform-style: preserve-3d;
@@ -48,7 +31,7 @@
       position: relative;
       top: 50%;
       transform: translateY(-50%);
-      margin: 0 50pt;
+      margin: 0 5pt;
       z-index: 10;
       overflow: hidden;
     }
@@ -61,8 +44,7 @@
 
     h1 {
       font-family: "harriet_displayblack_italic";
-      font-size: 1em; /* TODO */
-      font-size: 4em; /* TODO */
+      font-size: 1.5em;
       letter-spacing: -.01em;
       line-height: 1em;
       margin-bottom: .1em;
@@ -70,6 +52,7 @@
 
     h2 {
       font-family: "alright_sansthin";
+      font-size: 1em;
     }
 
     a {
@@ -77,21 +60,115 @@
     }
 
     .contributors {
-      margin: 0 auto;
-      font-family: "alright_sansthin";
-
-      th {
-        text-align: right;
-        padding-right: .25em;
-        font-weight: normal;
-        font-family: "harriet_displaylight_italic";
-      }
-
-      td {
-        text-align: left;
-        font-family: "alright_sansmedium";
-      }
+      display: none;
     }
   } /* .h-entry */
+
+  .row .h-entry {
+    height: 100pt;
+
+    h1 {
+      font-family: "alright_sansbold";
+      font-size: 1.25em;
+      letter-spacing: -0.08em;
+    }
+
+    h2 {
+      font-size: .8em;
+      letter-spacing: -0.08em;
+    }
+  }
+
+
+  /* narrower desktop browser window in between phone and tablet */
+  @media (min-width: 500px) {
+    .row .h-entry {
+      height: 200pt;
+
+      h1 {
+        font-family: "alright_sansbold";
+        font-size: 1.5em;
+        letter-spacing: 0;
+      }
+
+      h2 {
+        font-size: 1em;
+        letter-spacing: 0;
+      }
+    }
+
+
+    .h-entry {
+      height: 300pt;
+
+      header {
+        margin: 0 20pt;
+      }
+
+      h1 {
+        font-size: 2em;
+        margin-bottom: .2em;
+      }
+
+      h2 {
+        font-size: 1.25em;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .h-entry {
+      height: 400pt;
+      text-align: center;
+
+      header {
+        margin: 0 50pt;
+      }
+
+      h1 {
+        font-size: 4em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+
+      .contributors {
+        display: inline-block;
+        margin: 0 auto;
+        font-family: "alright_sansthin";
+
+        th {
+          text-align: right;
+          padding-right: .25em;
+          font-weight: normal;
+          font-family: "harriet_displaylight_italic";
+        }
+
+        td {
+          text-align: left;
+          font-family: "alright_sansmedium";
+        }
+      }
+    } /* .h-entry */
+
+    .row .h-entry:first-child {
+      border-right: 1px solid white;
+    }
+
+    .row .h-entry {
+      width: 50%;
+      float: left;
+      height: 300pt;
+
+      h1 {
+        font-size: 2em;
+      }
+      
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+  }
 
 } /* #home */
