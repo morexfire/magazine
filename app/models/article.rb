@@ -25,11 +25,11 @@ class Article < ActiveRecord::Base
     [title, subtitle].join(" : ")
   end
 
-  def contributors(role)
+  def contributors(role=nil)
     contributors = []
 
     self.contributions.each do |c|
-      if c.role.name == role
+      if c.role.name == role || role.nil?
         contributors << c
       end
     end
