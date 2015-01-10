@@ -1,12 +1,12 @@
 #contributor {
-  padding: 50pt;
+  padding: 0;
 
   .h-feed,
   .h-card {
     margin: 0;
     padding: 0;
-    width: 49%;
-    float: left;
+    width: 100%;
+    float: none;
 
     .p-nickname,
     .u-url,
@@ -15,8 +15,8 @@
     }
   }
 
-  .h-feed { margin-left:  1%; padding-left:  25pt; }
-  .h-card { margin-right: 1%; padding-right: 25pt; }
+  .h-feed,
+  .h-card { margin: 0; padding: 5pt; }
 
   h1 {
     font-family: "alright_sansthin";
@@ -39,6 +39,10 @@
       font-size: 13pt;
     }
   } /* .h-card */
+
+  .h-feed > header h1 {
+    font-size: 1em;
+  }
 
   .h-entry {
     *zoom: 1;
@@ -73,14 +77,16 @@
 
     h1 {
       font-family: "harriet_displayblack_italic";
-      font-size: 2.25em;
+      font-size: 1.5em;
       line-height: 1em;
       margin-bottom: .1em;
+      letter-spacing: -0.08em;
     }
 
     h2 {
       font-family: "alright_sansthin";
       font-size: 1em;
+      letter-spacing: -0.08em;
     }
 
     a {
@@ -89,3 +95,52 @@
   } /* .h-entry */
 
 } /* #contributor */
+
+
+@media (min-width: 500px) {
+  #contributor {
+    padding: 5pt;
+
+    .h-feed > header h1 {
+      font-size: 1.5em;
+    }
+
+    .h-entry {
+      h1 {
+        font-size: 2em;
+        letter-spacing: -.01em;
+      }
+
+      h2 {
+        font-size: 0em;
+        letter-spacing: -0.08em;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #contributor {
+    padding: 50pt;
+
+    .h-feed > header h1 {
+      font-size: 2em;
+    }
+
+    .h-feed,
+    .h-card {
+      width: 49%;
+      float: left;
+    }
+
+    .h-feed { margin-left:  1%; padding: 0; padding-left:  25pt; }
+    .h-card { margin-right: 1%; padding: 0; padding-right: 25pt; }
+
+    .h-entry {
+      h1 {
+        font-size: 2.25em;
+        letter-spacing: 0em;
+      }
+    }
+  }
+}
