@@ -42,11 +42,9 @@
 
   .h-entry {
     *zoom: 1;
-    background-color:        black;
-    background-position:     center;
-    background-size:         cover;
-    -moz-background-size:    cover;
-    -webkit-background-size: cover;
+    background-color:    black;
+    background-position: center;
+    background-size:     cover;
     border-top: 1px solid white;
     color: white;
     float: none;
@@ -58,17 +56,13 @@
     height: 150pt;
 
     /* for vertically aligning title/subtitle/contributors */
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style:    preserve-3d;
-    transform-style:         preserve-3d;
+    transform-style: preserve-3d;
 
     header {
       /* for vertically aligning title/subtitle/contributors */
       position: relative;
       top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform:     translateY(-50%);
-      transform:         translateY(-50%);
+      transform: translateY(-50%);
     }
 
     h1,
