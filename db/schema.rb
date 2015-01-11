@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20141108234313) do
     t.string   "month"
     t.string   "day"
     t.string   "slug"
+    t.string   "draft"
     t.datetime "published_at"
     t.datetime "created_at"
     t.datetime "updated_at"

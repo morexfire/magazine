@@ -164,6 +164,16 @@ a = Article.create!(
   day:      "05"
 )
 
+a = Article.create!(
+  title:    "This is a Draft Article",
+  subtitle: "You Shouldn't See It at /YYYY/MM/DD URL",
+  content:  "<p><b>You should only see it at /drafts/fb72809ee9d7c71225816fd24fc27497</b></p>\n\n" + placeholder_content,
+  year:     "2015",
+  month:    "01",
+  day:      "10",
+  draft:    "fb72809ee9d7c71225816fd24fc27497"
+)
+
 puts "Creating articles... done."
 puts
 

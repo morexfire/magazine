@@ -13,6 +13,10 @@ class Article < ActiveRecord::Base
   before_create :set_published_at_attrs, :set_slug
   before_update :set_published_at_attrs, :set_slug
 
+  scope :draft,     -> { where(status: "draft")     }
+  scope :queued,    -> { where(status: "queued")    }
+  scope :published, -> { where(status: "published") }
+
   def path
     "/" + [year, month, day, slug].compact.join("/")
   end
