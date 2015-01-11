@@ -50,7 +50,7 @@ class Article < ActiveRecord::Base
   end
 
   def photo
-    "http://assets.allattacknoholdback.com.s3.amazonaws.com/articles/#{year}/#{month}/#{day}/photo.jpg"
+    "#{Setting.find_by(key: "asset_host").content}articles/#{year}/#{month}/#{day}/photo.jpg"
   end
 
   private

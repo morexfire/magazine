@@ -61,26 +61,26 @@ puts
 
 
 puts "Populating settings..."
-[
+{
   # Site Settings
-  ["Site URL",         "http://allattacknoholdback.com" ],
-  ["Site Name",        "All Attack, No Hold Back"],
-  ["Site Description", "Radical politics aimed at the digerati and privileged class. Kids gloves off. Coming out swinging. Pulling no punches."],
-  ["Site About",       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."],
+  "Site URL"         => "http://allattacknoholdback.com",
+  "Site Name"        => "All Attack, No Hold Back",
+  "Site Description" => "Radical politics aimed at the digerati and privileged class. Kids gloves off. Coming out swinging. Pulling no punches.",
+  "Site About"       => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 
   # Social Settings
-  ["Email",            "editor@allattacknoholdback.com"],
-  ["Twitter Username", "AllAttackMag"],
-  ["FB app id",        "TODO"],
+  "Email"            => "editor@allattacknoholdback.com",
+  "Twitter Username" => "AllAttackMag",
+  "FB app id"        => "TODO",
 
   # Misc Settings
-  ["Asset Host",       "http://assets.allattacknoholdback.com.s3.amazonaws.com/"],
-  ["Start Year",       "2014"],
-  ["Start Month",      "10"],
-].each do |setting|
+  "Asset Host"       => "http://assets.allattacknoholdback.com/",
+  "Start Year"       => "2015",
+  "Start Month"      => "01",
+}.each do |name, content|
   s         = Setting.new
-  s.name    = setting.first
-  s.content = setting.last
+  s.name    = name
+  s.content = content
   s.save!
 end
 puts "Populating settings... done."
@@ -123,45 +123,45 @@ a = Article.create!(
   title:    "Summer Holidays vs Punk Routine",
   subtitle: "A Liberation Frequency",
   content:  placeholder_content,
-  year:     "2014",
-  month:    "10",
-  day:      "20"
+  year:     "2015",
+  month:    "01",
+  day:      "01"
 )
 
 a = Article.create!(
   title:    "The Only Good Fascist Is A Very Dead Fascist",
   subtitle: "Nailing Descartes To The Wall",
   content:  placeholder_content,
-  year:     "2014",
-  month:    "10",
-  day:      "21"
+  year:     "2015",
+  month:    "01",
+  day:      "02"
 )
 
 a = Article.create!(
   title:    "Freedom",
   subtitle: "Darkness",
   content:  placeholder_content,
-  year:     "2014",
-  month:    "10",
-  day:      "22"
+  year:     "2015",
+  month:    "01",
+  day:      "03"
 )
 
 a = Article.create!(
   title:    "Roots Radicals",
   subtitle: "I Wanna Riot",
   content:  placeholder_content,
-  year:     "2014",
-  month:    "10",
-  day:      "23"
+  year:     "2015",
+  month:    "01",
+  day:      "04"
 )
 
 a = Article.create!(
   title:    "Collapse (Post-Amerika)",
   subtitle: "Long Forgotten Sons",
   content:  placeholder_content,
-  year:     "2014",
-  month:    "11",
-  day:      "24"
+  year:     "2015",
+  month:    "01",
+  day:      "05"
 )
 
 puts "Creating articles... done."

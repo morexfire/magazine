@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20141108234313) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "articles", force: true do |t|
+  create_table "articles", force: :cascade do |t|
     t.text     "title"
     t.text     "subtitle"
     t.text     "content"
@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 20141108234313) do
     t.datetime "updated_at"
   end
 
-  create_table "contributions", force: true do |t|
+  create_table "contributions", force: :cascade do |t|
     t.integer  "contributor_id"
     t.integer  "article_id"
     t.integer  "role_id"
@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 20141108234313) do
     t.datetime "updated_at"
   end
 
-  create_table "contributors", force: true do |t|
+  create_table "contributors", force: :cascade do |t|
     t.string   "name"
     t.string   "twitter"
     t.string   "slug"
@@ -47,8 +47,7 @@ ActiveRecord::Schema.define(version: 20141108234313) do
     t.datetime "updated_at"
   end
 
-  create_table "feedbacks", force: true do |t|
-    t.text     "url"
+  create_table "feedbacks", force: :cascade do |t|
     t.text     "content"
     t.string   "name"
     t.string   "email"
@@ -56,7 +55,7 @@ ActiveRecord::Schema.define(version: 20141108234313) do
     t.datetime "updated_at"
   end
 
-  create_table "licenses", force: true do |t|
+  create_table "licenses", force: :cascade do |t|
     t.string   "name"
     t.string   "short_code"
     t.text     "description"
@@ -65,14 +64,14 @@ ActiveRecord::Schema.define(version: 20141108234313) do
     t.datetime "updated_at"
   end
 
-  create_table "roles", force: true do |t|
+  create_table "roles", force: :cascade do |t|
     t.string   "name"
     t.string   "thing"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "settings", force: true do |t|
+  create_table "settings", force: :cascade do |t|
     t.string   "name"
     t.string   "key"
     t.text     "content"
@@ -81,7 +80,7 @@ ActiveRecord::Schema.define(version: 20141108234313) do
     t.datetime "updated_at"
   end
 
-  create_table "users", force: true do |t|
+  create_table "users", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
     t.string   "password_digest"
