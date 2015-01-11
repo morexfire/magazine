@@ -7,7 +7,7 @@
   form>
   <: end :>
 
-  <| link_to "Support this site", support_path, rel: "", class: "support-button" |>
+  <| link_to "Support this site", support_path, rel: "payment", class: "support-button" |>
 
   <br />
 header>
