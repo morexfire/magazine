@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   # homepage and footer form
   root "about#home"
-  resources :feedbacks, only: [:create]
 
   # about pages
   get "support", to: "about#support", as: :support
@@ -13,19 +12,19 @@ Rails.application.routes.draw do
   resources :sessions
   get "logout",    to: "sessions#destroy", as: :logout
   get "login",     to: "sessions#new",     as: :login
-  get "/sessions", to: redirect("/login")
+  get "sessions", to: redirect("/login")
 
 
   # contributors listings and their contributor page
-  get "/contributors/:slug", to: "contributors#show",  as: :contributor
-  get "/contributors",       to: "contributors#index", as: :contributors
+  get "contributors/:slug", to: "contributors#show",  as: :contributor
+  get "contributors",       to: "contributors#index", as: :contributors
 
 
   # articles and archives
   get "archives", to: "about#archives", as: :archives
-  get "/archive", to: redirect("/archives")
+  get "archive",  to: redirect("/archives")
 
-  get "/:year/:month/:day/:slug",
+  get ":year/:month/:day/:slug",
       to:          "articles#show",
       constraints: { year: /\d{4}/, month: /\d{2}/, day: /\d{2}/ },
       as:          :article
@@ -35,10 +34,12 @@ Rails.application.routes.draw do
       constraints: { year: /\d{4}/, month: /\d{2}/, day: /\d{2}/ },
       as:          :articles
 
+  # drafts
   get "drafts/:hash", to: "articles#show", as: :draft
+  get "drafts",       to: redirect("/")
 
   # atom feed
-  get "/feed", to: "articles#index", defaults: { format: "atom" }, as: :feed
+  get "feed", to: "articles#index", defaults: { format: "atom" }, as: :feed
 
 
   # TODO make this
