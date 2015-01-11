@@ -125,7 +125,8 @@ a = Article.create!(
   content:  placeholder_content,
   year:     "2015",
   month:    "01",
-  day:      "01"
+  day:      "01",
+  status:   "published"
 )
 
 a = Article.create!(
@@ -134,7 +135,8 @@ a = Article.create!(
   content:  placeholder_content,
   year:     "2015",
   month:    "01",
-  day:      "02"
+  day:      "02",
+  status:   "published"
 )
 
 a = Article.create!(
@@ -143,7 +145,8 @@ a = Article.create!(
   content:  placeholder_content,
   year:     "2015",
   month:    "01",
-  day:      "03"
+  day:      "03",
+  status:   "published"
 )
 
 a = Article.create!(
@@ -152,7 +155,8 @@ a = Article.create!(
   content:  placeholder_content,
   year:     "2015",
   month:    "01",
-  day:      "04"
+  day:      "04",
+  status:   "published"
 )
 
 a = Article.create!(
@@ -161,7 +165,8 @@ a = Article.create!(
   content:  placeholder_content,
   year:     "2015",
   month:    "01",
-  day:      "05"
+  day:      "05",
+  status:   "published"
 )
 
 a = Article.create!(
@@ -170,8 +175,7 @@ a = Article.create!(
   content:  "<p><b>You should only see it at /drafts/fb72809ee9d7c71225816fd24fc27497</b></p>\n\n" + placeholder_content,
   year:     "2015",
   month:    "01",
-  day:      "10",
-  draft:    "fb72809ee9d7c71225816fd24fc27497"
+  day:      "10"
 )
 
 puts "Creating articles... done."

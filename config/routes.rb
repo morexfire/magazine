@@ -35,7 +35,7 @@ Rails.application.routes.draw do
       as:          :articles
 
   # drafts
-  get "drafts/:hash", to: "articles#show", as: :draft
+  get "drafts/:code", to: "articles#show", as: :draft
   get "drafts",       to: redirect("/")
 
   # atom feed
