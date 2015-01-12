@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   # homepage and footer form
   root "about#home"
+  resources :feedbacks, only: [:create] # for /contact form
 
   # about pages
   get "support", to: "about#support", as: :support
