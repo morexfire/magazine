@@ -12,6 +12,7 @@ class AboutController < ApplicationController
   def home
     @slug         = "home"
     @articles     = Article.published.shuffle # TODO do the right lookup here
+    byebug
     @contributors = Contributor.all
   end
 

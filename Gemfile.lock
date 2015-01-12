@@ -40,8 +40,17 @@ GEM
     autoprefixer-rails (4.0.2.2)
       execjs
     bcrypt (3.1.9)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
     builder (3.2.2)
+    byebug (3.5.1)
+      columnize (~> 0.8)
+      debugger-linecache (~> 1.2)
+      slop (~> 3.6)
+    columnize (0.9.0)
     dang (2.0.0)
+    debug_inspector (0.0.2)
+    debugger-linecache (1.2.0)
     erubis (2.7.0)
     execjs (2.2.2)
     globalid (0.3.0)
@@ -110,6 +119,7 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (~> 1.1)
+    slop (3.6.0)
     sprockets (2.12.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -127,6 +137,11 @@ GEM
     uglifier (2.7.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    web-console (2.0.0)
+      activemodel (~> 4.0)
+      binding_of_caller (>= 0.7.2)
+      railties (~> 4.0)
+      sprockets-rails (>= 2.0, < 4.0)
     will_paginate (3.0.7)
 
 PLATFORMS
@@ -135,6 +150,7 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   bcrypt
+  byebug
   dang
   jquery-rails
   pg
@@ -145,4 +161,5 @@ DEPENDENCIES
   responders
   sass-rails
   uglifier
+  web-console (~> 2.0)
   will_paginate
