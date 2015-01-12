@@ -169,14 +169,14 @@ a = Article.create!(
   status:   "published"
 )
 
-# a = Article.create!(
-#   title:    "This is a Draft Article",
-#   subtitle: "You Shouldn't See It at /YYYY/MM/DD URL",
-#   content:  "<p><b>You should only see it at /drafts/fb72809ee9d7c71225816fd24fc27497</b></p>\n\n" + placeholder_content,
-#   year:     "2015",
-#   month:    "01",
-#   day:      "10"
-# )
+a = Article.create!(
+  title:    "This is a Draft Article",
+  subtitle: "You Shouldn't See It at /YYYY/MM/DD URL",
+  content:  "<p><b>You should only see it at /drafts/fb72809ee9d7c71225816fd24fc27497</b></p>\n\n" + placeholder_content,
+  year:     "2015",
+  month:    "01",
+  day:      "10"
+)
 
 puts "Creating articles... done."
 puts
@@ -189,6 +189,17 @@ Article.all.each do |article|
   article.save!
 end
 puts "Setting published_at for articles... done."
+puts
+
+
+# Set status to published
+puts "Publishing articles..."
+Article.all.each do |article|
+  unless article.title.downcase =~ /draft/
+    article.  publish!
+  end
+end
+puts "Publishing articles... done."
 puts
 
 
