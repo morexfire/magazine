@@ -67,6 +67,7 @@ puts "Populating settings..."
   "Site Name"        => "All Attack, No Hold Back",
   "Site Description" => "Radical politics aimed at the digerati and privileged class. Kids gloves off. Coming out swinging. Pulling no punches.",
   "Site About"       => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "Site Support"     => %Q{ <b>No ads. No Paywall. Ever.</b> That&rsquo;s the promise. We will never sell you out to advertisers or cops. We will only ever make money by selling <i>to you</i> : weekly/monthly ebooks and print-on-demand monthly collections.\n\nIn addition to collect editions, we ask for your direct financial support. We can&rsquo;t do this without your help. If you think that this magazine existing is a good resource freely available to everyone, share this with your friends and enemies. If you also have some money to spare, please <b><a href="/support" rel="payment">send some of it our way. &rarr;</a></b> },
 
   # Social Settings
   "Email"            => "editor@allattacknoholdback.com",
