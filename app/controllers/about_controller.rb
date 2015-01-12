@@ -1,7 +1,7 @@
 class AboutController < ApplicationController
   def archives
     @slug     = "the-archives"
-    @articles = Article.all
+    @articles = Article.published
   end
 
   def contact
@@ -12,7 +12,6 @@ class AboutController < ApplicationController
   def home
     @slug         = "home"
     @articles     = Article.published.shuffle # TODO do the right lookup here
-    byebug
     @contributors = Contributor.all
   end
 

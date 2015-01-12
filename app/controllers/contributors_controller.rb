@@ -5,7 +5,7 @@ class ContributorsController < ApplicationController
 
   def show
     @contributor  = Contributor.find_by(slug: params[:slug])
-    @articles     = Article.all.shuffle
+    @articles     = Article.published.shuffle # TODO do the right lookup here
     @contributors = Contributor.all
   end
 end
