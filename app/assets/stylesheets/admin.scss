@@ -1,0 +1,30 @@
+#admin-banner {
+  nav {
+    ul,
+    li {
+      display: inline;
+      padding: 0;
+      font-weight: bold;
+    }
+
+    li {
+      margin-right:  .5em;
+      padding-right: .5em;
+      border-right: 1px solid #666;
+    }
+
+    li:last-child {
+      margin-right:  0;
+      padding-right: 0;
+      border-right:  0
+    }
+
+    li a {
+      font-weight: normal;
+    }
+  }
+    
+  p {
+    margin-bottom: 0;
+  }
+}

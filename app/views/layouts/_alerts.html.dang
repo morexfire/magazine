@@ -1,3 +1,15 @@
+<: if logged_in? :>
+  <div#admin-banner.alert.alert-danger
+    <nav
+      <ul
+        <li <| link_to_unless_current "Admin",  "admin_path" |> li>
+        <li <| link_to_unless_current "Logout", logout_path |> li>
+      ul>
+    nav>
+    <p Logged in as: <b <| current_user.email |> b> p>
+  div>
+<: end :>
+
 <: if flash[:notice] :>
   <div.alert.alert-info
     <| flash[:notice] |>
