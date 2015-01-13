@@ -11,8 +11,8 @@ Rails.application.routes.draw do
 
   # authentication
   resources :sessions
-  get "logout",    to: "sessions#destroy", as: :logout
-  get "login",     to: "sessions#new",     as: :login
+  get "logout",   to: "sessions#destroy", as: :logout
+  get "login",    to: "sessions#new",     as: :login
   get "sessions", to: redirect("/login")
 
 

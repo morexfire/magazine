@@ -1,0 +1,17 @@
+<article
+  <header
+    <h1 Admin Login h1>
+  header>
+
+  <: # TODO FIXME :>
+  <| form_tag sessions_path do |>
+    <| label_tag          :email, "Email", class: "screen-reader-only" |>
+    <| email_field_tag    :email, params[:email], placeholder: "Email" |>
+
+    <| label_tag          :password, "Password", class: "screen-reader-only" |>
+    <| password_field_tag :password, nil, placeholder: "Password"            |>
+
+    <| link_to "Cancel", root_url, class: "cancel" |>
+    <| button_tag "Login" |>
+  <| end |>
+article>

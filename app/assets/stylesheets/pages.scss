@@ -3,7 +3,6 @@
 #about {
   article {
     margin: 0 5pt;
-    
 
     h1 {
       font-family: "alright_sansbold";
@@ -85,7 +84,7 @@
 #login {
   article {
     input:nth-of-type(1),
-    input {
+    input[type] {
       width: 100%;
       float: none;
       margin: 1em 0;
