@@ -1,0 +1,34 @@
+<%= form_for @contributor do |f| %>
+
+  <% if @contributor.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@contributor.errors.count, "error") %>
+        prohibited this admin_contributor from being saved:
+      </h2>
+
+      <ul>
+        <% @contributor.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= f.label :name, class: "screen-reader-only" %>
+  <%= f.text_field :name, placeholder: "Name" %>
+
+  <%= f.label :twitter, class: "screen-reader-only" %>
+  <%= f.text_field :twitter, placeholder: "Twitter Account (no @)" %>
+
+  <br>
+
+  <%= f.label :bio, class: "screen-reader-only" %>
+  <%= f.text_area :bio, placeholder: "Bio" %>
+
+  <div class="actions">
+    <%= link_to "Cancel", admin_contributors_path, class: "cancel" %>
+    <button>Submit</button>
+  </div>
+
+<% end %>

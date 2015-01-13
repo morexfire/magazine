@@ -9,10 +9,10 @@
 
     <nav
       <ul
-        <li <| link_to_unless_current "Users",        "admin_users_path"    |> li>
-        <li <| link_to_unless_current "Roles",        admin_roles_path      |> li>
-        <li <| link_to_unless_current "Contributors", "contributors_x_path" |> li>
-        <li <| link_to_unless_current "Articles",     "admin_articles_path" |> li>
+        <li <| link_to_unless_current "Users",        "admin_users_path"      |> li>
+        <li <| link_to_unless_current "Roles",        admin_roles_path        |> li>
+        <li <| link_to_unless_current "Contributors", admin_contributors_path |> li>
+        <li <| link_to_unless_current "Articles",     "admin_articles_path"   |> li>
       ul>
     nav>
   div>

@@ -1,0 +1,7 @@
+<h1
+  <| link_to "Contributors", admin_contributors_path |>
+
+  <small
+    ( <| link_to "New", new_admin_contributor_path |> )
+  small>
+h1>

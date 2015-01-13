@@ -1,0 +1,8 @@
+<article
+  <header
+    <| render("header_title").html_safe |>
+    <| render("header_subtitle").html_safe |>
+  header>
+
+  <| render "form" |>
+article>

@@ -1,0 +1,7 @@
+<h2
+  <| link_to_unless_current @contributor.name, admin_contributor_path(@contributor) |>
+
+  <small
+    ( <| link_to_unless_current "Edit", edit_admin_contributor_path(@contributor) |> )
+  small>
+h2>

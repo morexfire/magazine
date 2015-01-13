@@ -1,0 +1,10 @@
+<h3 Name h3>
+<p <| link_to_unless_current contributor.name, admin_contributor_path(contributor) |> p>
+
+<h3 Twitter h3>
+<p <| link_to "@#{contributor.twitter}", "http://twitter.com/#{contributor.twitter}" |> p>
+
+<h3 Bio h3>
+<| simple_format contributor.bio |>
+
+<hr />

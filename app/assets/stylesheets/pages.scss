@@ -13,59 +13,63 @@
       font-family: "harriet_displaylight";
       font-size: 13pt;
     }
+  }
+}
 
-    input {
-      width: 49%;
-      float: left;
-      margin: 0;
-      padding: 25pt 25pt 0 25pt;
-    }
+form {
+  input[type=submit],
+  button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 5pt 10pt;
+    float: right;
+    text-transform: uppercase;
+  }
 
-    input,
-    textarea {
-      display: block;
-      width: 100%;
-      margin-bottom: 1em;
-      width: 49%;
-      padding: 5pt;
-      border: 1px solid #ccc;
-      outline: none;
-    }
+  input {
+    width: 49%;
+    float: left;
+    margin: 0;
+    padding: 25pt 25pt 0 25pt;
+  }
 
-    input:focus,
-    textarea:focus {
-      border: 1px solid #666;
-    }
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+    width: 49%;
+    padding: 5pt;
+    border: 1px solid #ccc;
+    outline: none;
+  }
 
-    input[type=text] {
-      margin-right: 1%;
-    }
+  input:focus,
+  textarea:focus {
+    border: 1px solid #666;
+  }
 
-    input[type=email] {
-      margin-left: 1%;
-    }
+  input[type=text] {
+    margin-right: 1%;
+  }
 
-    textarea {
-      width: 100%;
-      clear: both;
-      margin-top: .75em;
-      height: 6em;
-    }
+  input[type=email] {
+    margin-left: 1%;
+  }
 
-    .cancel {
-      color: #ccc;
-      padding: 5pt 0;
-      float: left;
-      text-transform: uppercase;
-    }
+  textarea {
+    width: 100%;
+    clear: both;
+    margin-top: .75em;
+    height: 6em;
+  }
 
-    button {
-      background: black;
-      color: white;
-      border: none;
-      padding: 5pt 10pt;
-      float: right;
-    }
+  .cancel {
+    color: #ccc;
+    padding: 5pt 0;
+    float: left;
+    text-transform: uppercase;
   }
 }
 

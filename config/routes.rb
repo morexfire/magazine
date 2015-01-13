@@ -50,6 +50,7 @@ Rails.application.routes.draw do
     # Directs /admin/roles/* to Admin::RolesController
     # (app/controllers/admin/roles_controller.rb)
 
+    resources :contributors
     resources :roles
   end
 end

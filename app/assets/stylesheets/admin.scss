@@ -43,3 +43,39 @@
     }
   }
 }
+
+/* DANGER ZONE... */
+/* lovingly inspired by GitHub's Danger Zone™ */
+#danger-zone {
+  margin-top: 7em;
+  outline: 1px solid #c00;
+
+  h2 {
+    background: #c00;
+    padding: .5em;
+    color: white;
+    font-weight: bold;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  b {
+    color: #c00;
+  }
+
+  button,
+  input[type=submit] {
+    border: none;
+    background: #c00;
+    padding: .5em;
+    color: white;
+  }
+}
+
+#danger-zone > div {
+  padding: 1em;
+  overflow: hidden;
+}
+/* ...DANGER ZONE */
