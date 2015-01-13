@@ -44,12 +44,12 @@ Rails.application.routes.draw do
 
 
   # admin
-  get "admin", to: redirect("/admin/articles"), as: :admin
+  get "admin", to: redirect("/admin/roles"), as: :admin
 
-  # TODO make this
-  # namespace :admin do
-  #   # Directs /admin/articles/* to Admin::ArticlesController
-  #   # (app/controllers/admin/articles_controller.rb)
-  #   resources :articles
-  # end
+  namespace :admin do
+    # Directs /admin/roles/* to Admin::RolesController
+    # (app/controllers/admin/roles_controller.rb)
+
+    resources :roles
+  end
 end

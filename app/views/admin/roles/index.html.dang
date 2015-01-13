@@ -1,0 +1,11 @@
+<article
+  <header
+    <h1 Roles h1>
+  header>
+
+  <ul 
+    <: @roles.each do |role| :>
+      <li <| role.name |> li>
+    <: end :>
+  ul>
+article>

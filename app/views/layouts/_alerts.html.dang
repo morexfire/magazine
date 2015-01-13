@@ -2,18 +2,17 @@
   <div#admin-banner.alert.alert-danger
     <nav
       <ul
-        <li <| link_to_unless_current "Admin",  admin_path  |> li>
         <li <| current_user.email |> li>
         <li <| link_to_unless_current "Logout", logout_path |> li>
       ul>
     nav>
-    
+
     <nav
       <ul
-        <li <| link_to "Users",        "admin_users_path"    |> li>
-        <li <| link_to "Role",         "admin_roles_path"    |> li>
-        <li <| link_to "Contributors", "contributors_x_path" |> li>
-        <li <| link_to "Articles",     "admin_articles_path" |> li>
+        <li <| link_to_unless_current "Users",        "admin_users_path"    |> li>
+        <li <| link_to_unless_current "Roles",        admin_roles_path      |> li>
+        <li <| link_to_unless_current "Contributors", "contributors_x_path" |> li>
+        <li <| link_to_unless_current "Articles",     "admin_articles_path" |> li>
       ul>
     nav>
   div>
