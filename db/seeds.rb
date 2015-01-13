@@ -1,3 +1,14 @@
+about = %q{
+
+The discussions surrounding politics that inform and define our lives have become mired in passivity, shaped by the protection of our first world privileges, and generally ignore the anger and discontent that lie deep within us - leading towards half-measures and tempered voices that avoid confrontation for the sake of polite discourse and retaining the illusory calm that maintains order and business as usual.
+
+All Attack, No Hold Back is not a voice of calm. It is not a plea for peace and measured reservation. It is genuine hostility and a deliberate increase in volume of radical voices, giving permissiveness to those of us ready to let loose through both word and deed. More than just anger for anger’s sake, however, AANHB is perspective born through countless years of skepticism, informed research and discussion from our various positions on the social pyramid of hierarchy and privilege, and the trial and error of alternative ways of being.
+
+To be succinct, AANNHB is pissed off and we aren’t going to be quiet about it. We see clearly that our dominant culture is driving us towards increasingly catastrophic moments where those on the bottom suffer the longest. We see clearly that everything is going to shit, and although we acknowledge our privileges, stand amongst A-List celebrities, and reap the benefits of first-world creature comforts, it doesn’t change the fact that everything is still going to shit. We’re going to call it all out for what it truly is, intelligently, but unapologetically. Don’t say we didn’t warn you.
+
+}
+
+
 puts "Populating licenses table..."
 [
   [
