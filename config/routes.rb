@@ -43,6 +43,9 @@ Rails.application.routes.draw do
   get "feed", to: "articles#index", defaults: { format: "atom" }, as: :feed
 
 
+  # admin
+  get "admin", to: redirect("/admin/articles"), as: :admin
+
   # TODO make this
   # namespace :admin do
   #   # Directs /admin/articles/* to Admin::ArticlesController

@@ -9,8 +9,8 @@
 
     li {
       margin-right:  .5em;
-      padding-right: .5em;
-      border-right: 1px solid #666;
+      padding-right: .75em;
+      border-right: 1px solid #ccc;
     }
 
     li:last-child {
@@ -23,8 +23,23 @@
       font-weight: normal;
     }
   }
-    
+
   p {
     margin-bottom: 0;
+  }
+}
+
+
+#admin {
+  article {
+    margin: 0 5pt;
+  }
+}
+
+@media (min-width: 768px) {
+  #admin {
+    article {
+      margin: 0 50pt;
+    }
   }
 }
