@@ -9,17 +9,17 @@ and business as usual.
 
 **All Attack, No Hold Back** is not a voice of calm. It is not a plea for peace
 and measured reservation. It is genuine hostility and a deliberate increase in
-volume of radical voices, giving permissiveness (???) to those of us ready to
+volume of radical voices, offering permission to those of us ready to
 let loose through both word and deed. More than just anger for anger’s sake,
 however, **All Attack, No Hold Back** is perspective born through countless
 years of skepticism, informed research and discussion from our various
-positions on the social pyramid of hierarchy and privilege, and the trial and
-error of alternative ways of being (??? being... living? I dont know).
+positions on the social pyramid of hierarchy and privilege, and experimentation 
+with alternative strategies in opposition to the dictactes of dominant culture.
 
 To be succinct, **All Attack, No Hold Back** is pissed off and we aren’t going
-to be quiet about it. We see clearly that our dominant culture is driving us
+to be quiet about it. We see clearly that dominant culture is driving us
 towards increasingly catastrophic moments where those on the bottom suffer the
-longest. We see clearly that everything is going to shit, and although we
+most. We see clearly that everything is going to shit, and although we
 acknowledge our privileges, stand amongst A-List celebrities, and reap the
 benefits of first-world creature comforts, it doesn’t change the fact that
 everything is still going to shit. We’re calling it all out for what it truly
