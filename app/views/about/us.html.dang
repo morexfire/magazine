@@ -1,7 +1,7 @@
 <article
   <header
-    <h1 About h1>
+    <h1 About Us h1>
   header>
 
-  <| simple_format(setting :site_about) |>
+  <| simple_format(setting :text_about) |>
 article>

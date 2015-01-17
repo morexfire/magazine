@@ -21,3 +21,11 @@ a:hover {
 }
 
 br { clear: both; }
+
+q        { font-family: "harriet_displaylight_italic"; }
+q:before { content: "“"; }
+q:after  { content: "”"; }
+
+b.aanhb {
+  font-family: "harriet_displaythin_italic";
+}

@@ -8,7 +8,7 @@
   <div#support
     <h1 <| link_to "Support", support_path |> h1>
 
-    <| simple_format(setting :site_support) |>
+    <| simple_format(setting :text_support_short) |>
   div>
 
   <nav[role=nav]

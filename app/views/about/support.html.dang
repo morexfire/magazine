@@ -1,0 +1,7 @@
+<article
+  <header
+    <h1 Support This Site h1>
+  header>
+
+  <| simple_format(setting :text_support) |>
+article>
