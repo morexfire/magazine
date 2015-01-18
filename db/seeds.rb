@@ -1,24 +1,24 @@
 text_about = %q{
 The political discussions that inform and define our lives have become mired in
 passivity, shaped by the protection of our first world privileges, and
-generally ignore the anger and discontent that lie deep within us. This _____
-has lead to half-measures and tempered voices that avoid confrontation for the
+generally ignore the anger and discontent that lie deep within us. These reservations
+have lead to half-measures and tempered voices that avoid confrontation for the
 sake of polite discourse and retaining the illusory calm that maintains order
 and business as usual.
 
 <b class="aanhb">All&nbsp;Attack,&nbsp;No&nbsp;Hold&nbsp;Back</b> is not a voice of calm. It is not a plea for peace
 and measured reservation. It is genuine hostility and a deliberate increase in
-volume of radical voices, giving permissiveness (???) to those of us ready to
+volume of radical voices, offering permission to those of us ready to
 let loose through both word and deed. More than just anger for anger’s sake,
 however, <b class="aanhb">All&nbsp;Attack,&nbsp;No&nbsp;Hold&nbsp;Back</b> is perspective born through countless
 years of skepticism, informed research and discussion from our various
-positions on the social pyramid of hierarchy and privilege, and the trial and
-error of alternative ways of being (??? being... living? I dont know).
+positions on the social pyramid of hierarchy and privilege, and experimentation
+with alternative strategies in opposition to the dictates of dominant culture.
 
 To be succinct, <b class="aanhb">All&nbsp;Attack,&nbsp;No&nbsp;Hold&nbsp;Back</b> is pissed off and we aren’t going
 to be quiet about it. We see clearly that our dominant culture is driving us
 towards increasingly catastrophic moments where those on the bottom suffer the
-longest. We see clearly that everything is going to shit, and although we
+most. We see clearly that everything is going to shit, and although we
 acknowledge our privileges, stand amongst A-List celebrities, and reap the
 benefits of first-world creature comforts, it doesn’t change the fact that
 everything is still going to shit. We’re calling it all out for what it truly
